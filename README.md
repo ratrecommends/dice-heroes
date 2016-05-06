@@ -6,8 +6,9 @@ Dice heroes is a turn based rpg-strategy game where characters are dice.
 This project is built using gradle, so to run it you have to:
 
 1. Clone this repository
-2. In project's root, run in command line following command: `./gradlew desktop:run`
-3. There is no step 3 :)
+2. Make sure you have jdk installed
+3. In project's root, run in command line following command: `gradlew desktop:run` (on windows) or `./gradlew desktop:run` (on mac and linux)
+4. There is no step 3 :)
 
 Alternatively, you can import cloned repository in Intellij IDEA and run `desktop:run` gradle task from IDE.
 
@@ -25,6 +26,5 @@ Alternatively, you can import cloned repository in Intellij IDEA and run `deskto
 1. Code is under [GNU GPLv3](https://gnu.org/licenses/gpl.html) ([tl;dr](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)).
 2. Images are under [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode) ([tl;dr](https://tldrlegal.com/license/creative-commons-attribution-4.0-international-%28cc-by-4%29)).
 3. Sound licenses:
-
   - `map.mp3` and `ambient-battle.mp3` have `All Rights Reserved` license: do not distribute these sounds. Please contact [Sagamor](mailto:a.sukhotin@gmail.com)  (he is author) for further details.
   - all other sounds are taken from [freesound.org](http://freesound.org/) and modified in audacity, please help me find original authors to give them proper credits.
