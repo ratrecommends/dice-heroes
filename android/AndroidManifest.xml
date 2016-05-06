@@ -19,8 +19,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.vlaaad.dice"
-          android:versionCode="38"
-          android:versionName="4.0.1"
+          android:versionCode="39"
+          android:versionName="4.1"
           android:installLocation="auto"
         >
 
