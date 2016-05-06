@@ -1,0 +1,5089 @@
+---
+name: tutorial
+x: 44
+y: 126
+parent: ~
+background:
+  objects: [cloud1, cloud2]
+rewards:
+  pass:
+    - {type: item, item: coin, count: 14}
+drop:
+- items:
+  - coin: 1
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  T: {obstacle: mushroom}
+  b: {obstacle: stone1}
+  d: {obstacle: sign}
+  c: {obstacle: crack}
+  e: {enemy: {profession: warrior, level: 1, name: Bjum, abilities: [default-attack]}}
+map:
+  #- [~, ~, T, b, ~, ~]
+  - [~, T, T, T, T, ~]
+  - [T, T, e, T, d, c]
+  - [T, _, _, b, T, T]
+  - [b, T, _, _, b, b]
+  - [T, b, s, b, T, T]
+  - [~, _, _, c, T, ~]
+  #- [~, ~, _, b, ~, ~]
+---
+name: start
+hidden: true
+---
+name: mountains
+hidden: true
+---
+name: crowd
+hidden: true
+---
+name: elf-intro
+hidden: true
+---
+name: pvp-2-1
+hidden: true
+---
+name: pvp-2-2
+hidden: true
+---
+name: pvp-2-3
+hidden: true
+---
+name: pvp-2-4
+hidden: true
+---
+name: w-1
+x: 105
+y: 87
+parent: tutorial
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 1}
+    - {type: die, level: 1, profession: warrior, name: Rudy, abilities: [default-attack, default-defence]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 5
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-30}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: stone1}
+  m: {obstacle: mushroom}
+  c: {obstacle: crack}
+  e: {enemy: {profession: warrior, level: 1, name: Zzak, abilities: [default-attack, default-defence]}}
+map:
+  - [~, ~, ~, _, c, ~]
+  - [m, ~, _, c, e, c]
+  - [~, ~, b, _, _, c]
+  - [~, _, _, _, _, ~]
+  - [~, b, _, _, ~, ~]
+  - [_, _, c, _, b, _]
+  - [m, _, _, _, _, b]
+  - [~, _, s, b, c, ~]
+---
+name: w-2
+x: 162
+y: 126
+parent: w-1
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 1}
+drop:
+- roll: 1-100
+  items:
+  - coin: 6
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-32}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: stone1}
+  m: {obstacle: mushroom}
+  c: {obstacle: crack}
+  E: {enemy: {profession: warrior, level: 1, name: Tzuk, abilities: [default-attack, default-defence, default-defence, default-defence, default-attack]}}
+map:
+  - [~, ~, ~, _, ~, ~]
+  - [~, _, E, c, ~, ~]
+  - [~, _, c, _, _, ~]
+  - [~, c, _, _, c, b]
+  - [_, _, _, c, _, ~]
+  - [_, _, _, b, ~, ~]
+  - [~, _, _, _, b, ~]
+  - [~, _, s, s, ~, ~]
+---
+name: w-3
+x: 101
+y: 183
+parent: w-2
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 4}
+    - {type: die, level: 1, profession: warrior, name: Jack, abilities: [default-attack, default-attack, default-attack]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 6
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-32}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  m: {obstacle: pumpkin}
+  E: {enemy: {profession: warrior, level: 1, name: Gruk, abilities: [default-attack, default-defence]}}
+  F: {enemy: {profession: warrior, level: 1, name: Gnok, abilities: [default-attack, default-defence, default-defence]}}
+map:
+  - [m, E, ~, ~, F, ~]
+  - [_, _, ~, _, _, m]
+  - [_, ~, ~, m, _, _]
+  - [_, _, ~, m, m, _]
+  - [_, _, ~, ~, _, _]
+  - [m, _, ~, ~, _, _]
+  - [~, _, _, s, _, _]
+  - [~, ~, s, s, ~, ~]
+---
+name: w-4
+x: 50
+y: 252
+parent: w-3
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 5}
+drop:
+- roll: 1-100
+  items:
+  - coin: 7
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-32}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: lava}
+  c: {obstacle: crack}
+  E: {enemy: {profession: warrior, level: 1, name: Gnuk, abilities: [default-attack, default-attack, default-attack, default-attack, default-defence]}}
+  F: {enemy: {profession: warrior, level: 1, name: Grok, abilities: [default-attack, default-attack, default-attack, default-defence, default-defence]}}
+map:
+  - [~, b, _, _, _, ~]
+  - [b, _, _, c, ~, ~]
+  - [~, _, _, E, ~, ~]
+  - [~, _, _, F, _, b]
+  - [_, _, c, _, _, b]
+  - [_, _, ~, ~, _, _]
+  - [_, _, ~, ~, ~, _]
+  - [s, s, b, ~, ~, s]
+---
+name: w-5
+x: 129
+y: 290
+parent: w-4
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 6}
+drop:
+- roll: 1-100
+  items:
+  - coin: 7
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-36}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: stone1}
+  m: {obstacle: mushroom}
+  c: {obstacle: sign}
+  E: {enemy: {profession: warrior, level: 1, name: Trok, abilities: [default-attack, default-attack, default-defence]}}
+  F: {enemy: {profession: warrior, level: 1, name: Abek, abilities: [default-attack, default-attack, default-defence]}}
+  G: {enemy: {profession: warrior, level: 1, name: Marr, abilities: [default-attack, default-attack, default-attack, default-defence, default-defence]}}
+map:
+  - [~, ~, ~, m, b, ~]
+  - [~, ~, F, c, E, ~]
+  - [~, _, _, G, _, ~]
+  - [~, _, _, _, b, ~]
+  - [b, _, _, _, _, c]
+  - [_, m, _, _, _, m]
+  - [~, _, _, _, m, m]
+  - [~, s, s, s, m, ~]
+---
+name: w-6
+x: 196
+y: 268
+parent: w-5
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 10}
+    - {type: die, level: 1, profession: warrior, name: Snow, abilities: [default-attack, default-defence, default-defence]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 8
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-36}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: stone1}
+  m: {obstacle: pumpkin}
+  E: {enemy: {profession: warrior, level: 1, name: Park, abilities: [default-attack, default-attack, default-defence, default-defence]}}
+  F: {enemy: {profession: warrior, level: 1, name: Pork, abilities: [default-attack, default-attack, default-defence, default-defence]}}
+  G: {enemy: {profession: warrior, level: 1, name: Perk, abilities: [default-attack, default-attack, default-defence, default-defence]}}
+map:
+  - [~, _, m, b, ~, ~]
+  - [_, _, _, _, G, ~]
+  - [E, ~, ~, ~, _, _]
+  - [_, ~, ~, ~, ~, _]
+  - [_, _, ~, ~, _, s]
+  - [s, _, _, _, _, b]
+  - [~, b, _, _, _, _]
+  - [~, ~, m, F, b, ~]
+---
+name: w-7
+x: 256
+y: 230
+parent: w-6
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 12}
+drop:
+- roll: 1-100
+  items:
+  - coin: 9
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-37}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: stone1}
+  l: {obstacle: lava}
+  m: {obstacle: crack}
+  E: {enemy: {profession: warrior, level: 2, name: Bzon, abilities: [default-attack, default-defence, default-defence, default-defence, cleave, cleave]}}
+  F: {enemy: {profession: warrior, level: 2, name: Mzon, abilities: [default-attack, default-defence, default-defence, default-defence, cleave, cleave]}}
+map:
+  - [~, ~, ~, b, F, ~]
+  - [~, ~, _, _, _, ~]
+  - [~, m, _, _, b, m]
+  - [~, ~, s, s, ~, ~]
+  - [~, ~, s, s, ~, ~]
+  - [~, ~, _, _, l, ~]
+  - [~, _, _, l, _, ~]
+  - [~, ~, E, _, ~, ~]
+---
+name: w-8
+x: 265
+y: 147
+parent: w-7
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 13}
+drop:
+- roll: 1-100
+  items:
+  - coin: 10
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-38}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: sign}
+  m: {obstacle: pumpkin}
+  E: {enemy: {profession: warrior, level: 2, name: Chek, abilities: [cleave, cleave, default-defence, default-defence]}}
+  F: {enemy: {profession: warrior, level: 2, name: Knig, abilities: [cleave, cleave, default-defence, default-defence]}}
+  G: {enemy: {profession: warrior, level: 2, name: Mate, abilities: [default-attack, default-defence, default-defence, default-defence, cleave]}}
+map:
+  - [~, ~, ~, b, ~, ~]
+  - [~, _, E, _, _, ~]
+  - [~, _, _, G, _, _]
+  - [_, _, b, _, F, _]
+  - [s, _, m, _, _, _]
+  - [_, s, _, _, m, ~]
+  - [m, _, s, _, _, ~]
+  - [~, b, m, b, ~, ~]
+---
+name: w-9
+x: 215
+y: 74
+parent: w-8
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 15}
+drop:
+- roll: 1-100
+  items:
+  - coin: 11
+  - feather: {count: 1, range: 1-25}
+  - sulfur: {count: 1, range: 21-39}
+  - applebloom: {count: 1, range: 38-42}
+defaults: {tile: ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: stone1}
+  t: {obstacle: tree}
+  m: {obstacle: mushroom}
+  E: {enemy: {profession: warrior, level: 2, name: Ough, abilities: [default-attack, default-attack, default-attack, default-defence, default-defence, default-defence]}}
+  F: {enemy: {profession: warrior, level: 2, name: Augh, abilities: [default-attack, default-attack, default-attack, default-defence, default-defence, default-defence]}}
+  G: {enemy: {profession: warrior, level: 2, name: Eugh, abilities: [default-attack, default-attack, default-attack, default-defence, default-defence, default-defence]}}
+  H: {enemy: {profession: warrior, level: 4, name: Yugh, abilities: [default-attack, default-attack, default-defence, default-defence, heavy-attack]}}
+map:
+  - [~, ~, _, H, m, ~]
+  - [~, _, E, F, G, t]
+  - [~, m, _, _, _, m]
+  - [~, _, _, m, _, ~]
+  - [t, _, b, _, _, m]
+  - [_, _, _, s, _, _]
+  - [~, _, s, s, s, ~]
+  - [~, ~, _, _, _, ~]
+---
+name: a-1
+x: 291
+y: 72
+parent: w-9
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 28}
+    - {type: die, level: 1, profession: archer, name: Enf, abilities: [default-attack, default-defence, shot]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 7
+  - applebloom: {count: 1, range: 1-20}
+  - dragonwort: {count: 1, range: 21-30}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~, tile: ground}
+  b: {obstacle: crack, tile: ground}
+  -: {tile: ground}
+  +: {tile: wooden-bridge}
+  h: {obstacle: bush}
+  t: {obstacle: tree}
+  m: {obstacle: mushroom}
+  E: {enemy: {profession: warrior, level: 4, name: Cthu, abilities: [heavy-defence, heavy-attack, heavy-defence, heavy-attack]}}
+  F: {enemy: {profession: archer, level: 1, name: Fizz, abilities: [default-defence, default-defence, shot, shot]}}
+  G: {enemy: {profession: archer, level: 1, name: Buzz, abilities: [default-defence, default-defence, shot, shot]}}
+map:
+  - [h, F, _, t, G, h]
+  - [~, _, E, _, h, ~]
+  - [~, ~, +, +, ~, ~]
+  - [~, ~, +, +, ~, ~]
+  - [~, ~, +, +, ~, ~]
+  - [~, ~, +, +, ~, ~]
+  - [~, -, s, s, -, ~]
+  - [-, b, s, s, -, b]
+---
+name: a-2
+x: 373
+y: 60
+parent: a-1
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 31}
+drop:
+- roll: 1-100
+  items:
+  - coin: 7
+  - applebloom: {count: 1, range: 1-20}
+  - dragonwort: {count: 1, range: 21-31}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  A: {obstacle: house-top-left}
+  B: {obstacle: house-top-right}
+  C: {obstacle: house-bottom-left}
+  D: {obstacle: house-bottom-right}
+  W: {obstacle: well}
+  +: {tile: ground}
+  b: {obstacle: bush}
+  r: {obstacle: barrels}
+  w: {obstacle: stone2}
+  t: {obstacle: tree}
+  T: {obstacle: appletree}
+  E: {enemy: {profession: warrior, level: 3, name: Wark, abilities: [heavy-defence, default-defence, cleave, default-attack, default-attack, default-attack]}, tile: ground}
+  F: {enemy: {profession: archer, level: 1, name: Eld, abilities: [default-defence, default-defence, default-defence, shot, shot]}}
+  G: {enemy: {profession: archer, level: 1, name: Elm, abilities: [default-defence, default-defence, default-defence, shot, shot]}}
+  H: {enemy: {profession: archer, level: 1, name: Elp, abilities: [default-defence, default-defence, default-defence, shot, shot]}}
+map:
+  - [~, F, ~, ~, r, ~]
+  - [H, _, ~, ~, _, G]
+  - [_, _, ~, t, E, W]
+  - [_, _, _, _, +, b]
+  - [A, B, _, _, +, _]
+  - [C, D, +, +, +, _]
+  - [b, s, s, s, s, r]
+  - [~, t, s, s, t, ~]
+---
+name: a-3
+x: 447
+y: 77
+parent: a-2
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 34}
+drop:
+- roll: 1-100
+  items:
+  - coin: 8
+  - applebloom: {count: 1, range: 1-21}
+  - dragonwort: {count: 1, range: 21-32}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: bush}
+  w: {obstacle: stone2}
+  t: {obstacle: tree}
+  +: {tile: wooden-bridge}
+  E: {enemy: {profession: warrior, level: 4, name: Zerg, abilities: [default-defence, heavy-attack, heavy-attack, heavy-attack, heavy-attack, default-attack]}}
+  F: {enemy: {profession: warrior, level: 4, name: Zerg, abilities: [default-defence, heavy-attack, heavy-attack, heavy-attack, heavy-attack, default-attack]}}
+  G: {enemy: {profession: warrior, level: 4, name: Zerg, abilities: [default-defence, heavy-attack, heavy-attack, heavy-attack, heavy-attack, default-attack]}}
+  H: {enemy: {profession: warrior, level: 4, name: Zerg, abilities: [default-defence, heavy-attack, heavy-attack, heavy-attack, heavy-attack, default-attack]}}
+map:
+  - [~, ~, F, w, ~, ~]
+  - [~, w, G, E, H, ~]
+  - [~, b, _, b, ~, ~]
+  - [~, ~, +, ~, ~, ~]
+  - [~, ~, +, ~, ~, b]
+  - [~, ~, +, ~, ~, ~]
+  - [b, _, s, _, t, ~]
+  - [~, s, s, s, w, ~]
+---
+name: a-4
+x: 497
+y: 127
+parent: a-3
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 37}
+drop:
+- roll: 1-100
+  items:
+  - coin: 9
+  - applebloom: {count: 1, range: 1-21}
+  - dragonwort: {count: 1, range: 21-33}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: bush}
+  w: {obstacle: barrels}
+  t: {obstacle: appletree}
+  E: {enemy: {profession: archer, level: 5, name: End, abilities: [heavy-shot, shot, default-defence, default-defence]}}
+  F: {enemy: {profession: archer, level: 1, name: Erg, abilities: [shot, shot, default-defence, default-defence]}}
+  G: {enemy: {profession: archer, level: 1, name: Erg, abilities: [shot, shot, shot, default-defence]}}
+  H: {enemy: {profession: archer, level: 1, name: Erg, abilities: [shot, shot, default-defence, default-defence]}}
+  J: {enemy: {profession: archer, level: 1, name: Erg, abilities: [shot, shot, default-defence, default-defence]}}
+map:
+  - [~, w, E, b, t, b]
+  - [b, t, F, _, H, t]
+  - [G, _, _, _, _, J]
+  - [_, _, t, _, _, _]
+  - [_, _, _, b, _, _]
+  - [w, _, _, _, _, t]
+  - [~, _, s, s, t, w]
+  - [~, s, s, s, b, ~]
+---
+name: a-5
+x: 487
+y: 214
+parent: a-4
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 40}
+drop:
+- roll: 1-100
+  items:
+  - coin: 10
+  - applebloom: {count: 1, range: 1-22}
+  - dragonwort: {count: 1, range: 21-34}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: bush}
+  w: {obstacle: stone2}
+  l: {obstacle: small-lake}
+  t: {obstacle: appletree}
+  E: {enemy: {profession: archer, level: 5, name: Belf, abilities: [heavy-shot, shot, default-defence, default-defence, speed]}}
+  F: {enemy: {profession: archer, level: 5, name: Gelf, abilities: [heavy-shot, shot, default-defence, default-defence, speed]}}
+  G: {enemy: {profession: archer, level: 5, name: Delf, abilities: [heavy-shot, shot, default-defence, default-defence, speed]}}
+  H: {enemy: {profession: warrior, level: 5, name: Mord, abilities: [heavy-cleave, cleave, cleave, cleave, default-defence]}}
+map:
+  - [~, ~, ~, w, b, ~]
+  - [~, ~, w, E, F, t]
+  - [~, ~, l, _, H, G]
+  - [~, t, b, _, _, b]
+  - [~, b, _, _, _, ~]
+  - [~, _, _, _, ~, ~]
+  - [b, _, _, l, _, ~]
+  - [s, s, s, s, s, ~]
+---
+name: a-6
+x: 415
+y: 205
+parent: a-5
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 44}
+    - {type: die, level: 1, profession: archer, name: Oonf, abilities: [speed, shot, shot]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 11
+  - applebloom: {count: 1, range: 1-22}
+  - dragonwort: {count: 1, range: 21-35}
+defaults: {tile: grass}
+shortcuts:
+  A: {obstacle: lake-top-left}
+  B: {obstacle: lake-top-right}
+  C: {obstacle: lake-bottom-left}
+  D: {obstacle: lake-bottom-right}
+  s: {spawn: ~}
+  b: {obstacle: bush}
+  w: {obstacle: stone2}
+  t: {obstacle: tree}
+  E: {enemy: {profession: archer, level: 5, name: Ori, abilities: [heavy-shot, heavy-shot, shot, shot, speed]}}
+  F: {enemy: {profession: archer, level: 5, name: Yori, abilities: [heavy-shot, heavy-shot, shot, shot, speed]}}
+  G: {enemy: {profession: archer, level: 5, name: Yari, abilities: [heavy-shot, heavy-shot, shot, shot, speed]}}
+  H: {enemy: {profession: warrior, level: 6, name: Dnuk, abilities: [heavy-cleave, heavy-cleave, heavy-cleave, cleave, cleave, default-defence]}}
+map:
+  - [~, ~, b, H, ~, ~]
+  - [~, _, E, F, G, ~]
+  - [~, _, _, _, _, ~]
+  - [~, t, _, _, ~, ~]
+  - [~, _, _, _, _, ~]
+  - [_, _, _, _, A, B]
+  - [t, _, s, s, C, D]
+  - [~, s, s, s, b, ~]
+---
+name: a-7
+x: 346
+y: 189
+parent: a-6
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 47}
+drop:
+- roll: 1-100
+  items:
+  - coin: 11
+  - applebloom: {count: 1, range: 1-23}
+  - dragonwort: {count: 1, range: 21-36}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  w: {obstacle: stone2}
+  t: {obstacle: tree}
+  E: {enemy: {profession: archer, level: 5, name: Woo, abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, shot, speed]}}
+  F: {enemy: {profession: archer, level: 5, name: Boo, abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, shot, speed]}}
+  G: {enemy: {profession: warrior, level: 3, name: Figg, abilities: [default-defence, default-defence, default-defence, default-defence, default-defence, cleave]}}
+  H: {enemy: {profession: warrior, level: 3, name: Fogg, abilities: [default-defence, default-defence, default-defence, default-defence, default-defence, cleave]}}
+  I: {enemy: {profession: warrior, level: 3, name: Fegg, abilities: [default-defence, default-defence, default-defence, default-defence, default-attack, cleave]}}
+map:
+  - [~, ~, H, E, ~, ~]
+  - [~, t, G, F, I, ~]
+  - [~, _, _, _, w, ~]
+  - [~, w, _, _, t, ~]
+  - [~, _, t, _, _, ~]
+  - [~, _, _, _, t, ~]
+  - [~, s, s, s, s, ~]
+  - [~, ~, s, s, ~, ~]
+---
+name: a-8
+x: 322
+y: 288
+parent: a-7
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 50}
+drop:
+- roll: 1-100
+  items:
+  - coin: 12
+  - applebloom: {count: 1, range: 1-24}
+  - dragonwort: {count: 1, range: 21-38}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: bush}
+  t: {obstacle: tree}
+  w: {obstacle: well}
+  E: {enemy: {profession: archer, level: 5, name: Feli, abilities: [heavy-shot, heavy-shot, heavy-shot, shot, shot, shot]}}
+  F: {enemy: {profession: archer, level: 6, name: Beli, abilities: [heavy-shot, heavy-shot, heavy-shot, shot, shot, shot]}}
+  G: {enemy: {profession: archer, level: 5, name: Nerf, abilities: [heavy-shot, heavy-shot, heavy-shot, default-defence, default-attack]}}
+  H: {enemy: {profession: warrior, level: 5, name: Yarr, abilities: [heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave]}}
+  I: {enemy: {profession: warrior, level: 6, name: Yorr, abilities: [heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave]}}
+map:
+  - [G, ~, E, F, ~, ~]
+  - [_, ~, H, I, _, ~]
+  - [_, b, _, _, t, b]
+  - [_, _, t, _, b, t]
+  - [b, _, _, _, w, ~]
+  - [~, t, s, s, ~, ~]
+  - [~, b, s, s, ~, t]
+  - [~, ~, s, s, ~, ~]
+---
+name: a-9
+x: 399
+y: 292
+parent: a-8
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 53}
+drop:
+- roll: 1-100
+  items:
+  - coin: 13
+  - applebloom: {count: 1, range: 1-25}
+  - dragonwort: {count: 1, range: 21-39}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: bush}
+  w: {obstacle: stone2}
+  l: {obstacle: small-lake}
+  t: {obstacle: tree}
+  E: {enemy: {profession: warrior, level: 6, name: Mork, abilities: [heavy-cleave, heavy-cleave, heavy-cleave, heavy-defence, heavy-defence, heavy-defence]}}
+  F: {enemy: {profession: warrior, level: 6, name: Tork, abilities: [heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-defence, heavy-defence]}}
+  G: {enemy: {profession: warrior, level: 5, name: Cork, abilities: [heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-defence]}}
+  H: {enemy: {profession: archer, level: 5, name: Peep, abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, heavy-shot, speed]}}
+  I: {enemy: {profession: archer, level: 6, name: Neep, abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, shot, speed]}}
+  J: {enemy: {profession: archer, level: 6, name: Leep, abilities: [shot, shot, shot, shot, default-defence, default-attack]}}
+map:
+  - [H, F, G, J, E, I]
+  - [~, _, _, _, t, _]
+  - [_, _, _, b, _, ~]
+  - [_, ~, _, _, w, _]
+  - [t, _, _, ~, _, l]
+  - [~, _, _, _, w, _]
+  - [_, _, t, _, ~, _]
+  - [s, s, s, s, s, s]
+---
+name: a-10
+x: 357
+y: 364
+parent: a-9
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 56}
+drop:
+- roll: 1-100
+  items:
+  - coin: 14
+  - applebloom: {count: 1, range: 1-25}
+  - dragonwort: {count: 1, range: 21-40}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: bush}
+  w: {obstacle: small-lake}
+  t: {obstacle: tree}
+  T: {obstacle: tree, tile: magic-ground}
+  k: {obstacle: crystal, tile: magic-ground}
+  +: {tile: magic-ground}
+  E: {enemy: {profession: warrior, level: 6, name: Dorn, abilities: [heavy-cleave, heavy-cleave, heavy-defence, heavy-defence, heavy-defence, heavy-defence]}}
+  F: {enemy: {profession: warrior, level: 6, name: Gorn, abilities: [heavy-cleave, heavy-defence, heavy-defence, heavy-defence, heavy-defence, heavy-defence]}, tile: magic-ground}
+  G: {enemy: {profession: warrior, level: 6, name: Zorn, abilities: [heavy-attack, heavy-defence, heavy-defence, heavy-defence, heavy-defence, heavy-defence]}, tile: magic-ground, cover: crystals}
+  H: {enemy: {profession: warrior, level: 6, name: Born, abilities: [heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave]}}
+  I: {enemy: {profession: warrior, level: 6, name: Forn, abilities: [heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave, heavy-cleave]}}
+  J: {enemy: {profession: archer, level: 6, name: Beny, abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, speed, speed]}, tile: magic-ground, cover: crystals}
+  K: {enemy: {profession: archer, level: 6, name: Meny, abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, heavy-shot, default-defence]}, tile: magic-ground}
+map:
+  - [T, J, H, I, K, k]
+  - [b, E, +, _, F, G]
+  - [_, b, _, w, _, _]
+  - [_, _, w, _, t, b]
+  - [w, _, b, _, _, _]
+  - [_, _, w, _, t, _]
+  - [t, s, s, s, s, b]
+  - [~, b, s, s, t, ~]
+
+---
+name: m-1
+x: 309
+y: 404
+parent: a-10
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 60}
+    - {type: die, level: 1, profession: mage, name: Gend, abilities: [fireball, fireball]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 15
+  - fireberries: {count: 1, range: 6-20}
+  - pearl: {count: 1, range: 1-8}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  S: {spawn: ~, cover: crystals}
+  b: {obstacle: tentacles}
+  w: {obstacle: tentacles}
+  o: {obstacle: fountain}
+  t: {obstacle: tentacles}
+  +: {cover: crystals}
+  f: {obstacle: treeshroom}
+  h: {obstacle: treeshroom-pair}
+  A: {enemy: {name: Bulk, profession: warrior, level: 6, abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-cleave, heavy-defence, heavy-defence, heavy-defence]}}
+  B: {enemy: {name: Folk, profession: warrior, level: 6, abilities: [heavy-defence, heavy-attack, heavy-attack, heavy-attack, heavy-attack, heavy-attack]}}
+  C: {enemy: {name: Nelk, profession: warrior, level: 6, abilities: [heavy-speed-attack, heavy-defence, heavy-defence, heavy-attack, heavy-attack, heavy-attack]}}
+  D: {enemy: {name: Yolk, profession: archer, level: 6, abilities: [heavy-shot, speed, heavy-shot, heavy-shot, speed, heavy-shot]}}
+  E: {enemy: {name: Aril, profession: archer, level: 6, abilities: [heavy-shot, heavy-elven-defence, heavy-shot, speed, heavy-shot, heavy-shot]}}
+  F: {enemy: {name: Uril, profession: archer, level: 6, abilities: [heavy-shot, speed, heavy-shot, speed, heavy-shot, heavy-elven-defence]}}
+  G: {enemy: {name: Saur, profession: mage, level: 2, abilities: [fireball, fireball, freeze, freeze, freeze, freeze]}}
+map:
+  - [~, ~, _, b, _, ~, ~, ~]
+  - [~, F, _, G, b, +, _, ~]
+  - [~, B, t, _, +, +, _, f]
+  - [_, _, C, D, A, _, _, ~]
+  - [w, _, +, ~, ~, ~, E, ~]
+  - [~, _, _, t, ~, ~, ~, ~]
+  - [~, +, +, w, ~, ~, ~, ~]
+  - [_, _, +, _, h, _, _, o]
+  - [b, _, _, +, _, _, ~, ~]
+  - [~, _, f, +, w, _, _, ~]
+  - [~, ~, _, s, S, s, +, w]
+  - [~, _, s, S, S, s, S, +]
+  - [~, ~, b, s, s, s, h, ~]
+
+---
+name: m-2
+x: 218
+y: 398
+parent: m-1
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 63}
+drop:
+- roll: 1-100
+  items:
+  - coin: 15
+  - fireberries: {count: 1, range: 6-21}
+  - pearl: {count: 1, range: 1-8}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: crystal-violet}
+  w: {obstacle: crystal}
+  o: {obstacle: fountain}
+  t: {obstacle: treeshroom-pair}
+  f: {obstacle: treeshroom}
+  h: {obstacle: treeshroom-pair}
+  A: {enemy: {name: Riff, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-cleave, heavy-cleave, heavy-defence, heavy-defence]}}
+  B: {enemy: {name: Sher, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-cleave, heavy-cleave, heavy-defence, heavy-defence]}}
+  C: {enemy: {name: Trum, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-cleave, heavy-cleave, heavy-defence, heavy-defence]}}
+  D: {enemy: {name: Mann, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-speed-attack, heavy-cleave, heavy-cleave, heavy-defence]}}
+  E: {enemy: {name: Fats, level: 6, profession: archer, abilities: [speed, heavy-elven-defence, heavy-shot, heavy-shot, speed, heavy-shot]}}
+  F: {enemy: {name: Rung, level: 6, profession: archer, abilities: [heavy-elven-defence, heavy-shot, heavy-shot, heavy-shot, speed, speed]}}
+  G: {enemy: {name: Tafy, level: 6, profession: archer, abilities: [heavy-shot, heavy-elven-defence, heavy-shot, heavy-shot, speed, heavy-shot]}}
+  I: {enemy: {name: Rold, level: 2, profession: mage, abilities: [fireball, fireball, fireball, fireball, freeze, freeze]}}
+map:
+  - [~, ~, t, w, t, ~, ~, ~, ~]
+  - [~, _, w, t, G, I, _, ~, ~]
+  - [t, _, _, _, _, _, _, _, ~]
+  - [F, _, B, A, _, _, C, D, ~]
+  - [_, _, _, t, ~, E, _, _, ~]
+  - [_, _, ~, ~, ~, ~, _, _, w]
+  - [_, _, ~, ~, o, ~, ~, _, _]
+  - [_, _, _, ~, ~, ~, ~, _, _]
+  - [h, _, _, ~, ~, _, _, _, _]
+  - [_, _, _, _, _, _, _, _, f]
+  - [f, s, s, h, ~, s, s, ~, ~]
+  - [~, s, s, ~, ~, s, s, s, ~]
+  - [~, ~, s, ~, ~, ~, s, s, ~]
+  
+---
+name: m-3
+x: 151
+y: 401
+parent: m-2
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 65}
+drop:
+- roll: 1-100
+  items:
+  - coin: 16
+  - fireberries: {count: 1, range: 6-22}
+  - pearl: {count: 1, range: 1-8}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  S: {spawn: ~, cover: crystals}
+  b: {obstacle: crystal-violet}
+  w: {obstacle: crystal}
+  o: {obstacle: fountain}
+  t: {obstacle: tentacles}
+  f: {obstacle: crystal}
+  +: {cover: crystals}
+  h: {obstacle: crystal}
+  A: {enemy: {name: Karr, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-speed-attack, heavy-defence, heavy-defence]}}
+  D: {enemy: {name: Toor, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-cleave]}}
+  E: {enemy: {name: Woof, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-speed-attack, heavy-speed-attack]}}
+  F: {enemy: {name: Basy, level: 6, profession: archer, abilities: [heavy-shot, speed, speed, heavy-shot, heavy-shot, heavy-shot]}}
+  G: {enemy: {name: Elsy, level: 6, profession: archer, abilities: [speed, heavy-elven-defence, heavy-shot, speed, heavy-shot, heavy-shot]}}
+  H: {enemy: {name: Nani, level: 6, profession: archer, abilities: [heavy-shot, speed, heavy-shot, heavy-elven-defence, heavy-shot, speed]}}
+  I: {enemy: {name: Heen, level: 2, profession: cleric, abilities: [cleric-defence, cleric-defence, cleric-defence, antidote, antidote, antidote]}}
+  J: {enemy: {name: Damb, level: 2, profession: mage, abilities: [fireball, fireball, fireball, freeze, freeze, freeze]}}
+  K: {enemy: {name: Door, level: 2, profession: mage, abilities: [fireball, fireball, fireball, freeze, freeze, freeze]}}
+map:
+  - [~, o, +, t, ~, ~, ~, ~, ~]
+  - [f, J, _, +, _, t, ~, ~, ~]
+  - [~, _, +, _, _, +, _, _, ~]
+  - [~, ~, ~, ~, +, I, G, _, ~]
+  - [~, ~, ~, F, +, +, _, _, ~]
+  - [~, D, H, +, _, A, _, E, ~]
+  - [b, _, +, K, _, +, ~, ~, ~]
+  - [_, +, _, ~, ~, ~, ~, ~, ~]
+  - [h, b, _, +, +, ~, ~, ~, ~]
+  - [~, ~, +, _, _, +, t, h, ~]
+  - [~, ~, ~, ~, _, _, _, +, ~]
+  - [~, ~, ~, ~, ~, _, +, _, _]
+  - [~, w, +, +, _, _, +, +, f]
+  - [f, +, _, _, _, +, +, f, ~]
+  - [b, _, _, _, +, +, ~, ~, ~]
+  - [+, +, _, t, ~, ~, ~, ~, ~]
+  - [+, _, _, _, s, S, s, h, ~]
+  - [f, +, _, s, S, s, S, S, ~]
+  - [~, w, +, s, S, s, S, ~, ~]
+
+---
+name: m-4
+x: 71
+y: 409
+parent: m-3
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 68}
+    - {type: die, level: 1, name: Dort, profession: mage, abilities: [fireball, fireball, default-attack, default-attack, default-attack, default-attack]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 17
+  - fireberries: {count: 1, range: 6-22}
+  - pearl: {count: 1, range: 1-9}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: tentacles}
+  w: {obstacle: tentacles}
+  +: {cover: crystals}
+  o: {obstacle: fountain}
+  t: {obstacle: tentacles}
+  f: {obstacle: treeshroom}
+  h: {obstacle: treeshroom-pair}
+  A: {enemy: {name: Zoob, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-speed-attack, heavy-defence]}}
+  C: {enemy: {name: Poon, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-speed-attack, heavy-speed-attack, heavy-speed-attack, heavy-defence]}}
+  D: {enemy: {name: Loop, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-speed-attack, heavy-defence]}}
+  F: {enemy: {name: Menk, level: 6, profession: archer, abilities: [heavy-shot, heavy-elven-defence, heavy-shot, heavy-shot, speed, speed]}}
+  G: {enemy: {name: Lenk, level: 6, profession: archer, abilities: [heavy-shot, speed, speed, heavy-shot, heavy-shot, heavy-shot]}}
+  H: {enemy: {name: Zenk, level: 6, profession: archer, abilities: [heavy-shot, speed, speed, heavy-shot, heavy-shot, heavy-shot]}}
+  I: {enemy: {name: Lisk, level: 2, profession: cleric, abilities: [cleric-defence, cleric-defence, cleric-defence, antidote, antidote, antidote]}}
+  J: {enemy: {name: Feen, level: 3, profession: mage, abilities: [chain-lightning, chain-lightning, chain-lightning, fireball, fireball, freeze]}}
+  K: {enemy: {name: Seen, level: 3, profession: mage, abilities: [chain-lightning, chain-lightning, chain-lightning, fireball, fireball, freeze]}}
+map:
+  - [~, ~, ~, ~, ~, ~, _, _, ~, ~, ~, ~, ~, ~, _, t, ~, ~]
+  - [~, ~, ~, ~, ~, _, A, _, t, ~, ~, ~, ~, _, _, _, t, ~]
+  - [~, ~, ~, ~, ~, _, F, _, _, ~, ~, ~, ~, _, H, _, _, ~]
+  - [~, ~, w, ~, ~, ~, _, _, b, ~, ~, ~, ~, ~, ~, _, _, ~]
+  - [~, ~, ~, ~, ~, ~, _, +, _, ~, ~, ~, t, ~, ~, _, K, ~]
+  - [~, ~, ~, ~, ~, ~, ~, _, _, _, ~, ~, ~, ~, _, +, _, ~]
+  - [~, ~, ~, o, ~, ~, ~, ~, _, _, ~, ~, ~, _, _, _, _, ~]
+  - [~, t, ~, ~, ~, ~, ~, ~, _, _, ~, ~, _, _, _, _, ~, ~]
+  - [b, _, _, ~, ~, ~, ~, _, _, _, ~, ~, _, _, _, h, ~, ~]
+  - [_, C, _, _, _, _, _, s, s, s, _, _, _, _, _, ~, ~, ~]
+  - [G, _, _, +, _, _, _, s, s, s, _, _, _, _, ~, ~, ~, ~]
+  - [~, ~, _, _, w, h, _, s, s, s, _, _, ~, ~, ~, ~, ~, ~]
+  - [~, ~, ~, ~, ~, ~, _, _, _, _, _, ~, ~, ~, ~, ~, ~, ~]
+  - [~, ~, ~, ~, ~, ~, ~, _, _, ~, ~, ~, ~, ~, ~, ~, h, ~]
+  - [~, ~, ~, ~, ~, ~, ~, _, +, ~, ~, ~, ~, ~, ~, ~, ~, ~]
+  - [~, ~, ~, ~, ~, b, ~, _, _, ~, ~, ~, t, b, ~, ~, ~, ~]
+  - [~, ~, ~, ~, ~, ~, ~, _, _, ~, ~, o, w, h, o, ~, ~, ~]
+  - [~, ~, ~, ~, ~, ~, _, _, o, ~, ~, ~, t, w, ~, ~, ~, ~]
+  - [~, ~, w, ~, ~, ~, +, _, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~]
+  - [~, ~, ~, ~, ~, f, _, _, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~]
+  - [~, ~, ~, ~, _, D, J, ~, ~, ~, ~, h, ~, ~, ~, o, ~, ~]
+  - [~, ~, ~, ~, t, I, h, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~, ~]
+
+---
+name: m-5
+x: 77
+y: 514
+parent: m-4
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 72}
+drop:
+- roll: 1-100
+  items:
+  - coin: 18
+  - fireberries: {count: 1, range: 6-23}
+  - pearl: {count: 1, range: 1-9}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: crystal-violet}
+  w: {obstacle: crystal}
+  +: {cover: crystals}
+  o: {obstacle: fountain}
+  t: {obstacle: tentacles}
+  f: {obstacle: treeshroom}
+  h: {obstacle: treeshroom-pair}
+  A: {enemy: {name: Bjut, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, defensive-attack, defensive-attack, heavy-speed-attack, defensive-attack]}}
+  B: {enemy: {name: Snak, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-defence, speed-attack, defensive-attack, heavy-defence]}}
+  C: {enemy: {name: Tzuz, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defence, defensive-attack]}}
+  D: {enemy: {name: Tzaz, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-defence, defensive-attack, speed-attack]}}
+  G: {enemy: {name: Pelf, level: 6, profession: archer, abilities: [shot, shot, heavy-shot, heavy-shot, shot, shot]}}
+  I: {enemy: {name: Perf, level: 6, profession: archer, abilities: [heavy-shot, heavy-shot, speed, shot, shot, shot]}}
+  J: {enemy: {name: Lori, level: 5, profession: cleric, abilities: [area-of-attack, area-of-attack, area-of-attack, area-of-attack, area-of-antidote, cleric-defence]}}
+  K: {enemy: {name: Luri, level: 5, profession: cleric, abilities: [area-of-attack, area-of-attack, area-of-attack, area-of-antidote, cleric-defence, cleric-defence]}}
+  L: {enemy: {name: Genk, level: 4, profession: mage, abilities: [firestorm, firestorm, firestorm, fireball, freeze, freeze]}}
+  M: {enemy: {name: Hank, level: 4, profession: mage, abilities: [firestorm, firestorm, chain-lightning, fireball, freeze, freeze]}}
+map:
+  - [~, ~, ~, ~, ~, ~, t, ~, ~, ~, ~]
+  - [~, _, _, ~, ~, _, +, +, t, ~, ~]
+  - [J, _, _, +, _, L, +, _, _, +, ~]
+  - [I, G, b, _, _, _, w, +, b, _, ~]
+  - [~, _, _, _, b, _, _, _, _, _, _]
+  - [~, +, _, _, _, D, _, ~, _, _, t]
+  - [+, w, +, _, _, ~, A, K, h, C, _]
+  - [+, +, b, _, _, _, b, B, _, M, ~]
+  - [+, ~, _, ~, ~, _, _, _, _, _, ~]
+  - [_, _, _, f, ~, +, +, _, h, o, ~]
+  - [_, _, _, _, +, _, +, b, _, +, ~]
+  - [~, b, _, _, ~, _, _, +, _, +, _]
+  - [~, _, _, _, _, _, w, _, ~, _, _]
+  - [_, _, +, b, _, _, +, _, _, _, w]
+  - [w, _, _, _, _, ~, _, _, f, _, ~]
+  - [_, +, ~, _, _, _, t, _, ~, +, ~]
+  - [w, _, _, _, b, _, _, b, _, +, _]
+  - [~, s, f, s, s, _, h, _, _, w, _]
+  - [~, s, s, s, s, s, s, _, _, _, ~]
+  - [~, ~, s, s, h, ~, s, h, ~, ~, ~]
+
+---
+name: m-6
+x: 148
+y: 537
+parent: m-5
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 75}
+drop:
+- roll: 1-100
+  items:
+  - coin: 18
+  - fireberries: {count: 1, range: 6-24}
+  - pearl: {count: 1, range: 1-9}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  S: {spawn: ~, cover: crystals}
+  b: {obstacle: crystal-violet}
+  w: {obstacle: crystal}
+  -: {tile: wooden-bridge}
+  +: {cover: crystals}
+  o: {obstacle: fountain}
+  t: {obstacle: tentacles}
+  f: {obstacle: crystal-violet}
+  h: {obstacle: crystal}
+  A: {enemy: {name: Pump, level: 6, profession: warrior, abilities: [heavy-speed-attack, heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence, heavy-defence]}}
+  B: {enemy: {name: Rump, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence]}, tile: wooden-bridge}
+  C: {enemy: {name: Dump, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defence]}}
+  E: {enemy: {name: Numb, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence, heavy-speed-attack]}}
+  F: {enemy: {name: Mumb, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-defensive-attack, heavy-speed-attack, heavy-defence, heavy-defence]}}
+  G: {enemy: {name: Elil, level: 6, profession: archer, abilities: [heavy-shot, speed, heavy-shot, speed, shot, shot]}}
+  I: {enemy: {name: Etil, level: 6, profession: archer, abilities: [speed, speed, heavy-shot, speed, heavy-shot, shot]}}
+  J: {enemy: {name: Hlik, level: 5, profession: cleric, abilities: [area-of-attack, area-of-attack, area-of-defence, area-of-defence, area-of-defence, area-of-antidote]}}
+  K: {enemy: {name: Hlak, level: 5, profession: cleric, abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-antidote, antidote]}}
+  L: {enemy: {name: Vold, level: 4, profession: mage, abilities: [firestorm, firestorm, chain-lightning, fireball, fireball, freeze]}}
+  M: {enemy: {name: Mort, level: 4, profession: mage, abilities: [firestorm, firestorm, fireball, fireball, freeze, freeze]}}
+map:
+  - [b, h, K, C, b, w]
+  - [t, +, A, +, M, o]
+  - [~, ~, -, -, ~, ~]
+  - [~, ~, B, -, ~, ~]
+  - [~, ~, -, -, ~, ~]
+  - [~, ~, -, -, ~, ~]
+  - [~, ~, -, -, ~, ~]
+  - [~, +, +, L, _, ~]
+  - [_, J, +, +, w, _]
+  - [w, E, o, F, G, h]
+  - [~, I, +, _, _, ~]
+  - [~, ~, -, -, ~, ~]
+  - [~, ~, -, -, ~, ~]
+  - [~, ~, -, -, ~, ~]
+  - [~, ~, -, -, ~, ~]
+  - [~, ~, -, -, ~, ~]
+  - [~, _, +, _, +, ~]
+  - [h, S, S, S, S, ~]
+  - [t, o, S, s, s, ~]
+  - [~, S, s, f, w, ~]
+
+---
+name: m-7
+x: 228
+y: 550
+parent: m-6
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 78}
+    - {type: die, level: 1, name: Hely, profession: cleric, abilities: [cleric-defence, default-defence, default-attack, default-attack]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 19
+  - fireberries: {count: 1, range: 6-25}
+  - pearl: {count: 1, range: 1-9}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  S: {spawn: ~, cover: crystals}
+  b: {obstacle: treeshroom}
+  w: {obstacle: treeshroom-pair}
+  +: {cover: crystals}
+  o: {obstacle: fountain}
+  t: {obstacle: tentacles}
+  f: {obstacle: treeshroom}
+  h: {obstacle: treeshroom-pair}
+  A: {enemy: {level: 6, name: Com, profession: warrior, abilities: [heavy-defensive-attack, defensive-attack, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence]}}
+  B: {enemy: {level: 6, name: Plet, profession: warrior, abilities: [heavy-speed-attack, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence, heavy-defence]}}
+  C: {enemy: {level: 6, name: Tely, profession: warrior, abilities: [heavy-speed-attack, heavy-speed-attack, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence]}}
+  D: {enemy: {level: 6, name: Ran, profession: warrior, abilities: [heavy-defensive-attack, heavy-defence, heavy-defence, heavy-speed-attack, heavy-defence, heavy-defence]}}
+  E: {enemy: {level: 6, name: Dom, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defence, heavy-defence, heavy-defence]}}
+  H: {enemy: {level: 6, name: Eham, profession: archer, abilities: [heavy-shot, heavy-shot, speed, speed, shot, shot]}}
+  I: {enemy: {level: 6, name: Oneh, profession: archer, abilities: [heavy-shot, heavy-shot, shot, shot, shot, shot]}}
+  J: {enemy: {level: 6, name: Menh, profession: archer, abilities: [speed, heavy-shot, heavy-shot, shot, shot, shot]}}
+  K: {enemy: {level: 5, name: Rili, profession: cleric, abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-antidote, cleric-defence, cleric-defence]}}
+  L: {enemy: {level: 6, name: Nero, profession: mage, abilities: [heavy-firestorm, firestorm, chain-lightning, chain-lightning, fireball, fireball]}}
+  M: {enemy: {level: 5, name: Rokr, profession: mage, abilities: [heavy-firestorm, chain-lightning, chain-lightning, chain-lightning, fireball, fireball]}}
+  N: {enemy: {level: 5, name: Mant, profession: mage, abilities: [heavy-firestorm, chain-lightning, fireball, fireball, fireball, fireball]}}
+map:
+  - [~, ~, ~, ~, t, f, _, ~, ~, ~]
+  - [~, _, D, h, E, _, _, _, ~, ~]
+  - [~, _, +, K, _, H, f, I, _, J]
+  - [~, +, L, _, o, M, _, N, +, w]
+  - [_, C, b, B, _, _, A, _, _, _]
+  - [w, f, _, h, +, t, _, _, +, _]
+  - [_, _, _, _, +, f, _, _, _, t]
+  - [b, _, _, ~, ~, _, t, _, b, w]
+  - [_, _, ~, ~, ~, _, _, _, _, w]
+  - [_, h, ~, ~, ~, _, +, _, _, b]
+  - [_, _, ~, ~, _, _, +, t, _, _]
+  - [_, _, _, _, b, _, _, _, ~, _]
+  - [~, +, +, _, _, _, _, ~, ~, _]
+  - [~, _, +, t, _, h, _, _, _, _]
+  - [~, _, _, _, _, _, f, _, _, ~]
+  - [~, ~, S, s, S, s, t, S, s, ~]
+  - [~, ~, ~, f, S, S, s, s, ~, ~]
+
+---
+name: m-8
+x: 305
+y: 519
+parent: m-7
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 81}
+drop:
+- roll: 1-100
+  items:
+  - coin: 20
+  - fireberries: {count: 1, range: 6-25}
+  - pearl: {count: 1, range: 1-10}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  S: {spawn: ~, cover: crystals}
+  b: {obstacle: crystal-violet}
+  w: {obstacle: crystal}
+  +: {cover: crystals}
+  o: {obstacle: fountain}
+  t: {obstacle: tentacles}
+  f: {obstacle: treeshroom}
+  h: {obstacle: treeshroom-pair}
+  A: {enemy: {level: 6, name: Doc, profession: warrior, abilities: [heavy-defensive-attack, defensive-attack, heavy-defence, defensive-attack, heavy-defence, heavy-defence]}}
+  B: {enemy: {level: 6, name: Tor, profession: warrior, abilities: [heavy-defensive-attack, defensive-attack, defensive-attack, heavy-defence, heavy-defence, heavy-defensive-attack]}}
+  C: {enemy: {level: 6, name: Who, profession: warrior, abilities: [heavy-defensive-attack, defensive-attack, defensive-attack, heavy-defence, heavy-defence, heavy-defence]}}
+  E: {enemy: {level: 6, name: Rose, profession: warrior, abilities: [heavy-defensive-attack, defensive-attack, defensive-attack, defensive-attack, heavy-defence, heavy-defence]}}
+  F: {enemy: {level: 6, name: Tar, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defence, heavy-defence, heavy-defence]}}
+  G: {enemy: {level: 6, name: Dis, profession: warrior, abilities: [heavy-defensive-attack, defensive-attack, defensive-attack, heavy-defence, heavy-defence, heavy-defensive-attack]}}
+  H: {enemy: {level: 6, name: Harl, profession: archer, abilities: [speed, speed, heavy-shot, shot, shot, shot]}}
+  I: {enemy: {level: 6, name: Bari, profession: archer, abilities: [speed, speed, heavy-shot, shot, shot, shot]}}
+  K: {enemy: {level: 6, name: Anel, profession: archer, abilities: [speed, speed, speed, shot, shot, shot]}}
+  L: {enemy: {level: 6, name: Rein, profession: cleric, abilities: [area-of-attack, area-of-defence, area-of-defence, area-of-antidote, area-of-antidote, cleric-defence]}}
+  N: {enemy: {level: 5, name: Aton, profession: cleric, abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-antidote, cleric-defence, cleric-defence]}}
+  O: {enemy: {level: 5, name: Torc, profession: mage, abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning, chain-lightning]}}
+  P: {enemy: {level: 5, name: Woon, profession: mage, abilities: [fireball, fireball, fireball, fireball, fireball, fireball]}}
+  Q: {enemy: {level: 6, name: Mark, profession: mage, abilities: [heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning, fireball]}}
+map:
+  - [~, ~, w, f, +, f, _, h, f, f, b, ~, ~, ~]
+  - [~, w, f, O, t, _, f, F, G, _, t, _, w, ~]
+  - [~, L, t, +, P, +, h, _, t, f, _, Q, N, b]
+  - [w, _, _, A, B, t, C, +, t, _, E, _, _, ~]
+  - [t, I, f, _, _, ~, ~, ~, ~, _, +, +, _, _]
+  - [H, +, +, _, ~, ~, _, _, ~, ~, _, +, _, K]
+  - [+, +, _, _, ~, _, +, _, _, ~, b, +, +, h]
+  - [+, +, _, ~, ~, +, _, +, ~, ~, t, +, _, _]
+  - [_, _, f, _, ~, t, _, +, _, ~, _, _, h, b]
+  - [t, _, _, ~, ~, ~, +, _, ~, ~, _, _, w, b]
+  - [w, _, _, _, ~, _, _, _, ~, +, _, t, _, ~]
+  - [~, _, t, _, _, _, +, _, _, _, _, _, _, ~]
+  - [~, _, _, _, _, _, _, +, _, _, _, _, _, ~]
+  - [~, ~, s, s, S, s, S, s, s, S, S, s, ~, ~]
+
+---
+name: m-9
+x: 390
+y: 489
+parent: m-8
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 84}
+drop:
+- roll: 1-100
+  items:
+  - coin: 21
+  - fireberries: {count: 1, range: 6-25}
+  - pearl: {count: 1, range: 1-10}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  S: {spawn: ~, cover: crystals}
+  b: {obstacle: crystal-violet}
+  w: {obstacle: crystal}
+  +: {cover: crystals}
+  o: {obstacle: fountain}
+  t: {obstacle: fountain}
+  f: {obstacle: crystal}
+  h: {obstacle: crystal}
+  B: {enemy: {name: Dron, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defence]}}
+  C: {enemy: {name: Coop, level: 6, profession: warrior, abilities: [heavy-defensive-attack, defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-defence]}, cover: crystals}
+  E: {enemy: {name: Many, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defensive-attack, heavy-defensive-attack]}}
+  F: {enemy: {name: Blak, level: 6, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defence]}, cover: crystals}
+  A: {enemy: {name: Cron, level: 6, profession: archer, abilities: [speed, speed, heavy-shot, heavy-shot, heavy-elven-defence, shot]}}
+  G: {enemy: {name: Len, level: 6, profession: archer, abilities: [heavy-shot, speed, speed, heavy-elven-defence, shot, shot]}}
+  H: {enemy: {name: Lesf, level: 6, profession: archer, abilities: [heavy-shot, heavy-shot, heavy-elven-defence, speed, speed, heavy-shot]}, cover: crystals}
+  I: {enemy: {name: Keeh, level: 5, profession: cleric, abilities: [cleric-heavy-defence, cleric-heavy-defence, cleric-heavy-defence, area-of-defence, area-of-attack, antidote]}}
+  K: {enemy: {name: Guth, level: 6, profession: cleric, abilities: [area-of-attack, area-of-defence, area-of-defence, area-of-defence, area-of-antidote, cleric-defence]}}
+  L: {enemy: {name: Hope, level: 6, profession: mage, abilities: [heavy-firestorm, firestorm, chain-lightning, chain-lightning, chain-lightning, fireball]}, cover: crystals}
+  M: {enemy: {name: Horn, level: 5, profession: mage, abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning, chain-lightning]}}
+  N: {enemy: {name: Fait, level: 5, profession: mage, abilities: [heavy-firestorm, heavy-firestorm, firestorm, fireball, chain-lightning, chain-lightning]}, cover: crystals}
+map:
+  - [~, ~, ~, b, ~, f, t, _, f, w, ~, ~]
+  - [~, ~, M, _, N, F, _, _, +, _, b, w]
+  - [~, G, h, I, _, +, _, +, _, H, _, w]
+  - [~, +, _, +, A, +, ~, f, _, _, K, f]
+  - [E, _, +, C, _, B, _, ~, ~, _, _, _]
+  - [+, _, _, _, +, _, +, _, ~, ~, L, ~]
+  - [~, _, f, _, _, _, _, b, _, ~, ~, ~]
+  - [~, ~, _, _, +, _, +, _, h, _, ~, ~]
+  - [o, ~, ~, h, _, _, f, _, _, _, _, ~]
+  - [~, ~, ~, ~, ~, _, _, _, _, +, _, ~]
+  - [~, _, _, +, ~, ~, +, +, _, +, +, _]
+  - [_, _, +, _, w, t, _, _, _, +, _, _]
+  - [s, _, _, _, +, _, _, _, _, _, _, +]
+  - [s, S, S, _, _, _, _, +, _, _, w, b]
+  - [~, s, s, S, _, _, _, _, _, b, h, +]
+  - [~, s, s, s, s, _, +, _, t, f, h, ~]
+  - [~, ~, S, +, _, _, _, w, b, b, ~, ~]
+
+---
+name: m-10
+x: 438
+y: 551
+parent: m-9
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 88}
+drop:
+- roll: 1-100
+  items:
+  - coin: 22
+  - fireberries: {count: 1, range: 6-25}
+  - pearl: {count: 1, range: 1-10}
+defaults: {tile: magic-ground}
+shortcuts:
+  s: {spawn: ~}
+  S: {spawn: ~, cover: crystals}
+  b: {obstacle: tentacles}
+  w: {obstacle: treeshroom}
+  +: {cover: crystals}
+  o: {obstacle: fountain}
+  t: {obstacle: tentacles}
+  f: {obstacle: treeshroom}
+  h: {obstacle: treeshroom-pair}
+  A: {enemy: {name: Zond, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence]}}
+  B: {enemy: {name: Fond, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defence]}}
+  C: {enemy: {name: Tond, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defence]}}
+  D: {enemy: {name: Pond, profession: warrior, abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, defensive-attack, heavy-defensive-attack, heavy-defence]}}
+  G: {enemy: {name: Zenf, profession: archer, abilities: [heavy-shot, speed, speed, speed, heavy-shot, heavy-elven-defence]}}
+  H: {enemy: {name: Denf, profession: archer, abilities: [speed, speed, heavy-shot, heavy-shot, heavy-shot, heavy-elven-defence]}}
+  J: {enemy: {name: Pili, profession: cleric, abilities: [cleric-heavy-defence, cleric-heavy-defence, area-of-defence, area-of-defence, area-of-defence, area-of-antidote]}}
+  K: {enemy: {name: Fili, profession: cleric, abilities: [cleric-heavy-defence, area-of-attack, area-of-defence, area-of-defence, area-of-defence, area-of-antidote]}}
+  L: {enemy: {name: Kili, profession: cleric, abilities: [cleric-heavy-defence, area-of-attack, area-of-defence, area-of-defence, area-of-defence, area-of-defence]}}
+  M: {enemy: {name: Alfy, profession: mage, abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]}}
+  O: {enemy: {name: Andy, profession: mage, abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]}}
+  P: {enemy: {name: Asky, profession: mage, abilities: [heavy-firestorm, heavy-firestorm, firestorm, chain-lightning, chain-lightning, chain-lightning]}}
+map:
+  - [~, ~, ~, M, L, _, ~, ~, ~]
+  - [~, O, t, _, w, _, +, P, ~]
+  - [~, _, _, _, _, _, _, w, b]
+  - [~, t, ~, D, J, _, K, _, ~]
+  - [G, h, _, _, A, B, C, _, ~]
+  - [+, _, _, _, o, _, t, _, H]
+  - [f, b, ~, _, _, _, _, w, b]
+  - [_, _, _, _, _, h, _, t, _]
+  - [~, f, _, _, _, _, _, t, _]
+  - [~, w, _, s, s, S, _, _, _]
+  - [~, t, s, s, s, s, s, f, ~]
+  - [~, ~, t, s, s, s, t, h, ~]
+
+
+---
+name: m-11
+x: 394
+y: 646
+parent: m-10
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 91}
+drop:
+- roll: 1-100
+  items:
+  - coin: 22
+  - fireberries: {count: 1, range: 6-25}
+  - pearl: {count: 1, range: 1-10}
+shortcuts:
+  E:
+    tile: magic-ground
+    enemy:
+      name: agor
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-defence,
+        heavy-defensive-attack]
+    cover: crystals
+  N:
+    tile: magic-ground
+    enemy:
+      name: mody
+      profession: cleric
+      exp: 60
+      abilities: [cleric-heavy-defence, area-of-defence, cleric-heavy-defence, cleric-heavy-defence, area-of-antidote, area-of-defence]
+    cover: crystals
+  T:
+    cover: crystals
+    enemy:
+      name: woop
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, firestorm, firestorm, heavy-firestorm, firestorm, chain-lightning]
+    tile: magic-ground
+  J:
+    tile: magic-ground
+    cover: crystals
+    enemy:
+      name: melf
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, speed, heavy-shot, speed, heavy-shot]
+  U: {obstacle: fountain, cover: crystals, tile: magic-ground}
+  F: {tile: magic-ground, spawn: null}
+  A: {}
+  M: {obstacle: crystal, cover: crystals, tile: magic-ground}
+  I: {obstacle: crystal-violet, cover: crystals, tile: magic-ground}
+  G:
+    enemy:
+      name: dzon
+      profession: warrior
+      exp: 60
+      abilities: [heavy-speed-attack, heavy-defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defence, heavy-defensive-attack]
+    cover: crystals
+    tile: magic-ground
+  V:
+    tile: magic-ground
+    enemy:
+      name: dody
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, cleric-heavy-defence, area-of-antidote, cleric-heavy-defence, cleric-heavy-defence]
+  Q:
+    cover: crystals
+    enemy:
+      name: malf
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, speed, speed, heavy-shot, speed]
+    tile: magic-ground
+  L:
+    enemy:
+      name: mulf
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, speed, speed, heavy-shot, heavy-shot]
+    tile: magic-ground
+  B: {tile: magic-ground, obstacle: treeshroom}
+  P:
+    tile: magic-ground
+    enemy:
+      name: peew
+      profession: mage
+      exp: 71
+      abilities: [chain-lightning, heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning]
+  C: {tile: magic-ground}
+  H: {tile: magic-ground, cover: crystals}
+  K: {tile: magic-ground, cover: crystals, obstacle: treeshroom}
+  R: {cover: crystals, tile: magic-ground, obstacle: crystal}
+  O: {obstacle: treeshroom-pair, cover: crystals, tile: magic-ground}
+  D: {obstacle: treeshroom-pair, tile: magic-ground}
+  S:
+    tile: magic-ground
+    enemy:
+      name: pow
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+map:
+- [A, A, A, A, K, M, A, A, A, A, A, A, A]
+- [A, A, A, I, J, H, C, O, A, R, B, A, A]
+- [A, A, D, H, H, L, H, C, Q, H, T, C, A]
+- [A, A, C, G, A, A, A, D, H, N, H, H, D]
+- [A, B, E, C, D, A, A, A, P, A, A, V, C]
+- [A, A, C, C, C, B, A, A, A, A, C, U, C]
+- [A, A, A, C, H, A, A, A, A, A, S, C, B]
+- [A, A, C, C, A, A, A, A, A, A, A, A, A]
+- [A, C, C, A, A, A, H, D, A, A, A, A, A]
+- [A, C, C, A, A, B, C, C, C, A, A, A, A]
+- [C, C, A, A, A, A, C, C, C, C, A, A, A]
+- [B, C, A, A, A, A, A, C, C, A, A, A, A]
+- [A, C, C, A, A, A, C, C, C, B, A, A, A]
+- [A, D, C, C, A, A, F, F, C, A, A, A, A]
+- [A, A, C, F, A, D, F, F, F, A, A, A, A]
+- [A, A, B, F, F, F, F, F, A, A, A, A, A]
+- [A, A, A, F, F, F, F, A, A, A, A, A, A]
+- [A, A, A, A, A, F, F, A, A, A, A, A, A]
+
+---
+name: m-12
+x: 323
+y: 618
+parent: m-11
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 94}
+drop:
+- roll: 1-100
+  items:
+  - coin: 23
+  - fireberries: {count: 1, range: 6-25}
+  - pearl: {count: 1, range: 1-10}
+shortcuts:
+  E: {tile: magic-ground}
+  N:
+    enemy:
+      name: lozz
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence, heavy-defence]
+    tile: magic-ground
+  J: {obstacle: fountain, tile: magic-ground}
+  F:
+    tile: magic-ground
+    enemy:
+      name: gooz
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+  A: {}
+  M:
+    tile: magic-ground
+    enemy:
+      name: laki
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, cleric-heavy-defence, area-of-defence, cleric-heavy-defence, cleric-heavy-defence,
+        cleric-heavy-defence]
+  I:
+    tile: magic-ground
+    enemy:
+      name: bozz
+      profession: warrior
+      exp: 60
+      abilities: [heavy-speed-attack, heavy-defence, heavy-defence, heavy-defensive-attack, heavy-defence, heavy-defence]
+  G:
+    tile: magic-ground
+    enemy:
+      name: maki
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, cleric-defence, cleric-heavy-defence, area-of-defence, cleric-heavy-defence, area-of-defence]
+  Q:
+    enemy:
+      name: wozz
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defence, heavy-defence, heavy-defence, heavy-defensive-attack, heavy-speed-attack]
+    tile: magic-ground
+  L:
+    enemy:
+      name: neki
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, cleric-defence, cleric-heavy-defence, area-of-defence, cleric-heavy-defence, cleric-heavy-defence]
+    tile: magic-ground
+  B: {tile: magic-ground, obstacle: tentacles}
+  P:
+    enemy:
+      name: fooz
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, chain-lightning, firestorm, firestorm, firestorm]
+    tile: magic-ground
+  C: {obstacle: treeshroom, tile: magic-ground}
+  H: {spawn: null, tile: magic-ground}
+  K:
+    enemy:
+      name: rozz
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence, heavy-speed-attack]
+    tile: magic-ground
+  O:
+    tile: magic-ground
+    enemy:
+      name: looz
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+  D: {tile: magic-ground, obstacle: treeshroom-pair}
+map:
+- [A, A, E, B, A, A, A]
+- [A, E, E, E, A, A, A]
+- [B, E, J, M, B, A, A]
+- [A, G, E, E, O, B, A]
+- [C, F, I, L, E, P, D]
+- [A, D, B, E, N, B, Q]
+- [B, E, E, K, E, E, E]
+- [A, E, E, E, B, E, B]
+- [A, A, E, E, E, E, A]
+- [A, B, E, E, E, A, A]
+- [A, A, H, H, H, B, A]
+- [A, A, H, B, H, H, C]
+- [A, D, H, H, H, H, A]
+- [A, A, H, H, H, A, A]
+- [A, A, A, H, A, A, A]
+
+---
+name: m-13
+parent: m-12
+x: 258
+y: 646
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 97}
+drop:
+- roll: 1-100
+  items:
+  - coin: 24
+  - fireberries: {count: 1, range: 6-29}
+  - pearl: {count: 1, range: 1-12}
+shortcuts:
+  E: {tile: magic-ground}
+  N: {obstacle: crystal-violet, tile: magic-ground, cover: crystals}
+  T:
+    tile: magic-ground
+    enemy:
+      name: wrok
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence,
+        heavy-defensive-attack]
+  J: {tile: magic-ground, cover: crystals, obstacle: tentacles}
+  U:
+    tile: magic-ground
+    enemy:
+      name: aalf
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, speed, heavy-shot, speed, heavy-shot]
+  F: {obstacle: tentacles, tile: magic-ground}
+  A: {}
+  M: {cover: crystals, obstacle: crystal, tile: magic-ground}
+  I: {spawn: null, tile: magic-ground}
+  G: {tile: magic-ground, spawn: null, cover: crystals}
+  V:
+    enemy:
+      name: fidy
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, heavy-firestorm]
+    tile: magic-ground
+  Q:
+    tile: magic-ground
+    enemy:
+      name: wrak
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack,
+        heavy-defensive-attack]
+  L:
+    enemy:
+      name: wrek
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-defensive-attack,
+        heavy-defensive-attack]
+    tile: magic-ground
+    cover: crystals
+  B: {tile: magic-ground, obstacle: crystal-violet}
+  P: {obstacle: fountain, cover: crystals, tile: magic-ground}
+  C: {cover: crystals, tile: magic-ground}
+  H:
+    enemy:
+      name: bilb
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, area-of-defence, area-of-defence, cleric-heavy-defence, cleric-heavy-defence, area-of-defence]
+    tile: magic-ground
+  W:
+    enemy:
+      name: frod
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, cleric-heavy-defence, cleric-heavy-defence, area-of-defence, area-of-antidote]
+    tile: magic-ground
+  K:
+    enemy:
+      name: hidy
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]
+    tile: magic-ground
+  R:
+    cover: crystals
+    enemy:
+      name: eelf
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, heavy-shot, heavy-shot, speed, speed, heavy-shot]
+    tile: magic-ground
+  O:
+    tile: magic-ground
+    enemy:
+      name: oolf
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, speed, heavy-shot, heavy-shot, heavy-shot]
+  D: {obstacle: crystal, tile: magic-ground}
+  S:
+    enemy:
+      name: fady
+      profession: mage
+      exp: 71
+      abilities: [chain-lightning, chain-lightning, heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm]
+    tile: magic-ground
+    cover: crystals
+map:
+- [A, A, A, A, A, A, S, A, A, A, A, A, A]
+- [A, A, A, A, N, C, R, C, W, A, A, A, A]
+- [A, A, A, C, M, O, J, U, M, J, A, A, A]
+- [A, A, H, K, C, C, Q, C, V, E, N, A, A]
+- [A, F, C, E, L, M, C, T, J, C, E, E, A]
+- [A, C, C, F, E, C, E, B, E, E, D, E, A]
+- [B, E, C, E, E, E, P, C, C, F, E, N, E]
+- [A, D, E, J, E, M, E, C, E, E, C, E, A]
+- [A, C, E, B, C, E, E, E, E, C, F, E, A]
+- [A, A, G, I, I, I, J, I, M, I, I, A, A]
+- [A, A, A, I, G, I, I, N, I, I, A, A, A]
+- [A, A, A, A, I, M, I, I, I, A, A, A, A]
+- [A, A, A, A, A, A, I, A, A, A, A, A, A]
+
+---
+name: m-14
+parent: m-13
+x: 157
+y: 647
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 100}
+drop:
+- roll: 1-100
+  items:
+  - coin: 25
+  - fireberries: {count: 1, range: 6-29}
+  - pearl: {count: 1, range: 1-12}
+shortcuts:
+  E: {tile: magic-ground, obstacle: treeshroom}
+  X:
+    tile: magic-ground
+    enemy:
+      name: den
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, heavy-shot, heavy-elven-defence, heavy-shot, speed]
+  N: {tile: magic-ground, obstacle: crystal}
+  T:
+    enemy:
+      name: math
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, speed, heavy-shot, heavy-elven-defence, speed]
+    tile: magic-ground
+  J:
+    tile: magic-ground
+    enemy:
+      name: lary
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, cleric-heavy-defence, cleric-heavy-defence, area-of-defence, area-of-defence, area-of-defence]
+  U:
+    enemy:
+      name: durd
+      profession: mage
+      exp: 71
+      abilities: [firestorm, firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm]
+    tile: magic-ground
+    cover: crystals
+  F: {obstacle: treeshroom-pair, tile: magic-ground}
+  A: {}
+  M:
+    tile: magic-ground
+    enemy:
+      name: gund
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+  I: {tile: magic-ground}
+  G: {tile: magic-ground, cover: crystals}
+  V:
+    enemy:
+      name: zund
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]
+    tile: magic-ground
+  Q:
+    tile: magic-ground
+    enemy:
+      name: lony
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence]
+  L: {obstacle: crystal-violet, tile: magic-ground}
+  B: {obstacle: crystal-violet, tile: magic-ground, cover: crystals}
+  P: {cover: crystals, tile: magic-ground, obstacle: fountain}
+  C: {tile: magic-ground, obstacle: treeshroom, cover: crystals}
+  H:
+    tile: magic-ground
+    enemy:
+      name: mund
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+  W:
+    tile: magic-ground
+    enemy:
+      name: haly
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, area-of-defence, area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence]
+    cover: crystals
+  K: {tile: magic-ground, cover: crystals, obstacle: crystal}
+  R:
+    tile: magic-ground
+    enemy:
+      name: clam
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, speed, heavy-shot, speed, heavy-shot]
+  O: {spawn: null, tile: magic-ground}
+  D: {tile: magic-ground, cover: crystals, obstacle: treeshroom-pair}
+  S: {spawn: null, cover: crystals, tile: magic-ground}
+map:
+- [A, A, A, A, A, A, A, D, I, A, A, A, A, A]
+- [A, A, A, A, A, A, A, A, D, A, A, A, A, A]
+- [A, A, A, K, A, A, I, A, I, A, A, A, A, A]
+- [A, A, G, D, A, I, I, I, U, A, W, C, L, A]
+- [A, E, J, G, G, I, N, R, T, I, G, A, K, A]
+- [A, A, I, G, M, I, A, A, A, G, I, A, A, A]
+- [A, A, I, I, A, G, Q, E, A, I, V, A, E, N]
+- [C, A, H, F, A, I, G, G, I, G, I, I, X, A]
+- [B, D, G, I, A, G, P, G, A, A, I, G, A, A]
+- [A, A, G, I, A, G, I, G, A, A, I, I, A, A]
+- [A, A, F, I, G, I, A, G, I, F, G, I, D, A]
+- [A, A, A, G, I, A, A, A, I, G, I, D, G, A]
+- [A, A, A, A, L, I, I, I, G, G, G, I, A, A]
+- [A, A, A, A, A, I, G, I, I, A, G, I, A, F]
+- [A, A, A, A, A, A, G, O, A, A, O, S, I, G]
+- [A, A, A, A, I, N, O, O, A, O, S, O, O, K]
+- [A, A, A, A, E, A, A, O, S, O, N, O, L, A]
+- [A, A, A, A, A, A, A, E, O, A, A, O, A, A]
+- [A, A, A, A, A, A, A, A, B, D, A, A, A, A]
+
+---
+name: m-15
+parent: m-14
+x: 82
+y: 607
+background: {objects: [cloud1, cloud2]}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 104}
+drop:
+- roll: 1-100
+  items:
+  - coin: 26
+  - fireberries: {count: 1, range: 6-31}
+  - pearl: {count: 1, range: 1-14}
+shortcuts:
+  E: {tile: magic-ground, spawn: null}
+  X:
+    tile: magic-ground
+    enemy:
+      name: miri
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+  N: {obstacle: crystal, cover: crystals, tile: magic-ground}
+  T:
+    enemy:
+      name: dwel
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, heavy-shot, heavy-shot, speed, speed, heavy-shot]
+    tile: magic-ground
+  J: {cover: crystals, tile: magic-ground, obstacle: treeshroom}
+  U:
+    enemy:
+      name: kene
+      profession: mage
+      exp: 71
+      abilities: [chain-lightning, firestorm, firestorm, firestorm, heavy-firestorm, heavy-firestorm]
+    tile: magic-ground
+    cover: crystals
+  F: {obstacle: crystal-violet, tile: magic-ground}
+  A: {}
+  M: {tile: wooden-bridge}
+  I: {tile: magic-ground, obstacle: crystal}
+  G: {cover: crystals, tile: magic-ground}
+  V:
+    enemy:
+      name: vic
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, cleric-defence, area-of-defence, area-of-defence, area-of-defence, cleric-heavy-defence]
+    tile: magic-ground
+  Q:
+    enemy:
+      name: suli
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+    tile: magic-ground
+  L: {cover: crystals, obstacle: tentacles, tile: magic-ground}
+  B: {tile: magic-ground, obstacle: treeshroom}
+  P:
+    enemy:
+      name: valt
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, heavy-shot, speed, heavy-shot, heavy-shot]
+    tile: magic-ground
+  C: {obstacle: tentacles, tile: magic-ground}
+  H: {cover: crystals, obstacle: treeshroom-pair, tile: magic-ground}
+  W:
+    enemy:
+      name: morg
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+    tile: magic-ground
+  K: {tile: magic-ground}
+  R:
+    tile: magic-ground
+    enemy:
+      name: hiwa
+      profession: mage
+      exp: 71
+      abilities: [firestorm, firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm]
+  O: {obstacle: crystal-violet, tile: magic-ground, cover: crystals}
+  D: {obstacle: treeshroom-pair, tile: magic-ground}
+  S:
+    enemy:
+      name: kaga
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, cleric-defence, cleric-heavy-defence, area-of-defence, area-of-defence, area-of-defence]
+    tile: magic-ground
+map:
+- [A, A, A, C, K, A, A, A, A, A, C, A, B, C, A]
+- [C, A, V, G, O, I, A, A, A, D, S, K, K, A, A]
+- [B, G, Q, G, N, G, A, A, K, K, R, K, K, K, A]
+- [A, F, H, K, G, K, M, K, P, K, K, G, W, K, G]
+- [A, A, A, G, K, A, A, C, G, A, K, K, B, A, C]
+- [A, A, A, A, M, A, A, A, A, A, A, M, A, A, A]
+- [A, A, A, A, M, A, A, A, A, A, A, M, A, A, A]
+- [A, A, A, A, K, A, A, A, A, A, K, K, X, A, A]
+- [A, A, A, K, K, L, A, A, A, D, K, U, T, I, A]
+- [A, A, H, K, K, K, G, A, A, A, K, G, B, A, A]
+- [A, A, A, E, K, K, K, M, M, M, G, K, G, D, A]
+- [A, A, E, E, E, K, C, A, A, A, G, L, N, B, A]
+- [A, E, C, E, E, E, A, A, A, D, O, O, J, A, A]
+- [A, A, E, E, A, A, A, A, A, I, G, J, D, A, A]
+- [A, D, E, E, L, A, A, A, A, A, C, A, A, A, A]
+- [A, A, E, A, A, A, A, A, A, A, A, A, A, A, A]
+---
+name: c-1
+x: 557
+y: 263
+parent: a-5
+level-icon: skull
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 21}
+drop:
+- roll: 1-100
+  items:
+  - coin: 10
+  - web: {count: 1, range: 1-15}
+  - ruby: {count: 1, range: 16-26}
+defaults: {tile: grass}
+shortcuts:
+  s: {spawn: ~}
+  +: {tile: wooden-bridge}
+  -: {tile: castle-bricks}
+  b: {obstacle: bush}
+  w: {obstacle: stone2}
+  l: {obstacle: small-lake}
+  t: {obstacle: appletree}
+  x: {obstacle: bones, tile: castle-bricks}
+  A: {enemy: {name: Zond, level: 4, profession: warrior, abilities: [default-defence, default-defence, default-defence, default-attack, default-attack, default-attack]}, tile: castle-bricks}
+  B: {enemy: {name: Fond, level: 4, profession: warrior, abilities: [speed-attack, default-defence, default-defence, default-attack, default-attack, default-attack]}, tile: castle-bricks}
+  C: {enemy: {name: Pond, level: 4, profession: warrior, abilities: [defensive-attack, cleave, default-defence, default-defence, default-attack, default-attack]}, tile: castle-bricks}
+  D: {enemy: {name: Rory, level: 3, profession: archer, abilities: [shot, shot, shot, shot, shot, shot]}, tile: castle-bricks}
+  E: {enemy: {name: Ramy, level: 3, profession: archer, abilities: [shot, shot, shot, shot, shot, shot]}, tile: castle-bricks}
+map:
+  - [-, -, B, C, A, -, x]
+  - [x, -, -, -, -, -, -]
+  - [~, ~, ~, +, ~, ~, ~]
+  - [~, ~, ~, +, ~, ~, ~]
+  - [~, ~, ~, +, ~, ~, ~]
+  - [~, D, ~, +, ~, E, ~]
+  - [~, ~, ~, +, ~, ~, ~]
+  - [~, ~, ~, +, ~, ~, ~]
+  - [~, ~, ~, +, ~, ~, ~]
+  - [~, _, s, s, s, b, ~]
+  - [~, t, s, s, s, b, ~]
+
+---
+name: c-2
+x: 498
+y: 321
+parent: c-1
+level-icon: skull
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 27}
+drop:
+- roll: 1-100
+  items:
+  - coin: 11
+  - web: {count: 1, range: 1-16}
+  - ruby: {count: 1, range: 16-26}
+defaults: {tile: castle-bricks}
+shortcuts:
+  s: {spawn: ~}
+  b: {obstacle: trap}
+  w: {obstacle: table-meat}
+  l: {obstacle: bones}
+  A: {enemy: {name: Cron, level: 5, profession: warrior, abilities: [defensive-attack, cleave, heavy-attack, default-defence, default-attack, default-attack]}}
+  B: {enemy: {name: Hron, level: 5, profession: warrior, abilities: [heavy-attack, cleave, default-attack, default-attack, default-attack, default-attack]}}
+  C: {enemy: {name: Mlom, level: 5, profession: warrior, abilities: [defensive-attack, speed-attack, default-attack, default-attack, default-attack, default-attack]}}
+  D: {enemy: {name: Penf, level: 5, profession: archer, abilities: [shot, shot, shot, shot, shot, shot]}}
+  E: {enemy: {name: Pili, level: 5, profession: archer, abilities: [speed, speed, shot, shot, shot, elven-defence]}}
+map:
+  - [_, C, _, _, _, _, _, _, l]
+  - [_, w, A, _, b, _, D, E, _]
+  - [_, B, _, _, _, _, _, _, _]
+  - [~, ~, ~, _, b, _, ~, ~, ~]
+  - [~, ~, ~, _, _, _, ~, ~, ~]
+  - [~, ~, ~, _, b, _, ~, ~, ~]
+  - [_, s, s, s, s, s, s, s, _]
+
+---
+name: c-3
+x: 435
+y: 370
+parent: c-2
+level-icon: skull
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 32}
+drop:
+- roll: 1-100
+  items:
+  - coin: 13
+  - web: {count: 1, range: 1-17}
+  - ruby: {count: 1, range: 16-27}
+defaults: {tile: castle-bricks}
+shortcuts:
+  s: {spawn: ~}
+  o: {obstacle: trap}
+  i: {obstacle: column-damaged}
+  l: {obstacle: column}
+  m: {obstacle: table-meat}
+  x: {obstacle: bones}
+  A: {enemy: {name: Pump, level: 4, profession: warrior, abilities: [heavy-cleave, defensive-attack, speed-attack, heavy-defence, default-attack, default-attack]}}
+  B: {enemy: {name: Rump, level: 4, profession: warrior, abilities: [speed-attack, heavy-defence, speed-attack, cleave, default-defence, default-attack]}}
+  C: {enemy: {name: Dump, level: 4, profession: warrior, abilities: [heavy-attack, cleave, cleave, cleave, default-defence, default-attack]}}
+  D: {enemy: {name: Hump, level: 4, profession: warrior, abilities: [heavy-cleave, heavy-defence, heavy-defence, heavy-attack, default-defence, default-attack]}}
+  E: {enemy: {name: Efil, level: 3, profession: archer, abilities: [shot, elven-defence, shot, elven-defence, shot, elven-defence]}}
+  F: {enemy: {name: Etil, level: 3, profession: archer, abilities: [speed, elven-defence, shot, shot, shot, shot]}}
+map:
+  - [_, _, x, _, _, _, x]
+  - [E, l, A, _, x, l, F]
+  - [_, C, m, D, _, _, _]
+  - [_, ~, B, _, _, ~, _]
+  - [_, ~, _, l, _, ~, _]
+  - [~, ~, _, _, _, ~, ~]
+  - [~, ~, _, _, _, ~, ~]
+  - [_, ~, _, i, _, ~, _]
+  - [_, ~, _, _, _, ~, _]
+  - [x, _, s, s, s, _, _]
+  - [_, l, s, s, s, i, x]
+  - [_, x, s, s, s, x, x]
+
+---
+name: c-4
+x: 487
+y: 458
+parent: c-3
+level-icon: skull
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 36}
+drop:
+- roll: 1-100
+  items:
+  - coin: 14
+  - web: {count: 1, range: 1-18}
+  - ruby: {count: 1, range: 16-28}
+defaults: {tile: castle-bricks}
+shortcuts:
+  s: {spawn: ~}
+  o: {obstacle: trap}
+  m: {obstacle: table-meat}
+  x: {obstacle: bones}
+  i: {obstacle: column-damaged}
+  l: {obstacle: column}
+  A: {enemy: {name: Bjut, level: 5, profession: warrior, abilities: [defensive-attack, defensive-attack, defensive-attack, heavy-attack, cleave, default-defence]}}
+  B: {enemy: {name: Tzaz, level: 5, profession: warrior, abilities: [heavy-cleave, defensive-attack, cleave, heavy-attack, default-defence, default-attack]}}
+  C: {enemy: {name: Tzut, level: 5, profession: warrior, abilities: [heavy-cleave, defensive-attack, heavy-defence, speed-attack, cleave, default-defence]}}
+  D: {enemy: {name: Tlut, level: 5, profession: warrior, abilities: [heavy-cleave, defensive-attack, heavy-defence, heavy-defence, cleave, default-defence]}}
+  E: {enemy: {name: Penf, level: 5, profession: archer, abilities: [heavy-elven-defence, heavy-shot, heavy-elven-defence, heavy-shot, shot, default-defence]}}
+  F: {enemy: {name: Pelf, level: 5, profession: archer, abilities: [heavy-elven-defence, heavy-elven-defence, shot, shot, shot, shot]}}
+map:
+  - [i, _, _, _, _, _, _, _, _, i]
+  - [_, _, _, _, _, _, B, A, _, _]
+  - [i, _, _, x, _, _, _, D, _, l]
+  - [_, x, _, _, _, _, _, C, x, _]
+  - [l, s, s, s, ~, ~, _, _, _, i]
+  - [s, s, s, s, ~, ~, _, F, _, _]
+  - [i, s, s, l, ~, ~, l, E, x, i]
+
+---
+name: c-5
+x: 543
+y: 534
+parent: c-4
+level-icon: skull
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 40}
+    - {type: die, level: 1, name: Liri, profession: cleric, abilities: [antidote, default-defence, antidote, default-attack]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 15
+  - web: {count: 1, range: 1-20}
+  - ruby: {count: 1, range: 16-29}
+defaults: {tile: castle-bricks}
+shortcuts:
+  s: {spawn: ~}
+  S: {spawn: ~, cover: carpet}
+  -: {cover: carpet}
+  o: {obstacle: trap}
+  m: {obstacle: table-meat, cover: carpet}
+  x: {obstacle: bones}
+  T: {obstacle: torch}
+  A: {enemy: {name: Ohek, level: 5, profession: warrior, abilities: [speed-attack, speed-attack, heavy-attack, heavy-attack, cleave, default-defence]}}
+  B: {enemy: {name: Ehak, level: 6, profession: warrior, abilities: [defensive-attack, speed-attack, heavy-defence, speed-attack, cleave, heavy-attack]}}
+  C: {enemy: {name: Uhak, level: 5, profession: warrior, abilities: [defensive-attack, defensive-attack, speed-attack, speed-attack, cleave, default-attack]}}
+  D: {enemy: {name: Alfy, level: 5, profession: archer, abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, heavy-elven-defence, default-defence]}}
+  G: {enemy: {name: Tude, level: 5, profession: archer, abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, heavy-elven-defence, default-defence]}}
+  E: {enemy: {name: Anfy, level: 6, profession: archer, abilities: [heavy-shot, heavy-shot, heavy-shot, speed, speed, heavy-elven-defence]}, cover: carpet}
+  F: {enemy: {name: Elfy, level: 5, profession: archer, abilities: [speed, speed, heavy-shot, heavy-elven-defence, shot, shot]}}
+map:
+  - [~, _, _, -, _, _, ~]
+  - [~, _, G, m, C, _, ~]
+  - [~, D, A, E, B, F, ~]
+  - [~, ~, T, -, T, ~, ~]
+  - [_, _, _, -, _, _, _]
+  - [_, ~, T, -, T, ~, _]
+  - [_, ~, _, -, _, ~, _]
+  - [_, ~, T, -, T, ~, _]
+  - [_, _, _, -, _, _, _]
+  - [~, ~, T, -, T, ~, ~]
+  - [~, s, s, S, s, s, ~]
+  - [~, _, s, S, s, _, ~]
+---
+name: c-6
+parent: c-5
+x: 511
+y: 628
+level-icon: skull
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 42}
+drop:
+- roll: 1-100
+  items:
+  - coin: 17
+  - web: {count: 1, range: 1-20}
+  - ruby: {count: 1, range: 16-29}
+shortcuts:
+  E: {tile: castle-bricks}
+  N:
+    enemy:
+      name: ali
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, shot, heavy-elven-defence, shot, shot]
+    tile: castle-bricks
+  J: {cover: carpet, tile: castle-bricks}
+  F:
+    tile: castle-bricks
+    enemy:
+      name: Ying
+      profession: archer
+      exp: 120
+      abilities: [heavy-elven-defence, speed, heavy-shot, heavy-shot, heavy-elven-defence, speed]
+  A: {}
+  M:
+    tile: castle-bricks
+    enemy:
+      name: sumk
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-cleave, heavy-defensive-attack, heavy-attack, heavy-defensive-attack, heavy-defensive-attack]
+  I: {cover: carpet, tile: castle-bricks, spawn: null}
+  G: {tile: castle-bricks, spawn: null}
+  L:
+    cover: carpet
+    enemy:
+      name: Pake
+      profession: cleric
+      exp: 60
+      abilities: [cleric-heavy-defence, area-of-attack, cleric-defence, area-of-defence, cleric-defence, area-of-defence]
+    tile: castle-bricks
+  B: {tile: castle-bricks, obstacle: column}
+  C: {obstacle: torch, tile: castle-bricks}
+  H:
+    tile: castle-bricks
+    enemy:
+      name: ive
+      profession: warrior
+      exp: 60
+      abilities: [heavy-cleave, heavy-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence]
+  K:
+    cover: carpet
+    enemy:
+      name: Stai
+      profession: archer
+      exp: 120
+      abilities: [heavy-elven-defence, speed, speed, speed, shot, heavy-shot]
+    tile: castle-bricks
+  D: {obstacle: column-damaged, tile: castle-bricks}
+map:
+- [A, A, A, A, H, J, M, A, A, A, A]
+- [D, E, E, F, E, L, E, N, E, E, B]
+- [A, E, A, A, E, K, E, A, A, E, A]
+- [A, E, A, A, A, J, A, A, A, E, A]
+- [A, E, A, A, A, J, A, A, A, E, A]
+- [A, E, A, A, E, J, E, A, A, E, A]
+- [C, E, E, E, E, J, E, E, E, E, C]
+- [A, E, A, A, E, J, E, A, A, E, A]
+- [A, E, A, A, A, J, A, A, A, E, A]
+- [A, E, A, A, A, J, A, A, A, E, A]
+- [A, E, A, A, G, I, G, A, A, E, A]
+- [B, E, E, E, G, I, G, E, E, E, D]
+- [A, A, A, A, G, I, G, A, A, A, A]
+---
+name: c-7
+parent: c-6
+x: 541
+y: 730
+level-icon: skull
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 48}
+drop:
+- roll: 1-100
+  items:
+  - coin: 18
+  - web: {count: 1, range: 1-21}
+  - ruby: {count: 1, range: 16-29}
+shortcuts:
+  E: {obstacle: column-damaged, tile: castle-bricks}
+  N:
+    enemy:
+      name: kaga
+      profession: archer
+      exp: 120
+      abilities: [shot, speed, heavy-shot, speed, shot, heavy-shot]
+    tile: castle-bricks
+  J: {tile: castle-bricks, obstacle: column}
+  F: {tile: castle-bricks, obstacle: torch}
+  A: {}
+  M:
+    enemy:
+      name: gluk
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-defence, heavy-speed-attack, heavy-defensive-attack, heavy-speed-attack]
+    tile: castle-bricks
+  I:
+    enemy:
+      name: kega
+      profession: archer
+      exp: 120
+      abilities: [shot, speed, shot, shot, heavy-elven-defence, heavy-shot]
+    tile: castle-bricks
+  G:
+    tile: castle-bricks
+    enemy:
+      name: dok
+      profession: cleric
+      exp: 60
+      abilities: [antidote, cleric-heavy-defence, antidote, area-of-defence, antidote, antidote]
+  Q:
+    tile: castle-bricks
+    enemy:
+      name: asd
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack,
+        heavy-defence]
+  L: {obstacle: torch, tile: castle-bricks}
+  B: {tile: castle-bricks}
+  P:
+    tile: castle-bricks
+    enemy:
+      name: raad
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, cleric-heavy-defence, area-of-attack, area-of-attack, cleric-heavy-defence, antidote]
+  C: {obstacle: column, tile: castle-bricks}
+  H: {tile: castle-bricks, spawn: null}
+  K:
+    tile: castle-bricks
+    enemy:
+      name: falt
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, heavy-shot, shot, heavy-shot, heavy-shot, shot]
+  O: {tile: castle-bricks, obstacle: column-damaged}
+  D:
+    enemy:
+      name: cruk
+      profession: warrior
+      exp: 60
+      abilities: [heavy-speed-attack, heavy-speed-attack, heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence]
+    tile: castle-bricks
+map:
+- [C, B, E, A, J, B, J, B, O, A, E, B, C]
+- [B, B, A, A, B, K, B, M, B, A, A, B, B]
+- [B, B, B, G, B, A, A, A, B, P, B, B, B]
+- [B, D, A, A, I, B, A, B, N, A, A, Q, B]
+- [A, B, A, A, A, B, A, B, A, A, A, B, A]
+- [A, B, A, A, A, B, A, B, A, A, A, B, A]
+- [A, B, A, F, A, B, L, B, A, F, A, B, A]
+- [A, B, A, A, A, B, A, B, A, A, A, B, A]
+- [A, B, A, A, A, B, A, B, A, A, A, B, A]
+- [A, B, B, B, B, B, A, B, B, B, B, B, A]
+- [A, A, A, A, B, A, A, A, B, A, A, A, A]
+- [A, A, A, A, B, A, A, A, B, A, A, A, A]
+- [A, A, A, A, B, B, B, B, B, A, A, A, A]
+- [A, A, A, A, A, A, B, A, A, A, A, A, A]
+- [A, A, A, A, H, H, H, H, H, A, A, A, A]
+- [A, A, A, A, H, H, H, H, H, A, A, A, A]
+---
+name: d-1
+parent: m-15
+x: 75
+y: 728
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 76} #acc: 5
+    - {type: die, level: 1, profession: shaman, name: Juan, abilities: [default-attack, default-defence, tambourine-of-oblivion]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 27
+  - dragonwort: {count: 1, range: 1-21}
+  - web: {count: 1, range: 16-29}
+shortcuts:
+  E: {tile: grass}
+  X:
+    tile: sand
+    enemy:
+      name: d1ab
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, heavy-shot, speed, speed, heavy-shot, speed]
+  N:
+    enemy:
+      name: d1md
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+    tile: sand
+  T:
+    tile: sand
+    enemy:
+      name: d1mc
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]
+  J:
+    enemy:
+      name: d1ma
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+    tile: sand
+  U: {tile: sand, obstacle: cactus-tall2}
+  F: {tile: grass, obstacle: well}
+  A: {}
+  M:
+    tile: sand
+    enemy:
+      name: d1aa
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, heavy-shot, speed, heavy-shot, heavy-shot]
+  I: {tile: grass, obstacle: carpet}
+  G: {tile: grass, spawn: null}
+  V: {tile: sand, obstacle: cactus-short}
+  Q: {obstacle: palm1, tile: sand}
+  L: {tile: grass, obstacle: palm1}
+  B: {tile: sand}
+  P:
+    tile: sand
+    enemy:
+      name: d1mb
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+  C: {tile: grass, obstacle: pots}
+  H:
+    tile: sand
+    enemy:
+      name: d1ca
+      profession: cleric
+      exp: 60
+      abilities: [cleric-heavy-defence, area-of-defence, area-of-defence, cleric-defence, area-of-defence, cleric-heavy-defence]
+  W: {obstacle: palm2, tile: grass}
+  K: {tile: sand, obstacle: cactus-tall1}
+  R:
+    enemy:
+      name: d1cc
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, area-of-defence, cleric-defence, area-of-defence, area-of-defence]
+    tile: sand
+  O:
+    enemy:
+      name: d1cb
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, cleric-defence, area-of-defence, area-of-defence, area-of-defence]
+    tile: sand
+  D: {tile: sand, obstacle: palm2}
+  S:
+    tile: sand
+    enemy:
+      name: d1sa
+      profession: shaman
+      exp: 17
+      abilities: [tambourine-of-oblivion, staff-of-teleportation, staff-of-teleportation, staff-of-teleportation, tambourine-of-oblivion]
+map:
+- [A, A, A, A, A, A, B, B, B, B, B, A]
+- [A, A, A, B, B, B, B, P, B, B, B, B]
+- [A, A, B, B, B, K, M, O, S, B, B, B]
+- [A, A, B, B, B, B, B, N, R, U, X, V]
+- [A, B, B, E, L, B, B, K, B, T, B, B]
+- [B, D, G, G, G, E, B, B, B, B, B, A]
+- [B, C, F, G, G, E, B, B, B, B, B, B]
+- [B, B, E, I, B, B, B, B, G, G, W, B]
+- [A, B, B, B, K, B, B, L, G, G, V, B]
+- [A, B, B, B, B, B, B, B, E, G, B, A]
+- [A, A, B, H, J, A, A, B, Q, B, B, A]
+- [A, A, A, A, A, A, A, A, A, B, U, A]
+
+---
+name: d-2
+parent: d-1
+x: 64
+y: 810
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 80} #acc: 6
+drop:
+- roll: 1-100
+  items:
+  - coin: 28
+  - dragonwort: {count: 1, range: 1-21}
+  - web: {count: 1, range: 16-29}
+shortcuts:
+  E: {tile: grass}
+  X: {obstacle: cactus-tall1, tile: sand}
+  N:
+    enemy:
+      name: d2cb
+      profession: cleric
+      exp: 60
+      abilities: [area-of-antidote, area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-heavy-defence]
+    tile: sand
+  T: {obstacle: palm2, tile: grass}
+  J: {tile: grass, obstacle: palm2}
+  U:
+    tile: sand
+    enemy:
+      name: d2ab
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, heavy-shot, heavy-shot, speed, heavy-shot]
+  F: {obstacle: palm1, tile: grass}
+  A: {}
+  M:
+    tile: sand
+    enemy:
+      name: d2md
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+  I:
+    tile: grass
+    enemy:
+      name: d2mb
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm]
+  G: {tile: sand, obstacle: cactus-short}
+  V:
+    tile: sand
+    enemy:
+      name: d2aa
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, heavy-shot, heavy-shot, speed, speed]
+  Q:
+    enemy:
+      name: d2mc
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]
+    tile: sand
+  L:
+    tile: sand
+    enemy:
+      name: d2ma
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+  B: {tile: sand}
+  P: {tile: sand, obstacle: cactus-tall2}
+  C: {tile: sand, obstacle: palm1}
+  H:
+    enemy:
+      name: d2ca
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-defence]
+    tile: grass
+  W: {obstacle: palm1, tile: grass}
+  K: {obstacle: cactus-short, tile: sand}
+  R:
+    tile: grass
+    enemy:
+      name: d2sb
+      profession: shaman
+      exp: 17
+      abilities: [staff-of-teleportation, staff-of-teleportation, tambourine-of-oblivion, tambourine-of-oblivion,
+        tambourine-of-oblivion]
+  O:
+    enemy:
+      name: d2sa
+      profession: shaman
+      exp: 17
+      abilities: [tambourine-of-oblivion, tambourine-of-oblivion, staff-of-teleportation, tambourine-of-oblivion, staff-of-teleportation]
+    tile: grass
+  D: {spawn: null, tile: sand}
+  S:
+    tile: grass
+    enemy:
+      name: d2cc
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-defence]
+map:
+- [A, B, D, K, B, A, A, A, A, O, T, A, A]
+- [A, B, G, D, D, B, A, B, E, E, S, E, A]
+- [B, D, B, B, B, G, B, B, B, B, R, W, B]
+- [B, B, B, D, B, D, B, B, B, B, B, V, X]
+- [B, C, B, B, B, A, A, A, A, B, B, U, B]
+- [A, B, F, J, B, B, A, A, G, B, Q, B, A]
+- [A, B, E, I, E, B, B, B, M, N, P, A, A]
+- [A, A, B, H, E, G, B, B, B, A, A, A, A]
+- [A, A, A, B, L, B, A, A, A, A, A, A, A]
+
+
+---
+name: d-3
+parent: d-2
+x: 140
+y: 824
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 84} #acc: 7
+drop:
+- roll: 1-100
+  items:
+  - coin: 29
+  - dragonwort: {count: 1, range: 1-21}
+  - web: {count: 1, range: 16-29}
+shortcuts:
+  E: {tile: sand, obstacle: cactus-tall1}
+  X:
+    tile: sand
+    enemy:
+      name: d3cb
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-defence]
+  N: {tile: sand, spawn: null}
+  T:
+    tile: sand
+    enemy:
+      name: d3wc
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence]
+  J: {tile: grass, spawn: null}
+  U:
+    enemy:
+      name: d3sb
+      profession: shaman
+      level: 3
+      abilities: [staff-of-teleportation, staff-of-teleportation, staff-of-teleportation, black-spot, black-spot, staff-of-teleportation]
+    tile: sand
+  F:
+    tile: sand
+    enemy:
+      name: d3sa
+      profession: shaman
+      level: 3
+      abilities: [black-spot, staff-of-teleportation, black-spot, black-spot, staff-of-teleportation, black-spot]
+  A: {}
+  M:
+    tile: sand
+    enemy:
+      name: d3cc
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-defence]
+  I: {obstacle: palm2, tile: grass}
+  G:
+    tile: sand
+    enemy:
+      name: d3ma
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+  V:
+    tile: sand
+    enemy:
+      name: d3mb
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm]
+  Q:
+    enemy:
+      name: d3ab
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, heavy-shot, heavy-shot, speed, heavy-shot]
+    tile: sand
+  L: {tile: grass, obstacle: palm1}
+  B: {obstacle: cactus-tall2, tile: sand}
+  P:
+    tile: grass
+    enemy:
+      name: d3aa
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, heavy-shot, heavy-shot, speed, speed]
+  C: {tile: sand}
+  H: {tile: grass}
+  W:
+    enemy:
+      name: d3wb
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defence, heavy-defence, heavy-defensive-attack, heavy-defence, heavy-defence]
+    tile: sand
+  K: {tile: grass, obstacle: pots}
+  R: {obstacle: cactus-short, tile: sand}
+  O:
+    enemy:
+      name: d3mc
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+    tile: grass
+  D:
+    tile: sand
+    enemy:
+      name: d3ca
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-defence]
+  S:
+    tile: sand
+    enemy:
+      name: d3wa
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defence, heavy-defence, heavy-defence, heavy-defence, heavy-speed-attack]
+map:
+- [A, A, A, A, C, C, C, C, A, A, A, A]
+- [A, A, A, A, C, E, B, C, C, A, A, A]
+- [A, A, A, A, H, O, M, B, C, A, A, A]
+- [A, A, A, A, L, H, P, S, C, A, A, A]
+- [A, A, A, I, K, H, I, C, C, A, A, A]
+- [C, E, H, H, H, H, N, C, C, A, A, A]
+- [C, D, G, H, J, N, N, N, C, A, A, A]
+- [B, C, F, C, E, N, N, R, C, A, A, A]
+- [A, C, C, C, C, C, C, N, C, C, A, A]
+- [A, A, A, A, C, C, C, C, C, C, B, A]
+- [A, A, A, A, C, C, C, C, U, W, C, C]
+- [A, A, A, A, A, C, B, Q, T, V, X, C]
+- [A, A, A, A, A, A, C, C, R, R, C, A]
+---
+name: d-4
+parent: d-3
+x: 229
+y: 818
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 90} #acc: 8
+    - {type: die, level: 1, profession: shaman, name: Shrm, abilities: [default-attack, default-defence, tambourine-of-oblivion]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 30
+  - dragonwort: {count: 1, range: 1-22}
+  - web: {count: 1, range: 16-30}
+shortcuts:
+  E:
+    enemy:
+      name: d4c2
+      profession: cleric
+      exp: 60
+      abilities: [cleric-heavy-defence, cleric-defence, area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence]
+    tile: sand
+  X: {tile: sand, obstacle: palm1}
+  N:
+    enemy:
+      name: d4s2
+      profession: shaman
+      exp: 29
+      abilities: [tambourine-of-oblivion, tambourine-of-oblivion, tambourine-of-oblivion, tambourine-of-oblivion, black-spot,
+        staff-of-teleportation]
+    tile: sand
+  T: {tile: grass, obstacle: pots}
+  Y: {obstacle: carpet, tile: grass}
+  J:
+    tile: sand
+    enemy:
+      name: d4w5
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-defence, defensive-attack, heavy-defence, heavy-defence]
+  U: {tile: grass}
+  F:
+    enemy:
+      name: d4a1
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, heavy-shot, speed, speed, speed, heavy-shot]
+    tile: sand
+  A: {}
+  a:
+    tile: grass
+    enemy:
+      name: d4s1
+      profession: shaman
+      exp: 29
+      abilities: [staff-of-teleportation, black-spot, black-spot, tambourine-of-oblivion, staff-of-teleportation, black-spot]
+  M:
+    enemy:
+      name: d4w2
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence]
+    tile: sand
+  I:
+    tile: sand
+    enemy:
+      name: d4m2
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm]
+  G:
+    enemy:
+      name: d4w3
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, defensive-attack, heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence]
+    tile: sand
+  V: {tile: grass, obstacle: well}
+  Q:
+    enemy:
+      name: d4w7
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-defence, heavy-defence, defensive-attack, heavy-defensive-attack, heavy-defence]
+    tile: sand
+  L: {spawn: null, tile: sand}
+  b:
+    enemy:
+      name: d4c1
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, cleric-heavy-defence, cleric-heavy-defence, area-of-defence, area-of-defence, area-of-defence]
+    tile: grass
+  B: {tile: sand}
+  P: {spawn: null, tile: grass}
+  C: {tile: sand, obstacle: cactus-tall1}
+  H: {obstacle: cactus-tall2, tile: sand}
+  W: {obstacle: palm2, tile: sand}
+  K:
+    tile: sand
+    enemy:
+      name: d4w4
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, defensive-attack, heavy-defence, heavy-defence, heavy-defensive-attack, heavy-defence]
+  R:
+    tile: sand
+    enemy:
+      name: d4w8
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence, defensive-attack, heavy-defensive-attack]
+  O:
+    tile: sand
+    enemy:
+      name: d4w6
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence, defensive-attack,
+        heavy-defensive-attack]
+  D:
+    tile: sand
+    enemy:
+      name: d4a2
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, heavy-shot, speed, speed, heavy-shot]
+  Z:
+    enemy:
+      name: d4m1
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+    tile: grass
+  S:
+    tile: grass
+    enemy:
+      name: d4w1
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defence, defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defensive-attack]
+map:
+- [A, A, A, A, A, A, B, R, B, B, B, A]
+- [A, A, A, A, A, B, O, Q, B, W, Z, b]
+- [A, A, A, A, A, C, B, B, T, V, U, a]
+- [A, A, A, A, A, H, B, L, L, U, Y, U]
+- [A, E, I, B, B, B, L, P, S, U, U, B]
+- [A, B, B, B, M, L, L, B, B, B, X, A]
+- [C, B, B, B, L, L, B, B, A, A, A, A]
+- [B, B, H, B, B, B, B, B, A, A, A, A]
+- [A, D, G, K, B, B, B, C, A, A, A, A]
+- [A, A, F, J, B, B, N, B, A, A, A, A]
+---
+name: d-5
+parent: d-4
+x: 193
+y: 730
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 96} #acc: 9
+drop:
+- roll: 1-100
+  items:
+  - coin: 31
+  - dragonwort: {count: 1, range: 1-22}
+  - web: {count: 1, range: 16-30}
+shortcuts:
+  E: {spawn: null, tile: grass}
+  X: {obstacle: palm1, tile: grass}
+  N:
+    enemy:
+      name: d5m3
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+    tile: sand
+  T:
+    tile: sand
+    enemy:
+      name: d5m5
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]
+  J: {obstacle: cactus-tall1, tile: sand}
+  U: {tile: sand, obstacle: cactus-tall2}
+  F: {tile: grass}
+  A: {}
+  M:
+    enemy:
+      name: d5s1
+      profession: shaman
+      exp: 71
+      abilities: [tambourine-of-oblivion, black-spot, tambourine-of-oblivion, staff-of-teleportation, tambourine-of-oblivion,
+        staff-of-teleportation]
+    tile: sand
+  I: {obstacle: palm2, tile: grass}
+  G: {obstacle: cactus-short, tile: sand}
+  V: {tile: sand, obstacle: palm1}
+  Q:
+    tile: sand
+    enemy:
+      name: d5m1
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm]
+  L:
+    enemy:
+      name: d5s2
+      profession: shaman
+      exp: 71
+      abilities: [tambourine-of-oblivion, black-spot, black-spot, staff-of-teleportation, black-spot, black-spot]
+    tile: sand
+  B: {tile: sand}
+  P:
+    enemy:
+      name: d5m4
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+    tile: sand
+  C: {obstacle: palm2, tile: sand}
+  H: {tile: grass, obstacle: pots}
+  W: {obstacle: well, tile: grass}
+  K:
+    tile: sand
+    enemy:
+      name: d5c3
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, cleric-defence, cleric-heavy-defence, area-of-defence, area-of-defence]
+  R:
+    enemy:
+      name: d5c2
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence, area-of-defence]
+    tile: sand
+  O:
+    tile: sand
+    enemy:
+      name: d5c1
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-defence, cleric-heavy-defence]
+  D: {tile: sand, spawn: null}
+  S:
+    enemy:
+      name: d5m2
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+    tile: sand
+  Y:
+    enemy:
+      name: d5c4
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-defence, cleric-heavy-defence]
+    tile: sand
+  Z:
+    enemy:
+      name: d5c5
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, cleric-defence, cleric-heavy-defence]
+    tile: sand
+map:
+- [A, A, A, A, A, A, O, B, A, A, A, A, A, A, A]
+- [B, F, H, I, F, L, B, Q, T, U, A, A, A, A, A]
+- [C, E, E, F, B, B, B, Z, B, B, G, A, A, A, A]
+- [B, D, B, B, B, B, B, B, B, B, G, B, B, B, X]
+- [A, B, B, B, J, B, N, Y, B, B, B, B, E, E, W]
+- [A, B, G, B, B, K, M, P, S, B, B, B, B, E, F]
+- [A, A, A, A, A, A, A, A, R, B, B, B, V, B, C]
+- [A, A, A, A, A, A, A, A, A, B, B, G, B, B, A]
+---
+name: d-6
+parent: d-5
+x: 285
+y: 738
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 103} #acc: 10
+drop:
+- roll: 1-100
+  items:
+  - coin: 32
+  - dragonwort: {count: 1, range: 1-22}
+  - web: {count: 1, range: 16-31}
+shortcuts:
+  E: {tile: sand, obstacle: cactus-tall1}
+  X:
+    tile: sand
+    enemy:
+      name: d6w1
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, defensive-attack, heavy-defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defence]
+  N:
+    tile: grass
+    enemy:
+      name: d6a6
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, heavy-shot, speed, heavy-shot, heavy-shot]
+  T:
+    tile: sand
+    enemy:
+      name: d6s1
+      profession: shaman
+      exp: 42
+      abilities: [tambourine-of-oblivion, staff-of-teleportation, eery-mask, eery-mask, eery-mask, staff-of-teleportation]
+  Y: {spawn: null, tile: grass}
+  J:
+    enemy:
+      name: d6a3
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, speed, heavy-shot, speed, speed]
+    tile: grass
+  U:
+    enemy:
+      name: d6a8
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, heavy-shot, heavy-shot, speed, heavy-shot]
+    tile: sand
+  F: {spawn: null, tile: sand}
+  A: {}
+  M:
+    tile: grass
+    enemy:
+      name: d6m2
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]
+  I:
+    tile: sand
+    enemy:
+      name: d6a4
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, speed, heavy-shot, heavy-shot, speed]
+  G: {tile: grass, obstacle: pots}
+  V:
+    enemy:
+      name: d6a1
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, heavy-shot, heavy-shot, heavy-shot, speed, heavy-shot]
+    tile: sand
+  Q:
+    tile: sand
+    enemy:
+      name: d6c1
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence, area-of-defence]
+  L:
+    tile: grass
+    enemy:
+      name: d6c2
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence, area-of-defence]
+  B: {tile: sand}
+  P:
+    enemy:
+      name: d6m1
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+    tile: sand
+  C: {obstacle: cactus-tall2, tile: sand}
+  H: {tile: grass}
+  W:
+    enemy:
+      name: d6w2
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-defensive-attack,
+        heavy-defensive-attack]
+    tile: sand
+  K:
+    enemy:
+      name: d6s2
+      profession: shaman
+      exp: 42
+      abilities: [eery-mask, black-spot, black-spot, eery-mask, staff-of-teleportation, eery-mask]
+    tile: sand
+  R:
+    tile: grass
+    enemy:
+      name: d6a2
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, heavy-shot, speed, heavy-shot, heavy-shot]
+  O:
+    tile: sand
+    enemy:
+      name: d6a5
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, speed, heavy-shot, heavy-shot, speed]
+  D: {tile: sand, obstacle: cactus-short}
+  Z: {obstacle: carpet, tile: grass}
+  S:
+    enemy:
+      name: d6a7
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, heavy-shot, heavy-shot, speed, heavy-shot, heavy-shot]
+    tile: sand
+map:
+- [A, A, B, B, A, A, A, B, B, V, A, A, A, A, A, A, A, A, A]
+- [A, B, E, B, G, H, K, B, R, B, A, B, D, A, A, B, C, Z, A]
+- [C, E, B, B, B, H, H, N, H, U, A, F, B, B, B, B, B, B, G]
+- [B, B, B, F, F, B, J, M, Q, T, A, A, F, B, B, B, F, H, H]
+- [B, D, B, F, F, A, B, L, P, A, A, F, F, B, B, B, H, Y, H]
+- [A, B, B, B, A, A, I, B, B, S, A, B, B, B, B, H, B, B, B]
+- [A, A, A, C, A, B, B, B, O, B, B, B, B, B, B, B, D, E, A]
+- [A, A, A, A, A, A, A, B, B, B, W, X, A, A, B, D, B, A, A]
+---
+name: d-7
+parent: d-6
+x: 351
+y: 728
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 105} #acc: 10
+drop:
+- roll: 1-100
+  items:
+  - coin: 33
+  - dragonwort: {count: 1, range: 1-23}
+  - web: {count: 1, range: 16-31}
+shortcuts:
+  E: {tile: sand}
+  X:
+    tile: sand
+    enemy:
+      name: d7s2
+      profession: shaman
+      exp: 42
+      abilities: [black-spot, staff-of-teleportation, staff-of-teleportation, black-spot, tambourine-of-oblivion, eery-mask]
+  N: {obstacle: palm2, tile: grass}
+  T:
+    tile: sand
+    enemy:
+      name: d7a1
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, heavy-shot, heavy-shot, speed, speed]
+  Y:
+    enemy:
+      name: d7w2
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defence, heavy-defence, heavy-defence, heavy-defence, heavy-defence]
+    tile: sand
+  J:
+    enemy:
+      name: d7a2
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, speed, speed, speed, heavy-shot]
+    tile: sand
+  U:
+    enemy:
+      name: d7w3
+      profession: warrior
+      exp: 60
+      abilities: [default-defence, heavy-defence, heavy-defence, heavy-defence, heavy-defence, heavy-defence]
+    tile: sand
+  F: {spawn: null, tile: sand}
+  A: {}
+  M:
+    tile: sand
+    enemy:
+      name: d7s1
+      profession: shaman
+      exp: 42
+      abilities: [tambourine-of-oblivion, staff-of-teleportation, staff-of-teleportation, black-spot, eery-mask, black-spot]
+  I: {spawn: null, tile: grass}
+  G: {tile: grass}
+  V:
+    tile: sand
+    enemy:
+      name: d7m2
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm]
+  Q:
+    tile: sand
+    enemy:
+      name: d7a3
+      profession: archer
+      exp: 120
+      abilities: [speed, speed, heavy-shot, speed, speed, heavy-shot]
+  L: {obstacle: palm1, tile: grass}
+  B: {obstacle: cactus-short, tile: sand}
+  P:
+    tile: sand
+    enemy:
+      name: d7m3
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+  C: {obstacle: palm1, tile: sand}
+  H: {tile: wooden-bridge}
+  W:
+    tile: sand
+    enemy:
+      name: d7c1
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, area-of-defence, cleric-defence, area-of-defence, cleric-heavy-defence]
+  K:
+    enemy:
+      name: d7s3
+      profession: shaman
+      exp: 42
+      abilities: [black-spot, tambourine-of-oblivion, black-spot, black-spot, tambourine-of-oblivion, staff-of-teleportation]
+    tile: grass
+  R:
+    tile: grass
+    enemy:
+      name: d7m1
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+  O:
+    tile: grass
+    enemy:
+      name: d7c3
+      profession: cleric
+      exp: 60
+      abilities: [cleric-defence, cleric-heavy-defence, area-of-defence, cleric-heavy-defence, cleric-heavy-defence,
+        area-of-defence]
+  D: {obstacle: palm2, tile: sand}
+  Z:
+    enemy:
+      name: d7w1
+      profession: warrior
+      exp: 60
+      abilities: [defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence]
+    tile: sand
+  S:
+    enemy:
+      name: d7c2
+      profession: cleric
+      exp: 60
+      abilities: [cleric-heavy-defence, cleric-defence, area-of-defence, cleric-heavy-defence, cleric-heavy-defence,
+        cleric-heavy-defence]
+    tile: sand
+map:
+- [A, A, A, B, E, E, E, Q, A, A, A, A]
+- [A, A, F, E, E, E, E, E, T, X, A, A]
+- [A, A, F, E, E, G, G, P, S, E, E, D]
+- [A, A, A, C, G, E, K, O, R, W, E, E]
+- [C, D, A, A, H, A, J, N, E, V, Z, E]
+- [B, A, A, A, H, A, A, M, E, U, Y, A]
+- [A, A, A, E, G, I, A, A, A, A, A, A]
+- [A, A, A, E, E, G, I, A, A, A, A, A]
+- [A, A, D, E, E, G, G, G, A, A, A, A]
+- [A, A, E, E, E, E, G, L, A, A, A, A]
+- [A, A, E, E, E, E, D, E, A, A, A, A]
+- [A, A, F, F, E, E, E, A, A, A, A, A]
+- [A, A, E, F, F, B, E, A, A, A, A, A]
+- [A, A, A, E, E, E, A, A, A, A, A, A]
+
+---
+name: d-8
+parent: d-7
+x: 433
+y: 760
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 112}
+drop:
+- roll: 1-100
+  items:
+  - coin: 34
+  - dragonwort: {count: 1, range: 1-23}
+  - web: {count: 1, range: 16-31}
+shortcuts:
+  E:
+    enemy:
+      name: d8c2
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, cleric-defence, area-of-defence, area-of-defence, area-of-defence]
+    tile: grass
+  X:
+    enemy:
+      name: d8a2
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, heavy-shot, speed, heavy-shot, heavy-shot]
+    tile: grass
+  N: {tile: sand, spawn: null}
+  T:
+    tile: castle-bricks
+    enemy:
+      name: d8m1
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]
+  Y: {tile: castle-bricks, obstacle: bones}
+  J:
+    tile: sand
+    enemy:
+      name: d8m2
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, firestorm, firestorm, firestorm, chain-lightning]
+  U:
+    enemy:
+      name: d8c1
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, cleric-defence, cleric-heavy-defence, area-of-defence, area-of-defence, area-of-defence]
+    tile: grass
+  F:
+    tile: grass
+    enemy:
+      name: d8w1
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack,
+        heavy-defensive-attack]
+  A: {}
+  M:
+    tile: sand
+    enemy:
+      name: d8s3
+      profession: shaman
+      exp: 56
+      abilities: [staff-of-teleportation, eery-mask, eery-mask, poisonous-dust, eery-mask, poisonous-dust]
+  I: {obstacle: cactus-short, tile: sand}
+  G:
+    enemy:
+      name: d8a4
+      profession: archer
+      exp: 120
+      abilities: [heavy-shot, speed, heavy-shot, heavy-shot, heavy-shot, heavy-shot]
+    tile: grass
+  V:
+    tile: grass
+    enemy:
+      name: d8a1
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, heavy-shot, speed, heavy-shot, speed]
+  Q: {tile: castle-bricks}
+  L: {tile: sand, obstacle: cactus-tall1}
+  B: {tile: sand}
+  P: {tile: castle-bricks, obstacle: column-damaged}
+  C: {tile: grass}
+  H:
+    enemy:
+      name: d8s4
+      profession: shaman
+      exp: 56
+      abilities: [poisonous-dust, tambourine-of-oblivion, staff-of-teleportation, poisonous-dust, poisonous-dust, eery-mask]
+    tile: grass
+  W:
+    enemy:
+      name: d8s2
+      profession: shaman
+      exp: 56
+      abilities: [poisonous-dust, black-spot, poisonous-dust, poisonous-dust, poisonous-dust, black-spot]
+    tile: sand
+  K:
+    enemy:
+      name: d8w2
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-defence, heavy-defence, defensive-attack, heavy-defensive-attack]
+    tile: sand
+  R:
+    enemy:
+      name: d8a3
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, heavy-shot, heavy-shot, heavy-shot, heavy-shot]
+    tile: sand
+  O:
+    enemy:
+      name: d8a5
+      profession: archer
+      exp: 120
+      abilities: [speed, heavy-shot, speed, heavy-shot, speed, heavy-shot]
+    tile: sand
+  D: {obstacle: cactus-tall2, tile: sand}
+  Z: {tile: grass, obstacle: carpet}
+  S:
+    tile: sand
+    enemy:
+      name: d8s1
+      profession: shaman
+      exp: 56
+      abilities: [eery-mask, tambourine-of-oblivion, eery-mask, poisonous-dust, eery-mask, eery-mask]
+map:
+- [A, C, C, B, L, B, B, B, A, A, A, A, A, A]
+- [C, C, H, C, C, B, B, I, B, B, B, B, D, A]
+- [C, E, G, J, B, B, B, B, B, B, S, Q, Q, L]
+- [B, C, F, B, B, B, B, B, B, B, B, B, Y, B]
+- [A, D, C, B, B, N, N, N, B, B, C, V, C, B]
+- [A, A, B, B, B, N, L, N, B, C, C, U, X, C]
+- [A, A, A, I, B, N, N, N, B, B, B, T, W, Z]
+- [A, A, A, B, B, B, B, B, B, B, R, B, Q, B]
+- [A, A, A, B, B, B, B, B, D, P, Q, P, Q, A]
+- [A, A, A, B, K, B, B, B, B, A, A, A, A, A]
+- [A, A, A, D, B, M, O, B, I, A, A, A, A, A]
+- [A, A, A, B, B, B, B, B, A, A, A, A, A, A]
+- [A, A, A, A, B, B, D, A, A, A, A, A, A, A]
+
+---
+name: d-9
+parent: d-8
+x: 442
+y: 831
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 118}
+drop:
+- roll: 1-100
+  items:
+  - coin: 35
+  - dragonwort: {count: 1, range: 1-23}
+  - web: {count: 1, range: 16-31}
+shortcuts:
+  E:
+    enemy:
+      name: d9c2
+      profession: cleric
+      exp: 60
+      abilities: [cleric-heavy-defence, area-of-defence, cleric-defence, area-of-defence, area-of-defence, area-of-defence]
+    tile: sand
+  N: {tile: grass, obstacle: palm1}
+  T:
+    tile: sand
+    enemy:
+      name: d9w2
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-defence, defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defence]
+  J: {tile: grass}
+  F: {tile: wooden-bridge}
+  A: {}
+  M:
+    tile: sand
+    enemy:
+      name: d9s1
+      profession: shaman
+      exp: 71
+      abilities: [staff-of-teleportation, poisonous-dust, poisonous-dust, staff-of-teleportation, eery-mask, eery-mask]
+  I:
+    tile: sand
+    enemy:
+      name: d9c1
+      profession: cleric
+      exp: 60
+      abilities: [cleric-heavy-defence, cleric-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+  G:
+    enemy:
+      name: d9m1
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+    tile: sand
+  Q: {tile: sand, obstacle: cactus-tall2}
+  L: {spawn: null, tile: sand}
+  B: {tile: sand}
+  P:
+    tile: sand
+    enemy:
+      name: d9w1
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-defence, defensive-attack, heavy-defence, heavy-defence]
+  C: {obstacle: cactus-short, tile: sand}
+  H:
+    tile: sand
+    enemy:
+      name: d9s2
+      profession: shaman
+      exp: 71
+      abilities: [black-spot, staff-of-teleportation, eery-mask, poisonous-dust, tambourine-of-oblivion, eery-mask]
+  K: {obstacle: palm2, tile: grass}
+  R: {tile: sand, obstacle: palm2}
+  O: {obstacle: well, tile: grass}
+  D: {obstacle: cactus-tall1, tile: sand}
+  S: {tile: grass, obstacle: pots}
+map:
+- [A, A, A, A, A, A, A, A, A, A, A, C]
+- [A, B, D, A, A, A, A, N, B, P, A, A]
+- [B, C, B, F, C, K, J, L, B, B, B, A]
+- [A, B, A, A, B, J, L, B, J, B, B, T]
+- [A, A, A, A, B, B, B, B, L, C, B, B]
+- [A, A, A, E, H, B, B, B, B, B, B, B]
+- [A, A, A, B, B, B, B, B, B, J, S, A]
+- [A, A, A, C, G, B, B, B, J, O, J, A]
+- [A, A, A, B, B, I, B, B, B, J, R, A]
+- [A, A, A, A, B, C, B, M, B, B, A, A]
+- [A, A, A, A, A, B, B, B, A, A, A, A]
+- [A, A, A, A, A, A, A, A, A, A, A, A]
+- [A, A, A, A, A, A, A, A, A, A, Q, C]
+- [A, A, A, A, A, A, A, A, A, A, C, A]
+---
+name: d-10
+parent: d-9
+x: 515
+y: 832
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 125}
+drop:
+- roll: 1-100
+  items:
+  - coin: 36
+  - dragonwort: {count: 1, range: 1-24}
+  - web: {count: 1, range: 16-33}
+shortcuts:
+  E: {tile: grass}
+  X: {tile: sand, obstacle: palm1}
+  N: {tile: grass, spawn: null}
+  T:
+    tile: sand
+    enemy:
+      name: d0c2
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, cleric-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+  Y: {tile: castle-bricks, obstacle: bones}
+  J: {tile: wooden-bridge}
+  U:
+    tile: sand
+    enemy:
+      name: d0w5
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-defence, heavy-defensive-attack, defensive-attack, heavy-defence, heavy-defensive-attack]
+  F: {obstacle: cactus-short, tile: sand}
+  A: {}
+  a:
+    tile: grass
+    enemy:
+      name: d0c1
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, cleric-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+  M:
+    enemy:
+      name: d0w4
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence, defensive-attack, heavy-defensive-attack]
+    tile: sand
+  I:
+    tile: sand
+    enemy:
+      name: d0s2
+      profession: shaman
+      exp: 71
+      abilities: [tambourine-of-oblivion, poisonous-dust, poisonous-dust, tambourine-of-oblivion, staff-of-teleportation,
+        poisonous-dust]
+  G:
+    tile: sand
+    enemy:
+      name: d0c3
+      profession: cleric
+      exp: 60
+      abilities: [area-of-defence, area-of-defence, cleric-defence, area-of-defence, area-of-defence, area-of-defence]
+  V:
+    tile: sand
+    enemy:
+      name: d0w2
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defensive-attack, defensive-attack, heavy-defence, heavy-defence, heavy-defence]
+  Q:
+    enemy:
+      name: d0s1
+      profession: shaman
+      exp: 71
+      abilities: [poisonous-dust, poisonous-dust, tambourine-of-oblivion, black-spot, poisonous-dust, tambourine-of-oblivion]
+    tile: sand
+  L:
+    enemy:
+      name: d0w3
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-defence, defensive-attack, heavy-defensive-attack, heavy-defensive-attack]
+    tile: sand
+  B: {tile: sand}
+  P:
+    enemy:
+      name: d0s3
+      profession: shaman
+      exp: 71
+      abilities: [eery-mask, tambourine-of-oblivion, black-spot, tambourine-of-oblivion, poisonous-dust, poisonous-dust]
+    tile: sand
+  C: {obstacle: palm1, tile: grass}
+  H: {tile: grass, obstacle: palm2}
+  W: {obstacle: column-damaged, tile: castle-bricks}
+  K:
+    tile: wooden-bridge
+    enemy:
+      name: d0w1
+      profession: warrior
+      exp: 60
+      abilities: [heavy-defence, heavy-defence, defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defence]
+  R: {tile: castle-bricks}
+  O: {spawn: null, tile: sand}
+  D:
+    tile: sand
+    enemy:
+      name: d0m3
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+  Z:
+    enemy:
+      name: d0m1
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning]
+    tile: sand
+  S:
+    tile: sand
+    enemy:
+      name: d0m2
+      profession: mage
+      exp: 71
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+map:
+- [A, A, A, A, A, A, A, A, F, A, A, A, A, A, A, A]
+- [A, A, A, A, A, A, A, A, T, F, A, A, A, A, A, A]
+- [A, A, A, A, A, A, A, P, S, B, A, A, A, A, A, A]
+- [A, A, A, A, A, A, L, B, B, V, A, A, A, A, A, A]
+- [A, A, A, A, A, A, B, B, B, B, B, X, A, A, A, A]
+- [A, A, A, A, A, A, B, B, O, O, B, E, E, A, A, A]
+- [A, C, E, G, I, A, B, O, E, B, R, F, E, H, a, B]
+- [B, B, D, B, B, K, E, E, R, R, O, B, E, Z, B, A]
+- [A, A, B, F, H, J, B, N, B, B, B, B, Y, W, A, A]
+- [A, A, A, A, B, A, A, E, O, O, B, R, A, A, A, A]
+- [A, A, A, A, A, A, C, B, B, B, R, A, A, A, A, A]
+- [A, A, A, A, A, A, B, B, B, B, W, A, A, A, A, A]
+- [A, A, A, A, A, A, B, M, B, U, A, A, A, A, A, A]
+- [A, A, A, A, A, A, A, B, Q, F, A, A, A, A, A, A]
+---
+name: d-11
+parent: d-10
+x: 543
+y: 917
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 133}
+drop:
+- roll: 1-100
+  items:
+  - coin: 38
+  - dragonwort: {count: 1, range: 1-24}
+  - web: {count: 1, range: 16-34}
+shortcuts:
+  E: {tile: sand, spawn: protagonist}
+  X:
+    tile: sand
+    enemy:
+      name: e1c1
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-antidote, area-of-defence, area-of-defence, area-of-defence, cleric-heavy-defence]
+  N:
+    tile: sand
+    enemy:
+      name: e1w3
+      profession: warrior
+      level: 6
+      abilities: [heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack]
+  T: {tile: arena-bricks, obstacle: arena-bones}
+  Y:
+    enemy:
+      name: e1m1
+      profession: mage
+      level: 6
+      abilities: [chain-lightning, chain-lightning, heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm]
+    tile: arena-bricks
+  J: {tile: sand, obstacle: cactus-tall2}
+  U:
+    tile: sand
+    enemy:
+      name: e1a1
+      profession: archer
+      level: 6
+      abilities: [speed, speed, speed, speed, heavy-shot, heavy-shot]
+  F: {obstacle: cactus-short, tile: sand}
+  A: {}
+  a:
+    tile: arena-bricks
+    enemy:
+      name: e1c3
+      profession: cleric
+      level: 6
+      abilities: [cleric-heavy-defence, area-of-antidote, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+  M: {tile: grass, obstacle: palm1}
+  I: {obstacle: cactus-tall1, tile: sand}
+  G: {tile: castle-bricks, obstacle: pots}
+  V:
+    enemy:
+      name: e1m3
+      profession: mage
+      level: 6
+      abilities: [firestorm, chain-lightning, heavy-firestorm, heavy-firestorm, firestorm, firestorm]
+    tile: arena-bricks
+  Q:
+    enemy:
+      name: e1s2
+      profession: shaman
+      level: 6
+      abilities: [poisonous-dust, staff-of-teleportation, tambourine-of-oblivion, tambourine-of-oblivion, poisonous-dust,
+        poisonous-dust]
+    tile: sand
+  L:
+    tile: sand
+    enemy:
+      name: e1w1
+      profession: warrior
+      level: 6
+      abilities: [heavy-speed-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-defensive-attack,
+        heavy-defensive-attack]
+  b:
+    tile: arena-bricks
+    enemy:
+      name: e1m2
+      profession: mage
+      level: 6
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, chain-lightning, heavy-firestorm]
+  B: {tile: castle-bricks, obstacle: torch}
+  P:
+    tile: arena-bricks
+    enemy:
+      name: e1a3
+      profession: archer
+      level: 6
+      abilities: [heavy-shot, speed, speed, speed, heavy-shot, speed]
+  C: {tile: castle-bricks, spawn: protagonist}
+  H: {tile: sand}
+  c:
+    enemy:
+      name: e1c2
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-antidote, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+    tile: arena-bricks
+  W:
+    enemy:
+      name: e1s3
+      profession: shaman
+      level: 6
+      abilities: [poisonous-dust, tambourine-of-oblivion, poisonous-dust, poisonous-dust, tambourine-of-oblivion, tambourine-of-oblivion]
+    tile: sand
+  K: {obstacle: pots, tile: sand}
+  R:
+    tile: arena-bricks
+    enemy:
+      name: e1a2
+      profession: archer
+      level: 6
+      abilities: [speed, heavy-elven-defence, speed, speed, heavy-shot, heavy-shot]
+  O:
+    tile: sand
+    enemy:
+      name: e1w2
+      profession: warrior
+      level: 6
+      abilities: [heavy-defence, heavy-defence, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack]
+  D: {obstacle: bones, tile: castle-bricks}
+  Z: {tile: arena-bricks, obstacle: arena-torch}
+  S:
+    tile: sand
+    enemy:
+      name: e1s1
+      profession: shaman
+      level: 6
+      abilities: [tambourine-of-oblivion, poisonous-dust, poisonous-dust, poisonous-dust, eery-mask, poisonous-dust]
+map:
+- [A, A, A, A, A, H, H, A, A, A]
+- [A, A, H, H, H, F, I, U, A, A]
+- [B, C, C, I, H, H, H, T, Y, Z]
+- [C, D, G, F, H, M, O, S, X, c]
+- [C, E, E, H, H, L, F, R, W, b]
+- [C, D, F, H, J, K, N, Q, T, a]
+- [B, C, C, H, H, H, J, P, V, Z]
+- [A, A, A, H, J, H, H, A, A, A]
+- [A, A, A, A, H, H, A, A, A, A]
+
+---
+name: d-12
+parent: d-11
+x: 475
+y: 921
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 142}
+drop:
+- roll: 1-100
+  items:
+  - coin: 40
+  - dragonwort: {count: 1, range: 1-24}
+  - web: {count: 1, range: 16-35}
+shortcuts:
+  E:
+    enemy:
+      name: e2s2
+      profession: shaman
+      level: 6
+      abilities: [poisonous-dust, tambourine-of-oblivion, poisonous-dust, tambourine-of-oblivion, staff-of-teleportation,
+        poisonous-dust]
+    tile: sand
+  X:
+    tile: sand
+    enemy:
+      name: e2m1
+      profession: mage
+      level: 6
+      abilities: [heavy-firestorm, chain-lightning, firestorm, firestorm, firestorm, heavy-firestorm]
+  N: {tile: grass, obstacle: palm1}
+  T:
+    enemy:
+      name: e2w3
+      profession: warrior
+      level: 6
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-speed-attack, heavy-defensive-attack, heavy-speed-attack, heavy-defensive-attack]
+    tile: sand
+  J: {tile: sand, obstacle: arena-bones}
+  U: {tile: grass, obstacle: palm2}
+  F:
+    tile: sand
+    enemy:
+      name: e2c2
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-antidote, area-of-defence]
+  A: {}
+  M:
+    enemy:
+      name: e2a2
+      profession: archer
+      level: 6
+      abilities: [heavy-shot, speed, speed, speed, heavy-shot, speed]
+    tile: sand
+  I: {tile: sand, spawn: protagonist}
+  G:
+    enemy:
+      name: e2m2
+      profession: mage
+      level: 6
+      abilities: [firestorm, firestorm, heavy-firestorm, firestorm, chain-lightning, heavy-firestorm]
+    tile: sand
+  V:
+    enemy:
+      name: e2c1
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, cleric-heavy-defence, area-of-antidote, area-of-defence, area-of-defence, area-of-defence]
+    tile: grass
+  Q:
+    tile: grass
+    enemy:
+      name: e2w1
+      profession: warrior
+      level: 6
+      abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence, heavy-defensive-attack]
+  L:
+    tile: sand
+    enemy:
+      name: e2c3
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence, area-of-defence, area-of-antidote]
+  B:
+    tile: sand
+    enemy:
+      name: e2m3
+      profession: mage
+      level: 6
+      abilities: [chain-lightning, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, heavy-firestorm]
+  P:
+    enemy:
+      name: e2c4
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence, area-of-defence, area-of-antidote]
+    tile: grass
+  C: {obstacle: pots, tile: sand}
+  H: {tile: sand}
+  W:
+    enemy:
+      name: e2w4
+      profession: warrior
+      level: 6
+      abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-speed-attack, heavy-defensive-attack,
+        heavy-defensive-attack]
+    tile: sand
+  K:
+    enemy:
+      name: e2w2
+      profession: warrior
+      level: 6
+      abilities: [heavy-speed-attack, heavy-defence, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack,
+        heavy-defensive-attack]
+    tile: sand
+  R: {obstacle: small-lake, tile: grass}
+  O:
+    tile: sand
+    enemy:
+      name: e2s1
+      profession: shaman
+      level: 6
+      abilities: [staff-of-teleportation, staff-of-teleportation, poisonous-dust, poisonous-dust, tambourine-of-oblivion,
+        poisonous-dust]
+  D:
+    enemy:
+      name: e2a1
+      profession: archer
+      level: 6
+      abilities: [speed, speed, speed, speed, heavy-elven-defence, heavy-shot]
+    tile: sand
+  S:
+    enemy:
+      name: e2s3
+      profession: shaman
+      level: 6
+      abilities: [poisonous-dust, poisonous-dust, poisonous-dust, poisonous-dust, poisonous-dust, null]
+    tile: sand
+map:
+- [A, A, A, A, H, S, A, A]
+- [A, A, A, L, O, R, W, A]
+- [A, F, H, H, N, Q, V, X]
+- [C, E, G, K, M, P, U, A]
+- [B, D, A, A, H, C, T, H]
+- [A, A, A, A, A, H, H, H]
+- [A, A, A, J, I, I, I, A]
+- [A, A, A, I, I, I, I, A]
+- [A, A, A, A, I, A, A, A]
+
+---
+name: d-13
+parent: d-12
+x: 385
+y: 897
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 152}
+drop:
+- roll: 1-100
+  items:
+  - coin: 42
+  - dragonwort: {count: 1, range: 1-25}
+  - web: {count: 1, range: 16-35}
+shortcuts:
+  E:
+    enemy:
+      name: e3c1
+      profession: cleric
+      level: 6
+      abilities: [area-of-antidote, area-of-defence, area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence]
+    tile: sand
+  N:
+    tile: sand
+    enemy:
+      name: e3c2
+      profession: cleric
+      level: 6
+      abilities: [area-of-antidote, cleric-heavy-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+  J: {tile: sand, spawn: protagonist}
+  F: {obstacle: cactus-short, tile: sand}
+  A: {}
+  M: {tile: sand, obstacle: cactus-tall2}
+  I:
+    tile: sand
+    enemy:
+      name: e3w3
+      profession: warrior
+      level: 6
+      abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-defensive-attack, heavy-defensive-attack,
+        heavy-defensive-attack]
+  G:
+    enemy:
+      name: e3w1
+      profession: warrior
+      level: 6
+      abilities: [heavy-speed-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack,
+        heavy-defensive-attack]
+    tile: sand
+  L:
+    tile: sand
+    enemy:
+      name: e3w4
+      profession: warrior
+      level: 6
+      abilities: [heavy-defence, heavy-speed-attack, heavy-speed-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack]
+  B:
+    enemy:
+      name: e3s2
+      profession: shaman
+      level: 6
+      abilities: [poisonous-dust, tambourine-of-oblivion, poisonous-dust, eery-mask, eery-mask, poisonous-dust]
+    tile: sand
+  P:
+    enemy:
+      name: e3s1
+      profession: shaman
+      level: 6
+      abilities: [staff-of-teleportation, eery-mask, poisonous-dust, poisonous-dust, poisonous-dust, poisonous-dust]
+    tile: sand
+  C:
+    enemy:
+      name: e3w2
+      profession: warrior
+      level: 6
+      abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack, heavy-defensive-attack,
+        heavy-defensive-attack]
+    tile: sand
+  H:
+    enemy:
+      name: e3m1
+      profession: mage
+      level: 6
+      abilities: [firestorm, heavy-firestorm, firestorm, heavy-firestorm, heavy-firestorm, null]
+    tile: sand
+  K: {tile: sand, obstacle: cactus-tall1}
+  O:
+    tile: sand
+    enemy:
+      name: e3w5
+      profession: warrior
+      level: 6
+      abilities: [heavy-speed-attack, heavy-speed-attack, heavy-defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defensive-attack]
+  D: {tile: sand}
+map:
+- [A, E, H, A, A, A, A, N, A]
+- [B, D, G, D, K, A, D, D, P]
+- [A, C, D, D, J, A, A, M, O]
+- [A, A, F, J, A, A, J, D, D]
+- [A, A, D, D, F, J, D, D, A]
+- [A, A, A, I, D, D, D, A, A]
+- [A, A, A, A, D, L, A, A, A]
+
+---
+name: d-14
+parent: d-13
+x: 296
+y: 913
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 163}
+drop:
+- roll: 1-100
+  items:
+  - coin: 44
+  - dragonwort: {count: 1, range: 1-26}
+  - web: {count: 1, range: 16-36}
+shortcuts:
+  E: {tile: grass}
+  X:
+    tile: sand
+    enemy:
+      name: e4m4
+      profession: mage
+      level: 6
+      abilities: [heavy-firestorm, heavy-firestorm, chain-lightning, heavy-firestorm, heavy-firestorm, chain-lightning]
+  N:
+    tile: sand
+    enemy:
+      name: e4a1
+      profession: archer
+      level: 6
+      abilities: [speed, speed, heavy-shot, heavy-shot, speed, speed]
+  T:
+    enemy:
+      name: e4w3
+      profession: warrior
+      level: 6
+      abilities: [heavy-defence, heavy-defence, heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-speed-attack]
+    tile: sand
+  Y:
+    tile: sand
+    enemy:
+      name: e4m2
+      profession: mage
+      level: 6
+      abilities: [chain-lightning, heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning]
+  J:
+    tile: grass
+    enemy:
+      name: e4m3
+      profession: mage
+      level: 6
+      abilities: [heavy-firestorm, chain-lightning, firestorm, firestorm, firestorm, heavy-firestorm]
+  U:
+    enemy:
+      name: e4a2
+      profession: archer
+      level: 6
+      abilities: [heavy-shot, heavy-shot, speed, speed, speed, speed]
+    tile: sand
+  F: {tile: grass, obstacle: palm1}
+  A: {}
+  M:
+    enemy:
+      name: e4w1
+      profession: warrior
+      level: 6
+      abilities: [heavy-defence, heavy-defence, heavy-defensive-attack, heavy-defensive-attack, heavy-defence, heavy-speed-attack]
+    tile: sand
+  I:
+    tile: sand
+    enemy:
+      name: e4w4
+      profession: warrior
+      level: 6
+      abilities: [heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack,
+        heavy-speed-attack]
+  G: {spawn: protagonist, tile: sand}
+  V:
+    tile: sand
+    enemy:
+      name: e4s3
+      profession: shaman
+      level: 6
+      abilities: [poisonous-dust, staff-of-teleportation, tambourine-of-oblivion, poisonous-dust, tambourine-of-oblivion,
+        poisonous-dust]
+  Q:
+    tile: wooden-bridge
+    enemy:
+      name: e4c1
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-antidote]
+  L: {tile: wooden-bridge}
+  B: {tile: sand}
+  P:
+    enemy:
+      name: e4w2
+      profession: warrior
+      level: 6
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-defence, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack]
+    tile: wooden-bridge
+  C: {tile: grass, obstacle: palm2}
+  H: {obstacle: cactus-tall1, tile: sand}
+  W:
+    tile: sand
+    enemy:
+      name: e4w5
+      profession: warrior
+      level: 6
+      abilities: [heavy-defensive-attack, heavy-defence, heavy-defence, heavy-defence, heavy-defence, heavy-speed-attack]
+  K: {obstacle: cactus-tall2, tile: sand}
+  R:
+    enemy:
+      name: e4s1
+      profession: shaman
+      level: 6
+      abilities: [tambourine-of-oblivion, tambourine-of-oblivion, poisonous-dust, poisonous-dust, staff-of-teleportation,
+        poisonous-dust]
+    tile: sand
+  O:
+    tile: sand
+    enemy:
+      name: e4s2
+      profession: shaman
+      level: 6
+      abilities: [tambourine-of-oblivion, staff-of-teleportation, poisonous-dust, poisonous-dust, staff-of-teleportation,
+        poisonous-dust]
+  D:
+    tile: sand
+    enemy:
+      name: e4m1
+      profession: mage
+      level: 6
+      abilities: [chain-lightning, heavy-firestorm, heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning]
+  Z: {obstacle: carpet, tile: sand}
+  S:
+    tile: sand
+    enemy:
+      name: e4c2
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-antidote]
+map:
+- [C, F, J, E, S, B, X, B, Z, B]
+- [B, E, E, O, B, V, B, B, B, A]
+- [A, D, I, N, R, U, W, Y, B, K]
+- [A, A, A, M, Q, T, H, A, A, A]
+- [A, A, A, L, P, L, A, A, A, A]
+- [A, A, H, L, L, L, A, A, A, A]
+- [A, A, G, L, L, G, A, A, A, A]
+- [A, A, G, B, B, G, A, A, A, A]
+- [A, A, A, G, G, G, A, A, A, A]
+- [A, A, A, K, B, A, A, A, A, A]
+
+---
+name: d-15
+parent: d-14
+x: 200
+y: 904
+background: {color: {r: 187, g: 189, b: 165}}
+rewards:
+  pass:
+    - {type: item, item: coin, count: 175}
+drop:
+- roll: 1-100
+  items:
+  - coin: 46
+  - dragonwort: {count: 1, range: 1-26}
+  - web: {count: 1, range: 16-38}
+shortcuts:
+  E: {obstacle: cactus-tall2, tile: sand}
+  X: {obstacle: cactus-tall1, tile: sand}
+  N:
+    tile: sand
+    enemy:
+      name: e5w2
+      profession: warrior
+      level: 6
+      abilities: [heavy-defensive-attack, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence, heavy-defence]
+  T:
+    enemy:
+      name: e5a1
+      profession: archer
+      level: 6
+      abilities: [heavy-shot, heavy-shot, speed, speed, speed, speed]
+    tile: sand
+  J:
+    enemy:
+      name: e5c1
+      profession: cleric
+      level: 6
+      abilities: [area-of-antidote, area-of-defence, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+    tile: arena-bricks
+  U:
+    tile: sand
+    enemy:
+      name: e5w1
+      profession: warrior
+      level: 6
+      abilities: [heavy-defence, heavy-defensive-attack, heavy-defensive-attack, heavy-defensive-attack, heavy-speed-attack,
+        heavy-defence]
+  F:
+    tile: sand
+    enemy:
+      name: e5s1
+      profession: shaman
+      level: 6
+      abilities: [staff-of-teleportation, poisonous-dust, poisonous-dust, staff-of-teleportation, poisonous-dust, tambourine-of-oblivion]
+  A: {}
+  M: {tile: sand, obstacle: cactus-short}
+  I:
+    enemy:
+      name: e5a2
+      profession: archer
+      level: 6
+      abilities: [heavy-shot, heavy-shot, speed, speed, speed, speed]
+    tile: arena-bricks
+  G: {tile: arena-bricks}
+  V: {tile: arena-bricks, spawn: protagonist}
+  Q:
+    tile: sand
+    enemy:
+      name: e5w3
+      profession: warrior
+      level: 6
+      abilities: [heavy-defence, heavy-defence, heavy-speed-attack, heavy-defence, heavy-defence, heavy-defence]
+  L:
+    tile: sand
+    enemy:
+      name: e5a3
+      profession: archer
+      level: 6
+      abilities: [speed, speed, heavy-shot, heavy-shot, heavy-elven-defence, speed]
+  B: {obstacle: bones, tile: sand}
+  P:
+    tile: sand
+    enemy:
+      name: e5m2
+      profession: mage
+      level: 6
+      abilities: [firestorm, firestorm, firestorm, heavy-firestorm, heavy-firestorm, chain-lightning]
+  C: {tile: sand}
+  H:
+    tile: sand
+    enemy:
+      name: e5s3
+      profession: shaman
+      level: 6
+      abilities: [poisonous-dust, poisonous-dust, poisonous-dust, poisonous-dust, poisonous-dust, null]
+  W: {tile: sand, spawn: protagonist}
+  K:
+    tile: sand
+    enemy:
+      name: e5s2
+      profession: shaman
+      level: 6
+      abilities: [poisonous-dust, poisonous-dust, staff-of-teleportation, poisonous-dust, tambourine-of-oblivion, staff-of-teleportation]
+  R:
+    enemy:
+      name: e5m3
+      profession: mage
+      level: 6
+      abilities: [heavy-firestorm, heavy-firestorm, heavy-firestorm, chain-lightning, heavy-firestorm, chain-lightning]
+    tile: sand
+  O:
+    tile: sand
+    enemy:
+      name: e5m1
+      profession: mage
+      level: 6
+      abilities: [chain-lightning, heavy-firestorm, heavy-firestorm, chain-lightning, heavy-firestorm, heavy-firestorm]
+  D:
+    enemy:
+      name: e5c3
+      profession: cleric
+      level: 6
+      abilities: [area-of-defence, area-of-defence, area-of-defence, cleric-heavy-defence, area-of-defence, area-of-antidote]
+    tile: sand
+  S:
+    tile: sand
+    enemy:
+      name: e5c2
+      profession: cleric
+      level: 6
+      abilities: [cleric-heavy-defence, area-of-antidote, area-of-defence, area-of-defence, area-of-defence, area-of-defence]
+map:
+- [D, H, E, O, A, A, A, A, A, A, A]
+- [C, G, J, N, C, A, A, A, X, A, A]
+- [B, F, I, C, C, M, B, A, A, A, A]
+- [A, A, C, C, C, G, C, C, W, W, B]
+- [A, A, A, M, E, C, G, V, V, X, C]
+- [A, E, A, A, C, C, G, C, W, W, A]
+- [A, B, A, A, C, C, M, A, A, A, A]
+- [A, A, A, L, C, C, C, A, A, A, A]
+- [A, A, A, K, Q, C, U, C, A, A, A]
+- [A, A, A, E, P, S, T, A, A, A, A]
+- [A, A, A, A, B, R, A, A, A, A, A]
+
+
+
+---
+name: friends-pvp
+parent: a-4
+icon-number: false
+icon-style: "-pvp"
+x: 559
+y: 73
+type: pvp
+mode: friends-2
+rewards:
+  pass:
+    - {type: item, item: coin, count: 5}
+  confirm:
+    - {type: item, item: coin, count: 5}
+drop:
+- roll: 1-100
+  items:
+  - coin: {count: 5, range: 1-85}
+  - coin: {count: 10, range: 1-10}
+  - coin: {count: 20, range: 1-2}
+- roll: 1-100
+  items:
+  - feather: {count: 1, range: 1-8}
+- roll: 1-100
+  items:
+  - applebloom: {count: 1, range: 1-7}
+- roll: 1-100
+  items:
+  - dragonwort: {count: 1, range: 1-6}
+- roll: 1-100
+  items:
+  - fireberries: {count: 1, range: 1-8}
+- roll: 1-100
+  items:
+  - sulfur: {count: 1, range: 1-6}
+- roll: 1-100
+  items:
+  - web: {count: 1, range: 1-6}
+- roll: 1-100
+  items:
+  - pearl: {count: 1, range: 1-1}
+  - ruby: {count: 1, range: 2-2}
+
+---
+name: global-pvp
+parent: m-1
+icon-number: false
+icon-style: "-global-pvp"
+x: 258
+y: 330
+type: pvp
+mode: global-2
+rewards:
+  pass:
+    - {type: item, item: coin, count: 10}
+  confirm:
+    - {type: item, item: coin, count: 10}
+drop:
+- roll: 1-100
+  items:
+  - coin: {count: 5, range: 1-85}
+  - coin: {count: 10, range: 1-10}
+  - coin: {count: 20, range: 1-2}
+- roll: 1-100
+  items:
+  - feather: {count: 1, range: 1-16}
+- roll: 1-100
+  items:
+  - applebloom: {count: 1, range: 1-18}
+- roll: 1-100
+  items:
+  - dragonwort: {count: 1, range: 1-12}
+- roll: 1-100
+  items:
+  - fireberries: {count: 1, range: 1-16}
+- roll: 1-100
+  items:
+  - sulfur: {count: 1, range: 1-12}
+- roll: 1-100
+  items:
+  - web: {count: 1, range: 1-12}
+- roll: 1-100
+  items:
+  - pearl: {count: 1, range: 1-4}
+  - ruby: {count: 1, range: 5-8}
+
+---
+name: pvp-2-c-1
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [a, p]
+relations: {'p:a': enemy}
+shortcuts:
+  E: {spawn: p, tile: castle-bricks}
+  J: {cover: carpet, tile: castle-bricks, spawn: p}
+  F: {tile: castle-bricks, obstacle: bones}
+  A: {}
+  I: {tile: castle-bricks, obstacle: torch}
+  G: {obstacle: trap, tile: castle-bricks}
+  L: {tile: castle-bricks, cover: carpet, spawn: a}
+  B: {obstacle: column-damaged, tile: castle-bricks}
+  C: {tile: castle-bricks}
+  H: {tile: castle-bricks, spawn: a}
+  K: {cover: carpet, tile: castle-bricks}
+  D: {obstacle: column, tile: castle-bricks}
+map:
+- [A, H, H, L, H, H, A]
+- [B, G, H, L, H, C, D]
+- [C, C, C, K, C, F, C]
+- [D, C, I, K, I, C, B]
+- [C, F, C, K, C, C, C]
+- [B, C, E, J, E, F, B]
+- [A, E, E, J, E, E, A]
+
+---
+name: pvp-2-c-2
+hidden: true
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {spawn: protagonist, tile: castle-bricks}
+  J: {obstacle: table-meat, tile: castle-bricks}
+  F: {spawn: antagonist, tile: castle-bricks}
+  A: {}
+  I: {tile: castle-bricks, obstacle: bones}
+  G: {tile: castle-bricks, obstacle: column}
+  B: {tile: castle-bricks, obstacle: torch}
+  C: {tile: castle-bricks}
+  H: {obstacle: trap, tile: castle-bricks}
+  D: {obstacle: column-damaged, tile: castle-bricks}
+map:
+- [A, A, A, G, F, C, A, A, C, E, D, A, A, A]
+- [A, A, A, F, I, F, C, C, E, C, E, A, A, A]
+- [B, C, C, C, F, C, A, A, J, E, C, C, C, B]
+- [A, C, A, A, C, A, A, A, A, H, A, A, C, A]
+- [A, C, A, A, I, A, A, A, A, C, A, A, C, A]
+- [B, C, C, C, E, C, A, A, I, F, C, C, C, B]
+- [A, A, A, E, H, E, C, C, F, C, F, A, A, A]
+- [A, A, A, D, E, C, A, A, C, F, D, A, A, A]
+
+---
+name: pvp-2-c-3
+hidden: true
+background: {objects: [dark-cloud1, dark-cloud2], color: {r: 102, g: 141, b: 144}}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: castle-bricks, spawn: protagonist}
+  A: {tile: castle-bricks, spawn: antagonist}
+  B: {tile: castle-bricks}
+  C: {}
+  D: {obstacle: torch, tile: castle-bricks}
+map:
+- [A, B, B, C, C, B, C, C, B, B, E]
+- [B, D, B, C, C, B, C, C, B, D, B]
+- [A, A, B, B, B, B, B, B, B, E, E]
+- [C, C, B, C, C, B, C, C, B, C, C]
+- [C, C, B, C, C, B, C, C, B, C, C]
+- [A, A, B, B, B, D, B, B, B, E, E]
+- [C, C, B, C, C, B, C, C, B, C, C]
+- [C, C, B, C, C, B, C, C, B, C, C]
+- [A, A, B, B, B, B, B, B, B, E, E]
+- [B, D, B, C, C, B, C, C, B, D, B]
+- [A, B, B, C, C, B, C, C, B, B, E]
+
+---
+name: pvp-2-m-1
+hidden: true
+background: {objects: [cloud1, cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: magic-ground}
+  N: {tile: magic-ground, obstacle: fountain, cover: crystals}
+  J: {spawn: antagonist, tile: magic-ground}
+  F: {cover: crystals, tile: magic-ground, spawn: protagonist}
+  A: {}
+  M: {tile: magic-ground, cover: crystals, obstacle: treeshroom}
+  I: {spawn: antagonist, tile: magic-ground, cover: crystals}
+  G: {obstacle: treeshroom-pair, tile: magic-ground}
+  L: {obstacle: crystal, cover: crystals, tile: magic-ground}
+  B: {obstacle: crystal, tile: magic-ground}
+  C: {cover: crystals, tile: magic-ground}
+  H: {spawn: protagonist, tile: magic-ground}
+  K: {tile: magic-ground, obstacle: crystal-violet}
+  D: {obstacle: treeshroom, tile: magic-ground}
+map:
+- [A, A, A, I, A, A, K, A, A]
+- [A, A, G, J, J, A, J, M, K]
+- [A, A, A, I, J, J, J, L, A]
+- [C, E, C, E, E, C, E, A, A]
+- [B, A, A, E, D, C, E, A, N]
+- [A, A, A, A, E, E, C, A, A]
+- [A, A, B, F, H, F, H, H, A]
+- [A, D, F, H, A, A, H, L, K]
+- [A, A, A, E, C, A, A, G, A]
+
+---
+name: pvp-2-m-2
+hidden: true
+background: {objects: [cloud1, cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: magic-ground, spawn: antagonist}
+  F: {tile: magic-ground, cover: crystals, spawn: antagonist}
+  A: {}
+  I: {tile: magic-ground, spawn: protagonist, cover: crystals}
+  G: {spawn: protagonist, tile: magic-ground}
+  B: {obstacle: crystal, tile: magic-ground}
+  C: {tile: magic-ground}
+  H: {tile: magic-ground, obstacle: crystal-violet}
+  D: {tile: magic-ground, cover: crystals}
+map:
+- [A, A, A, A, A, A, C, A, A, A]
+- [A, A, D, A, A, C, C, A, A, A]
+- [A, A, E, F, E, E, C, C, A, A]
+- [A, C, E, C, C, C, C, C, B, C]
+- [B, C, E, D, C, C, D, D, C, A]
+- [A, A, E, C, C, C, D, A, A, A]
+- [A, A, A, C, H, C, C, G, C, C]
+- [A, A, D, C, C, C, C, I, C, A]
+- [A, C, C, A, C, D, C, G, D, A]
+- [A, A, A, A, G, G, G, G, A, A]
+- [A, A, A, A, C, A, A, H, A, A]
+
+
+---
+name: pvp-2-m-3
+hidden: true
+background: {objects: [cloud1, cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {cover: crystals, tile: magic-ground}
+  F: {tile: magic-ground, spawn: protagonist}
+  A: {}
+  I: {tile: magic-ground, cover: crystals, spawn: antagonist}
+  G: {spawn: protagonist, tile: magic-ground, cover: crystals}
+  B: {obstacle: treeshroom-pair, tile: magic-ground}
+  C: {tile: magic-ground}
+  H: {spawn: antagonist, tile: magic-ground}
+  D: {tile: magic-ground, obstacle: treeshroom}
+map:
+- [A, A, H, H, C, B, A, A, A]
+- [A, C, H, H, I, H, C, C, A]
+- [D, C, E, E, A, A, A, A, A]
+- [C, C, C, E, A, H, H, C, C]
+- [A, A, C, C, A, A, A, C, C]
+- [A, A, A, C, C, E, E, C, D]
+- [B, F, F, C, C, C, E, A, A]
+- [A, E, C, C, C, C, C, C, A]
+- [A, E, G, F, F, F, C, C, A]
+- [A, A, A, A, F, F, D, A, A]
+
+
+---
+name: pvp-2-a-1
+hidden: true
+background: {objects: [cloud1, cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: grass, spawn: antagonist}
+  F: {tile: grass}
+  A: {}
+  G: {tile: grass, spawn: protagonist}
+  B: {tile: grass, obstacle: sign}
+  C: {obstacle: bush, tile: grass}
+  H: {tile: wooden-bridge}
+  D: {obstacle: tree, tile: grass}
+map:
+- [A, A, A, G, G, G, G, A, A, A]
+- [A, C, F, F, F, G, G, G, A, A]
+- [A, A, F, F, F, F, F, F, F, A]
+- [A, A, A, D, F, F, F, A, A, A]
+- [B, A, A, A, H, H, A, A, A, A]
+- [A, A, A, A, F, F, F, A, A, C]
+- [A, A, E, F, F, F, F, G, A, A]
+- [A, A, A, A, F, F, A, A, A, A]
+- [A, A, A, A, H, H, A, A, A, A]
+- [A, C, A, F, F, F, F, A, D, A]
+- [A, A, A, F, F, F, F, F, F, F]
+- [A, A, D, F, F, F, F, F, F, F]
+- [A, A, A, F, E, E, E, E, F, A]
+- [A, A, A, A, A, E, E, E, A, A]
+
+---
+name: pvp-2-a-2
+hidden: true
+background: {objects: [cloud1, cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: grass}
+  F: {obstacle: barrels, tile: grass}
+  A: {}
+  G: {tile: wooden-bridge}
+  B: {obstacle: bush, tile: grass}
+  C: {tile: grass, spawn: antagonist}
+  H: {tile: grass, spawn: protagonist}
+  D: {obstacle: appletree, tile: grass}
+map:
+- [A, A, E, B, A, A, A, A, A, A, A]
+- [A, A, H, E, A, A, A, A, A, A, A]
+- [A, A, A, G, A, A, A, A, A, A, A]
+- [A, A, A, E, H, H, H, A, A, A, A]
+- [A, F, E, E, E, H, H, H, A, D, D]
+- [A, A, E, E, E, E, E, E, G, E, A]
+- [A, A, A, B, E, E, E, A, A, H, A]
+- [D, A, A, E, E, E, E, A, A, A, A]
+- [C, E, G, E, E, E, F, A, A, A, A]
+- [B, A, A, E, E, E, A, A, A, A, A]
+- [A, A, C, E, E, E, A, C, A, A, A]
+- [A, A, C, C, C, E, G, E, D, A, A]
+- [A, A, A, A, C, C, A, A, E, A, A]
+
+---
+name: pvp-2-a-3
+hidden: true
+background: {objects: [cloud1, cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: grass, obstacle: bush}
+  F: {spawn: antagonist, tile: grass}
+  A: {}
+  G: {tile: grass, spawn: protagonist}
+  B: {obstacle: fountain, tile: grass}
+  C: {tile: grass}
+  D: {obstacle: small-lake, tile: grass}
+map:
+- [A, A, A, C, C, A, A, A, A, B, A]
+- [A, A, C, D, C, G, G, G, A, A, A]
+- [A, A, A, C, C, C, C, C, C, A, A]
+- [A, A, A, G, G, G, C, C, G, E, A]
+- [A, D, C, C, C, C, C, C, C, A, A]
+- [A, C, C, C, C, C, C, C, A, A, A]
+- [A, A, C, C, C, C, C, C, D, C, A]
+- [B, A, C, C, C, C, C, C, C, C, A]
+- [A, A, A, C, C, C, C, C, A, A, A]
+- [A, A, C, F, F, F, C, C, F, A, A]
+- [A, A, A, E, C, C, C, C, C, A, B]
+- [A, A, A, A, A, F, F, F, A, A, A]
+
+---
+name: pvp-2-w-1
+hidden: true
+background: {objects: [cloud1, cloud2]}
+
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {obstacle: crack, tile: ground}
+  F: {obstacle: mushroom, tile: ground}
+  A: {}
+  B: {tile: ground, spawn: protagonist}
+  C: {tile: ground}
+  D: {tile: ground, spawn: antagonist}
+map:
+- [A, A, A, B, B, A, A, A, A, A, A]
+- [A, A, A, C, C, C, A, A, A, A, A]
+- [A, A, F, C, C, C, C, A, C, B, B]
+- [D, C, C, C, C, C, E, C, C, C, C]
+- [D, C, C, C, C, C, C, C, C, C, A]
+- [A, C, E, C, C, C, B, C, C, F, A]
+- [A, C, C, C, D, C, C, C, C, C, D]
+- [C, C, C, C, C, C, C, C, C, C, D]
+- [B, B, C, C, C, C, C, C, E, C, A]
+- [A, A, C, F, C, C, C, C, C, C, A]
+- [A, A, A, A, C, C, D, D, A, A, A]
+- [A, A, A, A, C, C, A, A, A, A, A]
+
+
+---
+name: pvp-2-w-2
+hidden: true
+background: {objects: [cloud1, cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {obstacle: stone1, tile: ground}
+  F: {spawn: protagonist, tile: ground}
+  A: {}
+  B: {tile: ground, spawn: antagonist}
+  C: {tile: ground}
+  D: {tile: ground, obstacle: mushroom}
+map:
+- [A, A, A, A, D, C, C, A, A, A, A]
+- [A, A, C, C, C, C, E, C, C, A, A]
+- [A, E, B, C, C, C, C, C, F, C, A]
+- [A, B, C, C, C, C, C, C, C, F, A]
+- [B, C, C, E, C, A, C, C, C, C, F]
+- [C, B, C, C, A, A, A, C, C, F, E]
+- [B, C, C, C, C, A, C, C, C, C, F]
+- [A, B, C, C, C, C, C, C, E, F, A]
+- [A, D, B, C, C, C, C, C, F, C, A]
+- [A, A, C, C, C, C, D, C, C, A, A]
+- [A, A, A, A, E, C, C, A, A, A, A]
+
+
+---
+name: pvp-2-w-3
+hidden: true
+background: {objects: [cloud1, cloud2]}
+
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {spawn: protagonist, tile: ground}
+  F: {spawn: antagonist, tile: ground}
+  A: {}
+  G: {tile: wooden-bridge}
+  B: {tile: ground, obstacle: sign}
+  C: {tile: ground}
+  D: {obstacle: pumpkin, tile: ground}
+map:
+- [A, A, A, A, A, A, F, C, C, F, C, D, A]
+- [A, A, A, F, C, C, C, F, A, A, A, C, D]
+- [A, C, C, C, C, F, C, C, C, B, A, A, C]
+- [D, C, F, A, C, C, D, F, C, F, C, A, A]
+- [C, C, A, A, A, A, A, A, A, G, A, A, A]
+- [B, C, C, A, C, C, A, A, A, G, A, A, B]
+- [A, C, E, C, D, E, C, D, C, C, E, C, D]
+- [A, A, A, C, C, C, C, E, C, E, C, A, A]
+- [A, A, A, A, A, E, B, C, C, A, A, A, A]
+- [A, A, A, A, A, C, C, A, E, A, C, A, A]
+- [A, A, A, A, A, A, A, A, C, E, D, A, A]
+
+
+---
+name: pvp-2-d-1
+hidden: true
+background: {color: {r: 187, g: 189, b: 165}}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: sand, obstacle: cactus-tall2}
+  N: {tile: wooden-bridge}
+  J: {tile: sand, spawn: protagonist}
+  F: {obstacle: pots, tile: grass}
+  A: {}
+  M: {tile: grass, obstacle: palm1}
+  I: {spawn: antagonist, tile: grass}
+  G: {tile: grass}
+  L: {obstacle: well, tile: grass}
+  B: {tile: sand}
+  C: {obstacle: cactus-short, tile: sand}
+  H: {obstacle: palm2, tile: grass}
+  K: {spawn: antagonist, tile: sand}
+  D: {tile: sand, obstacle: cactus-tall1}
+map:
+- [A, A, A, A, A, A, B, A, A, A]
+- [A, B, C, A, A, E, B, J, J, A]
+- [B, D, B, B, B, J, J, J, D, B]
+- [A, B, B, D, J, J, C, B, B, A]
+- [A, A, B, B, B, A, A, N, A, A]
+- [A, C, B, H, I, L, A, N, A, A]
+- [A, B, F, G, I, I, M, B, E, A]
+- [A, A, E, B, G, K, K, K, C, A]
+- [A, A, A, A, B, B, D, K, A, A]
+- [A, A, A, A, A, E, B, A, A, A]
+
+---
+name: pvp-2-d-2
+hidden: true
+background: {color: {r: 187, g: 189, b: 165}}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: sand, obstacle: cactus-tall2}
+  J: {tile: sand, spawn: protagonist}
+  F: {tile: sand}
+  A: {}
+  I: {spawn: antagonist, tile: castle-bricks}
+  G: {tile: sand, obstacle: cactus-short}
+  B: {tile: castle-bricks}
+  C: {obstacle: column-damaged, tile: castle-bricks}
+  H: {spawn: antagonist, tile: sand}
+  K: {tile: sand, obstacle: cactus-tall1}
+  D: {spawn: protagonist, tile: castle-bricks}
+map:
+- [A, A, C, A, A, A, A, A, A, A, A]
+- [A, A, I, I, B, A, H, H, A, A, A]
+- [A, F, H, H, F, F, F, B, K, A, A]
+- [A, E, F, F, B, F, F, F, H, H, A]
+- [A, A, F, F, F, F, F, F, H, I, B]
+- [A, A, G, F, F, F, F, F, B, F, B]
+- [A, B, F, F, F, F, F, K, F, F, C]
+- [B, D, D, F, F, F, F, F, F, F, A]
+- [A, D, D, B, F, F, F, F, F, F, A]
+- [A, C, A, F, F, F, J, J, F, F, A]
+- [A, A, A, J, J, F, J, J, A, A, A]
+- [A, A, A, A, A, G, F, A, A, A, A]
+
+---
+name: pvp-2-d-3
+hidden: true
+background: {color: {r: 187, g: 189, b: 165}}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {spawn: antagonist, tile: grass}
+  J: {tile: grass, spawn: protagonist}
+  F: {tile: sand, spawn: antagonist}
+  A: {}
+  M: {spawn: protagonist, tile: sand}
+  I: {tile: grass, obstacle: pots}
+  G: {tile: grass, obstacle: well}
+  L: {tile: sand, obstacle: bones}
+  B: {tile: sand}
+  C: {tile: grass}
+  H: {obstacle: cactus-tall1, tile: sand}
+  K: {obstacle: carpet, tile: grass}
+  D: {tile: sand, obstacle: cactus-tall2}
+map:
+- [A, A, B, B, C, I, C, A, A, A]
+- [A, B, B, H, B, C, J, J, A, A]
+- [D, B, B, B, B, B, J, M, C, B]
+- [A, B, B, B, B, B, B, B, B, A]
+- [A, A, G, B, B, B, B, B, H, A]
+- [A, C, C, C, B, B, B, L, A, A]
+- [C, E, E, B, B, B, B, B, B, A]
+- [B, E, F, B, B, B, C, K, B, B]
+- [A, B, B, B, B, B, C, B, B, A]
+- [A, A, A, A, D, B, B, B, A, A]
+
+
+---
+name: global-pvp-1
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: arena-bricks, spawn: antagonist}
+  F: {tile: arena-bricks, obstacle: arena-trap}
+  A: {}
+  G: {spawn: protagonist, tile: arena-bricks}
+  B: {tile: arena-bricks}
+  C: {tile: arena-bricks, obstacle: arena-bones}
+  D: {tile: arena-bricks, obstacle: arena-torch}
+map:
+- [A, A, A, A, G, C, A, A, A, A]
+- [A, A, B, B, B, G, B, B, A, A]
+- [A, D, B, B, A, A, G, B, D, A]
+- [A, B, B, B, B, B, G, G, B, A]
+- [C, B, A, B, F, B, B, A, G, B]
+- [B, E, A, B, B, F, B, A, B, F]
+- [A, B, E, E, B, B, B, B, B, A]
+- [A, D, B, E, A, A, B, B, D, A]
+- [A, A, B, B, E, B, B, B, A, A]
+- [A, A, A, A, B, E, A, A, A, A]
+
+---
+name: global-pvp-2
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [protagonist, antagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: arena-bricks, obstacle: arena-bones}
+  F: {spawn: antagonist, tile: arena-bricks}
+  A: {}
+  G: {tile: arena-bricks, obstacle: arena-trap}
+  B: {obstacle: arena-torch, tile: arena-bricks}
+  C: {tile: arena-bricks}
+  D: {tile: arena-bricks, spawn: protagonist}
+map:
+- [A, A, A, A, F, A, A, A, A]
+- [A, A, A, F, F, F, A, A, A]
+- [A, A, C, F, F, F, C, A, A]
+- [A, C, C, C, C, C, C, C, A]
+- [B, C, C, E, G, E, C, C, B]
+- [A, C, C, C, C, C, C, C, A]
+- [A, A, C, D, D, D, C, A, A]
+- [A, A, A, D, D, D, A, A, A]
+- [A, A, A, A, D, A, A, A, A]
+
+---
+name: global-pvp-3
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [protagonist, antagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {}
+  F: {tile: arena-bricks, spawn: antagonist}
+  A: {obstacle: arena-bones, tile: arena-bricks}
+  G: {tile: arena-bricks, obstacle: bones}
+  B: {tile: arena-bricks}
+  C: {spawn: protagonist, tile: arena-bricks}
+  D: {tile: arena-bricks, obstacle: arena-torch}
+map:
+- [B, B, B, F, F, B, A]
+- [F, F, B, B, B, B, B]
+- [E, E, E, E, E, F, F]
+- [D, B, B, B, B, B, B]
+- [B, B, B, G, B, B, D]
+- [C, C, E, E, E, E, E]
+- [B, B, B, B, B, C, C]
+- [A, B, C, C, B, B, B]
+
+---
+name: global-pvp-4
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [protagonist, antagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {spawn: antagonist, tile: arena-bricks}
+  F: {obstacle: bones, tile: arena-bricks}
+  A: {obstacle: arena-torch, tile: arena-bricks}
+  B: {spawn: protagonist, tile: arena-bricks}
+  C: {tile: arena-bricks}
+  D: {tile: arena-bricks, obstacle: arena-trap}
+map:
+- [E, C, E, C, E, C, E, A]
+- [C, E, C, E, F, E, C, E]
+- [E, C, E, C, E, C, E, C]
+- [C, C, C, C, C, C, C, D]
+- [D, C, C, C, C, C, C, C]
+- [C, B, F, B, C, B, C, B]
+- [B, C, B, C, B, C, B, C]
+- [A, B, C, B, C, B, C, B]
+
+---
+name: global-pvp-5
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [protagonist, antagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {spawn: protagonist, tile: arena-bricks}
+  F: {tile: arena-bricks, spawn: antagonist}
+  A: {}
+  B: {tile: arena-bricks}
+  C: {obstacle: arena-torch, tile: arena-bricks}
+  D: {tile: arena-bricks, obstacle: arena-bones}
+map:
+- [A, B, F, B, F, B, A]
+- [B, B, B, F, B, B, B]
+- [D, B, A, A, A, B, B]
+- [C, B, A, C, A, B, C]
+- [B, B, A, A, A, B, B]
+- [B, B, B, E, B, B, D]
+- [A, B, E, B, E, B, A]
+
+---
+name: global-pvp-6
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [protagonist, antagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {tile: arena-bricks, spawn: antagonist}
+  F: {tile: arena-bricks, obstacle: arena-trap}
+  A: {}
+  B: {spawn: protagonist, tile: arena-bricks}
+  C: {tile: arena-bricks, obstacle: arena-torch}
+  D: {tile: arena-bricks}
+map:
+- [A, A, A, E, A, E, A, A, A]
+- [A, C, A, E, E, E, A, C, A]
+- [A, A, A, D, D, D, A, A, A]
+- [B, B, D, D, D, D, D, E, E]
+- [A, B, D, D, F, D, D, E, A]
+- [B, B, D, D, D, D, D, E, E]
+- [A, A, A, D, D, D, A, A, A]
+- [A, C, A, B, B, B, A, C, A]
+- [A, A, A, B, A, B, A, A, A]
+
+---
+name: global-pvp-7
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [protagonist, antagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {spawn: protagonist, tile: arena-bricks}
+  F: {spawn: antagonist, tile: arena-bricks}
+  A: {}
+  B: {tile: arena-bricks, obstacle: arena-torch}
+  C: {tile: arena-bricks}
+  D: {tile: arena-bricks, obstacle: arena-bones}
+map:
+- [A, A, A, A, B, A, A, A, A]
+- [A, C, C, A, A, A, C, C, A]
+- [A, C, F, C, A, C, F, D, A]
+- [A, A, C, F, F, F, C, A, A]
+- [B, A, A, C, C, C, A, A, B]
+- [A, A, C, E, E, E, C, A, A]
+- [A, D, E, C, A, C, E, C, A]
+- [A, C, C, A, A, A, C, C, A]
+- [A, A, A, A, B, A, A, A, A]
+
+---
+name: global-pvp-8
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [protagonist, antagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {spawn: antagonist, tile: arena-bricks}
+  A: {}
+  B: {tile: arena-bricks, spawn: protagonist}
+  C: {tile: arena-bricks}
+  D: {tile: arena-bricks, obstacle: bones}
+map:
+- [A, A, A, A, E, A, A, A, A]
+- [A, A, A, C, E, D, A, A, A]
+- [A, A, A, C, C, E, A, A, A]
+- [A, C, C, C, C, E, E, C, A]
+- [B, B, C, C, C, C, C, E, E]
+- [A, C, B, B, C, C, C, C, A]
+- [A, A, A, B, C, C, A, A, A]
+- [A, A, A, D, B, C, A, A, A]
+- [A, A, A, A, B, A, A, A, A]
+
+---
+name: global-pvp-9
+hidden: true
+background: {color: {r: 102, g: 141, b: 144}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [protagonist, antagonist]
+relations: {'protagonist:antagonist': enemy}
+shortcuts:
+  E: {spawn: protagonist, tile: arena-bricks}
+  F: {tile: arena-bricks, obstacle: arena-trap}
+  A: {}
+  B: {tile: arena-bricks}
+  C: {tile: arena-bricks, obstacle: arena-torch}
+  D: {spawn: antagonist, tile: arena-bricks}
+map:
+- [A, D, D, D, C, D, D, D, A]
+- [D, D, D, D, B, B, B, B, B]
+- [D, B, B, B, B, B, B, B, B]
+- [D, B, B, F, B, F, B, B, B]
+- [C, B, B, B, B, B, B, B, C]
+- [B, B, B, F, B, F, B, B, E]
+- [B, B, B, B, B, B, B, B, E]
+- [B, B, B, B, B, B, E, E, E]
+- [A, E, E, E, C, E, E, E, A]
+
+---
+name: final-boss
+parent: d-15
+x: 92
+y: 919
+level-icon: dragon
+background: {color: {r: 127, g: 107, b: 111}, objects: [dark-cloud1, dark-cloud2]}
+fractions: [antagonist, protagonist]
+relations: {'protagonist:antagonist': enemy}
+rewards:
+  pass:
+  - {type: ability, abilities: [heavy-fireball, heavy-chain-lightning, ice-storm, summon-dale, super-elven-defence, poison-shot, super-attack, double-defensive-attack, viscosity, petrification, dragon-enthrallment, stupefaction]}
+  - {type: item, item: coin, count: 200}
+  confirm:
+  - {type: ability, abilities: [heavy-fireball, heavy-chain-lightning, ice-storm, summon-dale, super-elven-defence, poison-shot, super-attack, double-defensive-attack, viscosity, petrification, dragon-enthrallment, stupefaction]}
+drop:
+- roll: 1-100
+  items:
+  - coin: 50
+shortcuts:
+  E: {obstacle: boss-bones, tile: boss-bricks}
+  J:
+    tile: boss-bricks
+    step-detector: {name: warrior, requirement: {profession: warrior}}
+  F: {spawn: protagonist, tile: boss-bricks}
+  A: {}
+  I:
+    enemy:
+      name: boss
+      profession: boss
+      level: 1
+      abilities: [boss-summon-1, boss-summon-2, boss-summon-3, boss-summon-4, boss-summon-5, boss-summon-6]
+    tile: boss-bricks
+  G:
+    tile: boss-bricks
+    step-detector: {name: archer, requirement: {profession: archer}}
+  L:
+    tile: boss-bricks
+    step-detector: {name: mage, requirement: {profession: mage}}
+  B: {tile: boss-bricks}
+  C: {obstacle: boss-mushroom, tile: boss-bricks}
+  H:
+    tile: boss-bricks
+    step-detector: {name: shaman, requirement: {profession: shaman}}
+  K:
+    tile: boss-bricks
+    step-detector: {name: cleric, requirement: {profession: cleric}}
+  D: {tile: boss-bricks, obstacle: boss-lava}
+map:
+- [A, A, A, A, A, D, B, B, A, A, A, A, A]
+- [A, A, A, A, B, B, J, B, B, A, A, A, A]
+- [A, A, A, A, E, B, B, B, B, A, A, A, A]
+- [A, A, A, A, B, B, B, B, B, A, A, A, A]
+- [D, B, B, B, C, B, B, B, D, B, B, B, B]
+- [B, G, B, B, B, B, B, B, B, B, B, L, B]
+- [B, B, B, B, B, B, I, B, B, B, C, B, B]
+- [B, F, F, F, B, B, B, B, B, F, F, F, B]
+- [C, F, F, F, D, A, A, A, B, F, F, F, E]
+- [B, B, B, B, B, A, A, A, B, B, B, B, B]
+- [B, B, B, H, B, A, A, A, B, K, B, B, B]
+- [A, E, B, B, B, A, A, A, C, B, B, B, A]

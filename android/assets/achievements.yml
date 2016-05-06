@@ -1,0 +1,254 @@
+#
+# obtain die achievements
+#
+---
+name: obtain-archer
+id: CgkIsNnQ2ZcKEAIQAQ
+events: [startup, obtain-die]
+condition: any-of
+params:
+- condition: has-die
+  params: {profession: archer}
+- condition: obtained-die
+  params: {profession: archer}
+---
+name: obtain-mage
+id: CgkIsNnQ2ZcKEAIQAg
+events: [startup, obtain-die]
+condition: any-of
+params:
+- condition: has-die
+  params: {profession: mage}
+- condition: obtained-die
+  params: {profession: mage}
+---
+name: obtain-cleric
+id: CgkIsNnQ2ZcKEAIQAw
+events: [startup, obtain-die]
+condition: any-of
+params:
+- condition: has-die
+  params: {profession: cleric}
+- condition: obtained-die
+  params: {profession: cleric}
+---
+name: obtain-shaman
+id: CgkIsNnQ2ZcKEAIQBA
+events: [startup, obtain-die]
+condition: any-of
+params:
+- condition: has-die
+  params: {profession: shaman}
+- condition: obtained-die
+  params: {profession: shaman}
+
+#
+# potions
+#
+---
+name: first-ingredient
+id: CgkIsNnQ2ZcKEAIQBQ
+events: [startup, earn-item]
+condition: any-of
+params:
+- condition: has-item
+  params: {type: ingredient}
+- condition: earned-item
+  params: {type: ingredient}
+---
+name: first-potion
+id: CgkIsNnQ2ZcKEAIQBg
+events: [startup, brew-potion]
+condition: any-of
+params:
+- condition: has-potion
+- condition: brewed-potion
+---
+name: all-potions
+id: CgkIsNnQ2ZcKEAIQBw
+events: [startup, brew-potion]
+condition: has-every-potion
+
+#
+# levels
+#
+---
+name: all-fortress-levels
+id: CgkIsNnQ2ZcKEAIQCA
+events: [startup, end-level]
+condition: levels-completed
+params: [c-1, c-2, c-3, c-4, c-5, c-6, c-7]
+---
+name: all-wasteland-levels
+id: CgkIsNnQ2ZcKEAIQCg
+events: [startup, end-level]
+condition: levels-completed
+params: [tutorial, w-1, w-2, w-3, w-4, w-5, w-6, w-7, w-8, w-9]
+---
+name: all-woodlands-levels
+id: CgkIsNnQ2ZcKEAIQCw
+events: [startup, end-level]
+condition: levels-completed
+params: [a-1, a-2, a-3, a-4, a-5, a-6, a-7, a-8, a-9, a-10]
+---
+name: all-mages-levels
+id: CgkIsNnQ2ZcKEAIQDA
+events: [startup, end-level]
+condition: levels-completed
+params: [m-1, m-2, m-3, m-4, m-5, m-6, m-7, m-8, m-9, m-10, m-11, m-12, m-13, m-14, m-15]
+---
+name: all-desert-levels
+id: CgkIsNnQ2ZcKEAIQEg
+events: [startup, end-level]
+condition: levels-completed
+params: [d-1, d-2, d-3, d-4, d-5, d-6, d-7, d-8, d-9, d-10, d-11, d-12, d-13, d-14, d-15]
+---
+name: saviour-of-the-diceland
+id: CgkIsNnQ2ZcKEAIQHg
+events: [startup, end-level]
+condition: levels-completed
+params: [final-boss]
+#
+# smart levels
+#
+---
+name: pvp
+id: CgkIsNnQ2ZcKEAIQFg
+events: [end-level, startup]
+condition: any-of
+params:
+- condition: ended-level
+  params: {level: friends-pvp}
+- condition: levels-completed
+  params: [friends-pvp]
+---
+name: archers-battle
+id: CgkIsNnQ2ZcKEAIQCQ
+events: [end-level]
+condition: all-of
+params:
+- condition: ended-level
+  params: {success: true, level: c-1}
+- condition: used-potions
+  params: false
+- condition: max-used-dice
+  params: {archer: 1}
+---
+name: potion-ninja
+id: CgkIsNnQ2ZcKEAIQDQ
+events: [end-level]
+condition: all-of
+params:
+- condition: ended-level
+  params: {level: a-7, success: true}
+- condition: max-used-dice
+  params: 1
+- condition: no-one-wears-abilities
+
+---
+name: open-pvp-1
+id: CgkIsNnQ2ZcKEAIQGA
+events: [end-level]
+condition: ended-level
+params: {level: global-pvp, success: true}
+
+---
+name: open-pvp-10
+id: CgkIsNnQ2ZcKEAIQGQ
+events: [end-level]
+condition: all-of
+params:
+- condition: ended-level
+  params: {level: global-pvp, success: true}
+- condition: inc
+  params: 10
+
+---
+name: open-pvp-25
+id: CgkIsNnQ2ZcKEAIQGg
+events: [end-level]
+condition: all-of
+params:
+- condition: ended-level
+  params: {level: global-pvp, success: true}
+- condition: inc
+  params: 25
+
+---
+name: open-pvp-50
+id: CgkIsNnQ2ZcKEAIQGw
+events: [end-level]
+condition: all-of
+params:
+- condition: ended-level
+  params: {level: global-pvp, success: true}
+- condition: inc
+  params: 50
+
+---
+name: open-pvp-100
+id: CgkIsNnQ2ZcKEAIQHA
+events: [end-level]
+condition: all-of
+params:
+- condition: ended-level
+  params: {level: global-pvp, success: true}
+- condition: inc
+  params: 100
+
+#
+# kills
+#
+---
+name: kill-ally
+id: CgkIsNnQ2ZcKEAIQDg
+events: [kill]
+condition: all-of
+params:
+- condition: killer
+  params: {player: self}
+- condition: kill
+  params: {mode: exists, relation: allyExceptSelf}
+---
+name: kill-self
+id: CgkIsNnQ2ZcKEAIQDw
+events: [kill]
+condition: all-of
+params:
+- condition: killer
+  params: {player: self}
+- condition: kill
+  params: {mode: exists, relation: self}
+---
+name: cleric-kill
+id: CgkIsNnQ2ZcKEAIQEA
+events: [kill]
+condition: all-of
+params:
+- condition: killer
+  params: {player: self, profession: cleric}
+- condition: kill
+  params: {mode: exists, relation: enemy}
+---
+name: multi-kill
+id: CgkIsNnQ2ZcKEAIQEQ
+events: [kill]
+condition: all-of
+params:
+- condition: killer
+  params: {player: self}
+- condition: killed
+  params: {more: 1}
+
+#
+# misc
+#
+---
+name: a-cat
+id: CgkIsNnQ2ZcKEAIQEw
+events: [about-window]
+---
+name: supporter
+id: CgkIsNnQ2ZcKEAIQFA
+events: [startup, donated]
+condition: donated

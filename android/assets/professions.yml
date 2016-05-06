@@ -1,0 +1,105 @@
+---
+name: warrior
+id: w
+levels:
+  - 10
+  - 21
+  - 33
+  - 45
+  - 60
+skills:
+  - 5
+  - 8
+  - 10
+  - 12
+  - 15
+  - 17
+---
+name: archer
+id: a
+levels:
+  - 30
+  - 45
+  - 65
+  - 90
+  - 120
+skills:
+  - 9
+  - 11
+  - 12
+  - 13
+  - 14
+  - 16
+---
+name: mage
+id: m
+levels:
+  - 17
+  - 29
+  - 42
+  - 56
+  - 71
+skills:
+  - 9
+  - 11
+  - 12
+  - 13
+  - 15
+  - 18
+---
+name: cleric
+id: c
+levels:
+  - 15
+  - 25
+  - 36
+  - 47
+  - 60
+skills:
+  - 9
+  - 11
+  - 12
+  - 13
+  - 15
+  - 17
+---
+name: shaman
+id: s
+levels:
+  - 17
+  - 29
+  - 42
+  - 56
+  - 71
+skills:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 14
+  - 16
+---
+name: boss
+id: b
+ap: 3
+levels:
+- 1000
+skills:
+- 1000
+---
+name: dragon
+id: d
+ignore-requirements: true
+apply-on-create: dragon-defence
+levels:
+  - 17
+  - 29
+  - 42
+  - 56
+  - 71
+skills:
+  - 1000
+  - 1000
+  - 1000
+  - 1000
+  - 1000

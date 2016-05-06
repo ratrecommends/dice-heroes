@@ -1,0 +1,60 @@
+---
+name: coin
+order: 100
+type: resource
+cost: 1
+id: c
+---
+name: any-ingredient
+order: 0
+type: anyIngredient
+cost: 1000000
+id: a
+---
+name: feather
+order: 50
+type: ingredient
+cost: 10
+id: f
+---
+name: applebloom
+order: 51
+type: ingredient
+cost: 20
+id: b
+---
+name: dragonwort
+order: 52
+type: ingredient
+cost: 30
+id: d
+---
+name: fireberries
+order: 53
+type: ingredient
+cost: 10
+id: i
+---
+name: pearl
+order: 54
+type: ingredient
+cost: 80
+id: p
+---
+name: ruby
+order: 55
+type: ingredient
+cost: 80
+id: r
+---
+name: sulfur
+order: 56
+type: ingredient
+cost: 30
+id: s
+---
+name: web
+order: 57
+type: ingredient
+cost: 30
+id: w

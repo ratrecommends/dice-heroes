@@ -1,0 +1,20 @@
+labels:
+  - x: 186
+    y: 202
+    key: world-map-dusty-lands
+  - x: 394
+    y: 133
+    key: world-map-woodlands
+  - x: 184
+    y: 476
+    key: world-map-mages
+  - x: 526
+    y: 389
+    key: world-map-prison
+  - x: 334
+    y: 821
+    key: world-map-desert
+images:
+  - x: 79
+    y: 27
+    name: world-map-title-{language}

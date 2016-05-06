@@ -1,0 +1,785 @@
+# for everyone
+---
+name: skip-turn
+type: util
+id: w
+initiative: 0
+skill: 0
+action:
+  skip: ~
+cost: 0
+---
+name: default-attack
+type: wearable
+id: a
+initiative: -1
+skill: 1
+action:
+  attack: {type: weapon, level: 1}
+cost: 10
+---
+name: default-defence
+type: wearable
+id: d
+initiative: 1
+skill: 1
+action:
+  defence: {type: weapon, level: 1}
+cost: 15
+
+#
+# for warriors
+#
+---
+name: heavy-attack
+type: wearable
+id: ha
+initiative: -2
+requirement: {profession: warrior, level: 4}
+skill: 2
+action:
+  attack: {type: weapon, level: 2}
+cost: 30
+---
+name: heavy-defence
+type: wearable
+id: hd
+initiative: 2
+skill: 3
+requirement: {profession: warrior, level: 3}
+action:
+  defence: {type: weapon, level: 2}
+cost: 40
+---
+name: cleave
+id: c
+type: wearable
+initiative: -2
+requirement: {profession: warrior, level: 2}
+skill: 2
+action:
+  cleave: {type: weapon, level: 1}
+cost: 30
+---
+name: heavy-cleave
+type: wearable
+id: hc
+initiative: -2
+requirement: {profession: warrior, level: 5}
+skill: 2
+action:
+  cleave: {type: weapon, level: 2}
+cost: 50
+---
+name: speed-attack
+type: wearable
+id: sa
+initiative: -3
+requirement: {profession: warrior, level: 3}
+skill: 2
+action:
+  speed:
+    action: attack
+    setup: {type: weapon, level: 1, tiles: true}
+    tiles: true
+cost: 40
+---
+name: heavy-speed-attack
+type: wearable
+id: hsa
+initiative: -4
+requirement: {profession: warrior, level: 5}
+skill: 2
+action:
+  speed:
+    action: attack
+    setup: {type: weapon, level: 2}
+    tiles: true
+cost: 60
+---
+name: defensive-attack
+type: wearable
+id: da
+initiative: 0
+requirement: {profession: warrior, level: 2}
+skill: 2
+cost: 45
+action:
+  sequence:
+    - action: defence
+      setup: {type: weapon, level: 1}
+    - action: attack
+      setup: {type: weapon, level: 1}
+---
+name: heavy-defensive-attack
+type: wearable
+id: hda
+initiative: 1
+requirement: {profession: warrior, level: 4}
+cost: 70
+skill: 3
+action:
+  sequence:
+    - action: defence
+      setup: {type: weapon, level: 2}
+    - action: attack
+      setup: {type: weapon, level: 1}
+
+#
+# for archers
+#
+---
+name: shot
+type: wearable
+id: s
+initiative: -3
+requirement: {profession: archer}
+skill: 2
+cost: 35
+action:
+  shot: {type: weapon, level: 1, distance: 3}
+---
+name: heavy-shot
+type: wearable
+skill: 2
+id: hs
+initiative: -4
+requirement: {profession: archer, level: 5}
+cost: 50
+action:
+  shot: {type: weapon, level: 2, distance: 3}
+---
+name: speed
+type: wearable
+id: sp
+skill: 3
+initiative: -6
+requirement: {profession: archer, level: 3}
+cost: 60
+action:
+  speed: ~
+---
+name: elven-defence
+type: wearable
+id: ed
+initiative: 2
+requirement: {profession: archer, level: 2}
+skill: 1
+action:
+  defence: {type: weapon, level: 1, turns: 3, group: armor}
+cost: 40
+---
+name: heavy-elven-defence
+type: wearable
+id: eh
+skill: 1
+initiative: 3
+requirement: {profession: archer, level: 4}
+action:
+  defence: {type: weapon, level: 1, turns: 5, group: armor}
+cost: 60
+
+#
+# for mages
+#
+---
+name: fireball
+type: wearable
+id: f
+requirement: {profession: mage}
+skill: 2
+initiative: -4
+action:
+  fireball: {type: weapon, level: 1, distance: 4}
+cost: 50
+---
+name: freeze
+type: wearable
+id: z
+initiative: -1
+requirement: {profession: mage, level: 2}
+skill: 1
+action:
+  freeze: {distance: 2.9, turns: 3}
+cost: 35
+---
+name: chain-lightning
+type: wearable
+id: l
+initiative: -5
+skill: 1
+requirement: {profession: mage, level: 3}
+action:
+  chain-lightning: {distance: 3, targets: 2, type: weapon, level: 1}
+cost: 70
+---
+name: firestorm
+type: wearable
+id: t
+initiative: -10
+skill: 3
+requirement: {profession: mage, level: 4}
+action:
+  firestorm: {radius: 1.5, type: weapon, level: 1, epicenterLevel: 1}
+cost: 120
+---
+name: heavy-firestorm
+type: wearable
+id: ht
+initiative: -12
+skill: 4
+requirement: {profession: mage, level: 5}
+action:
+  firestorm: {radius: 1.5, type: weapon, level: 1, epicenterLevel: 2}
+cost: 145
+
+
+#
+# for clerics
+#
+---
+name: antidote
+type: wearable
+id: ae
+initiative: 1
+skill: 1
+requirement: {profession: cleric}
+action:
+  antidote: {radius: 2.9}
+cost: 15
+---
+name: cleric-defence
+type: wearable
+skill: 2
+id: cd
+initiative: 4
+requirement: {profession: cleric, level: 1}
+action:
+  cleric-defence: {type: weapon, level: 1, radius: 2.9}
+cost: 40
+---
+name: area-of-antidote
+type: wearable
+skill: 2
+id: aa
+initiative: 2
+requirement: {profession: cleric, level: 2}
+action:
+  area-of-antidote: {radius: 2.9}
+cost: 60
+---
+name: area-of-defence
+type: wearable
+skill: 3
+id: ad
+initiative: 5
+requirement: {profession: cleric, level: 3}
+action:
+  area-of-defence: {type: weapon, level: 1, radius: 1.5}
+cost: 115
+---
+name: area-of-attack
+type: wearable
+id: ak
+skill: 2
+initiative: 0
+requirement: {profession: cleric, level: 4}
+action:
+  area-of-attack: {type: weapon, level: 2, radius: 2.9}
+cost: 90
+---
+name: cleric-heavy-defence
+id: ch
+type: wearable
+skill: 3
+initiative: 7
+requirement: {profession: cleric, level: 5}
+action:
+  cleric-defence: {type: weapon, level: 2, radius: 2.9}
+cost: 100
+
+#
+# for shamans
+#
+---
+name: tambourine-of-oblivion
+skill: 2
+type: wearable
+id: o
+initiative: -1
+requirement: {profession: shaman}
+action:
+  restrict-use-abilities: {radius: 5, turns: 4}
+cost: 35
+---
+name: staff-of-teleportation
+type: wearable
+skill: 2
+id: p
+initiative: -2
+requirement: {profession: shaman, level: 2}
+action:
+  teleport-target: {radius: 5, teleport-radius: 6}
+cost: 50
+---
+name: black-spot
+type: wearable
+id: b
+skill: 1
+initiative: 2
+requirement: {profession: shaman, level: 3}
+action:
+  restrict-resurrect: {radius: 5, turns: 8}
+cost: 50
+---
+name: eery-mask
+type: wearable
+id: m
+skill: 1
+initiative: -3
+requirement: {profession: shaman, level: 4}
+cost: 90
+action:
+  decrease-attack-and-defence: {radius: 3, value: 1, min: 1, relation: enemy, turns: 1}
+---
+name: poisonous-dust
+type: wearable
+id: pd
+initiative: -4
+skill: 3
+requirement: {profession: shaman, level: 5}
+cost: 100
+action:
+  poison-area: {radius: 5, area: 1.5, turns: 6}
+#
+# PROFESSIONS
+#
+
+# warriors
+---
+name: speed-defence
+type: profession
+id: sd
+requirement: {profession: warrior, level: 3}
+cost: 2
+action:
+  sequence:
+  - action: speed
+    setup:
+      action: speed
+      tiles: true
+      setup:
+        action: defence
+        setup: {type: weapon, level: 1}
+        tiles: true
+  - action: cooldown
+    setup: {ability: speed-defence, turns: 8}
+---
+name: berserk
+type: profession
+id: bk
+cost: 1
+requirement: {profession: warrior, level: 6}
+action:
+  sequence:
+  - action: berserk-attack
+    setup: {type: weapon, level: 3}
+  - action: ignore-defence
+    setup: {turns: 4}
+  - action: cooldown
+    setup: {ability: berserk, turns: 12}
+
+# archers
+
+---
+name: transform-to-obstacle
+type: profession
+id: to
+cost: 2
+requirement: {profession: archer, level: 3}
+action:
+  sequence:
+  - action: transform-to-obstacle
+    setup: {name: archer-bush, turns: 4}
+  - action: cooldown
+    setup: {ability: transform-to-obstacle, turns: 8}
+---
+name: poison-dart
+type: profession
+id: dt
+cost: 1
+requirement: {profession: archer, level: 6}
+action:
+  sequence:
+  - action: poison-shot
+    setup: {radius: 3, turns: 4}
+  - action: cooldown
+    setup: {ability: poison-dart, turns: 12}
+
+# mages
+---
+name: concentration
+type: profession
+id: cc
+requirement: {profession: mage, level: 3}
+cost: 2
+action:
+  sequence:
+  - action: concentration
+  - action: cooldown
+    setup: {ability: concentration, turns: 12}
+---
+name: summon
+type: profession
+id: sn
+cost: 1
+requirement: {profession: mage, level: 6}
+action:
+  sequence:
+  - action: summon
+    setup: {profession: warrior, abilities: [heavy-attack, heavy-attack, heavy-attack, heavy-defence, heavy-defence, heavy-defence]}
+  - action: cooldown
+    setup: {ability: summon, turns: 16}
+
+# clerics
+---
+name: teleport
+type: profession
+id: tp
+cost: 2
+requirement: {profession: cleric, level: 3}
+action:
+  sequence:
+  - action: teleport
+  - action: cooldown
+    setup: {ability: teleport, turns: 8}
+---
+name: resurrection
+type: profession
+id: rr
+cost: 1
+requirement: {profession: cleric, level: 6}
+action:
+  sequence:
+  - action: resurrect
+  - action: cooldown
+    setup: {ability: resurrection, turns: 16}
+
+# shamans
+---
+name: shaman-heavy-defence
+type: profession
+id: sh
+cost: 2
+requirement: {profession: shaman, level: 3}
+action:
+  sequence:
+  - action: shaman-defence
+    setup: {level: 2, turns: 3, group: shaman-defence}
+  - action: cooldown
+    setup: {ability: shaman-heavy-defence, turns: 12}
+---
+name: enthrallment
+type: profession
+cost: 1
+id: e
+requirement: {profession: shaman, level: 6}
+action:
+  sequence:
+  - action: enthrallment
+    setup: {radius: 5, turns: 4}
+  - action: cooldown
+    setup: {ability: enthrallment, turns: 12}
+
+#
+# potions
+#
+---
+name: potion-of-experience
+type: potion
+id: pe
+cost: 10010
+ingredients:
+  feather: 2
+  sulfur: 1
+action:
+  potion:
+    drink: {action: levelUp}
+---
+name: potion-of-antidote
+type: potion
+id: pa
+cost: 10009
+ingredients:
+  applebloom: 1
+  dragonwort: 2
+action:
+  potion:
+    drink: {action: self-antidote}
+---
+name: potion-of-explosion
+type: potion
+id: px
+cost: 10008
+ingredients:
+  ruby: 1
+  fireberries: 1
+  sulfur: 1
+action:
+  potion:
+    throw: {action: ranged-damage, setup: {radius: 4, level: 2}}
+---
+name: potion-of-petrification
+type: potion
+id: pp
+cost: 10007
+ingredients:
+  web: 1
+  dragonwort: 2
+action:
+  potion:
+    throw: {action: transform-target-to-obstacle, setup: {radius: 4, turns: 4, obstacle: stone-die}}
+---
+name: potion-of-stupefaction
+type: potion
+id: ps
+cost: 10006
+ingredients:
+  sulfur: 2
+  feather: 1
+action:
+  potion:
+    throw: {action: stupefaction, setup: {radius: 4, turns: 4}}
+---
+name: potion-of-viscosity
+type: potion
+id: pv
+cost: 10005
+ingredients:
+  sulfur: 2
+  applebloom: 1
+action:
+  potion:
+    throw: {action: viscosity, setup: {radius: 4, turns: 4}}
+---
+name: potion-of-unstable-teleportation
+type: potion
+id: pt
+cost: 10004
+ingredients:
+  pearl: 1
+  any-ingredient: 2
+action:
+  potion:
+    drink:
+      action: random-teleport-self
+      setup: {radius: 10}
+    throw:
+      action: apply-to-target
+      setup:
+        radius: 4
+        relation: any
+        action: random-teleport-self
+        setup: {radius: 10}
+---
+name: potion-of-unstable-luck
+type: potion
+id: pl
+cost: 10003
+ingredients:
+  ruby: 1
+  any-ingredient: 2
+action:
+  potion:
+    drink:
+      action: random-of
+      setup:
+      - action: end-turn
+      - action: extra-turn
+    throw:
+      action: apply-to-target
+      setup:
+        radius: 4
+        relation: any
+        action: random-of
+        setup:
+        - action: end-turn
+        - action: extra-turn
+---
+name: heavy-fireball
+requirement: {profession: mage}
+type: wearable
+cost: -1
+id: f2
+initiative: -4
+action:
+  fireball: {type: weapon, level: 2, distance: 4}
+sound-name: ability-fireball
+---
+name: summon-dale
+requirement: {profession: mage}
+type: wearable
+cost: -1
+skill: 5
+initiative: -15
+id: d1
+action:
+  summon: {profession: warrior, abilities: [heavy-attack, heavy-attack, heavy-attack, heavy-defence, heavy-defence, heavy-defence]}
+---
+name: boss-summon-1
+type: util
+id: b1
+initiative: -5
+action:
+  summon: {profession: dragon, name: ruby, abilities: [heavy-fireball, heavy-fireball, summon-dale, summon-dale, heavy-firestorm, heavy-firestorm]}
+---
+name: heavy-chain-lightning
+requirement: {profession: mage}
+type: wearable
+cost: -1
+id: hl
+initiative: -12
+skill: 4
+action:
+  chain-lightning: {distance: 3, targets: 3, type: weapon, level: 2}
+---
+name: ice-storm
+requirement: {profession: mage}
+type: wearable
+cost: -1
+id: hi
+initiative: -12
+skill: 4
+action:
+  ice-storm: {radius: 1.5, turns: 2, epicenterTurns: 3}
+---
+name: boss-summon-2
+type: util
+id: b2
+initiative: -5
+action:
+  summon: {profession: dragon, name: dia, abilities: [heavy-chain-lightning, heavy-chain-lightning, summon-dale, summon-dale, ice-storm, ice-storm]}
+---
+name: super-elven-defence
+requirement: {profession: archer}
+type: wearable
+cost: -1
+id: he
+initiative: 2
+skill: 4
+action:
+  defence: {type: weapon, level: 2, turns: 4, group: armor}
+---
+name: poison-shot
+requirement: {profession: archer}
+type: wearable
+cost: -1
+id: pi
+skill: 2
+initiative: -2
+action:
+  poison-shot: {radius: 3, turns: 4}
+---
+name: boss-summon-3
+type: util
+id: b3
+initiative: -5
+action:
+  summon: {profession: dragon, name: ame, abilities: [heavy-shot, heavy-shot, speed, speed, poison-shot, super-elven-defence]}
+---
+name: super-attack
+requirement: {profession: warrior}
+type: wearable
+cost: -1
+id: ma
+initiative: -3
+skill: 3
+action:
+  berserk-attack: {type: weapon, level: 3}
+---
+name: boss-summon-4
+type: util
+id: b4
+initiative: -5
+action:
+  summon: {profession: dragon, name: jade, abilities: [heavy-cleave, heavy-cleave, super-elven-defence, super-elven-defence, super-attack, super-attack]}
+---
+name: double-defensive-attack
+requirement: {profession: warrior}
+type: wearable
+cost: -1
+id: dd
+initiative: 1
+skill: 3
+action:
+  sequence:
+    - action: defence
+      setup: {type: weapon, level: 2}
+    - action: attack
+      setup: {type: weapon, level: 2}
+---
+name: viscosity
+requirement: {profession: shaman}
+type: wearable
+cost: -1
+id: vi
+action:
+  viscosity: {radius: 4, turns: 4}
+---
+name: boss-summon-5
+type: util
+id: b5
+initiative: -5
+action:
+  summon: {profession: dragon, name: sil, abilities: [super-attack, super-attack, double-defensive-attack, double-defensive-attack, viscosity, viscosity]}
+---
+name: petrification
+requirement: {profession: shaman}
+type: wearable
+cost: -1
+id: pf
+action:
+  transform-target-to-obstacle: {radius: 4, turns: 4, obstacle: stone-die}
+---
+name: dragon-enthrallment
+requirement: {profession: shaman}
+type: wearable
+skill: 7
+cost: -1
+initiative: -14
+id: de
+action:
+  enthrallment: {radius: 5, turns: 4}
+---
+name: stupefaction
+requirement: {profession: shaman}
+type: wearable
+cost: -1
+id: sf
+action:
+  stupefaction: {radius: 4, turns: 4}
+---
+name: boss-summon-6
+type: util
+id: b6
+initiative: -5
+action:
+  summon: {profession: dragon, name: lazu, abilities: [tambourine-of-oblivion, poison-shot, petrification, staff-of-teleportation, dragon-enthrallment, stupefaction]}
+---
+name: invulnerability
+type: util
+id: i
+action:
+  set: {attributes: {canBeSelected: false}, turns: 10000}
+---
+name: boss-protection
+type: util
+id: bp
+action:
+  set: {attributes: {weapon-defence: 2, can-be-enthralled: false}, turns: 10000}
+---
+name: dragon-defence
+type: util
+id: rd
+action:
+  defence: {type: weapon, level: 1, turns: 10000, group: armor, additive: false}

@@ -1,0 +1,39 @@
+---
+name: friends-2
+variant: 1
+type: friends
+players: 2
+meta-level: friends-pvp
+levels:
+- pvp-2-c-1
+- pvp-2-c-2
+- pvp-2-c-3
+- pvp-2-m-1
+- pvp-2-m-2
+- pvp-2-m-3
+- pvp-2-a-1
+- pvp-2-a-2
+- pvp-2-a-3
+- pvp-2-w-1
+- pvp-2-w-2
+- pvp-2-w-3
+- pvp-2-d-1
+- pvp-2-d-2
+- pvp-2-d-3
+
+---
+name: global-2
+variant: 2
+type: global
+players: 2
+meta-level: global-pvp
+levels:
+- global-pvp-1
+- global-pvp-2
+- global-pvp-3
+- global-pvp-4
+- global-pvp-5
+- global-pvp-6
+- global-pvp-7
+- global-pvp-8
+- global-pvp-9

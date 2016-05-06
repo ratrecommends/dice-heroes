@@ -1,0 +1,209 @@
+{
+  "com.badlogic.gdx.graphics.Color": {
+    "text-main": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    },
+    "inactive": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.5
+    },
+    "inventory-text": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.4
+    },
+    "inventory-counter": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 0.3
+    }
+  },
+  "com.badlogic.gdx.graphics.g2d.BitmapFont": {
+    "default": {"file": "font.fnt"}
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle": {
+    "default": {
+      "font": "default",
+      "fontColor": "text-main"
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle": {
+    "default": {
+      "up": "ui/button/start-up",
+      "down": "ui/button/start-down",
+      "disabled": "ui/button/start-disabled",
+      "pressedOffsetY": 1,
+      "unpressedOffsetY": 1
+    },
+    "achievements": {"up": "ui/button/achievement-up"},
+    "leaderboards": {"up": "ui/button/leaderboards-up"},
+    "services": {"up": "ui/button/services-up"},
+    "services-sign-in": {"up": "ui/button/services-base"},
+    "sign-out": {"up": "ui/button/services-sign-out"},
+    "auto-place": {"up": "ui/button/auto-place"},
+    "conflict": {"up": "ui/button/conflict"},
+    "invite": {"up": "ui/button/invite"},
+    "dice-settings": {"up": "ui/button/dice-settings"}
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle": {
+    "share": {
+      "imageUp": "ui/button/share",
+      "up": "ui/button/start-up",
+      "down": "ui/button/start-down",
+      "disabled": "ui/button/start-disabled",
+      "pressedOffsetY": 1,
+      "unpressedOffsetY": 1
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+    "default": {
+      "font": "default",
+      "up": "ui/button/start-up",
+      "down": "ui/button/start-down",
+      "disabled": "ui/button/start-disabled",
+      "pressedOffsetY": 1,
+      "unpressedOffsetY": 1,
+      "disabledFontColor": "inactive",
+      "fontColor": "text-main"
+    },
+    "start": {
+      "font": "default",
+      "up": "ui/button/start-up",
+      "down": "ui/button/start-down",
+      "disabled": "ui/button/start-disabled",
+      "pressedOffsetY": 1,
+      "unpressedOffsetY": 1,
+      "disabledFontColor": "inactive",
+      "fontColor": "text-main"
+    },
+    "fight": {
+      "font": "default",
+      "up": "ui/button/fight-up",
+      "down": "ui/button/fight-down",
+      "disabled": "ui/button/fight-disabled",
+      "pressedOffsetX": 7,
+      "pressedOffsetY": 5,
+      "unpressedOffsetX": 7,
+      "unpressedOffsetY": 5,
+      "fontColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1
+      },
+      "disabledFontColor": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 0.5
+      }
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle": {
+    "settings": {
+      "up": "ui/button/settings-up",
+      "down": "ui/button/settings-down"
+    },
+    "dice": {
+      "up": "ui/button/dice-up",
+      "down": "ui/button/dice-down"
+    },
+    "potions": {
+      "up": "ui/button/potions-up",
+      "down": "ui/button/potions-down"
+    },
+    "getcoin": {
+      "up": "ui/button/get-coin-up",
+      "down": "ui/button/get-coin-down"
+    },
+    "default": {
+      "up": "ui/button/start-up",
+      "down": "ui/button/start-down",
+      "disabled": "ui/button/start-disabled",
+      "pressedOffsetY": 1,
+      "unpressedOffsetY": 1
+    },
+    "passive": {
+      "up": "ui/button/passive-up",
+      "down": "ui/button/passive-down",
+      "disabled": "ui/button/start-disabled"
+    },
+    "purchase-item": {
+      "up": "ui-purchase-item-background-up",
+      "down": "ui-purchase-item-background-down"
+    },
+    "arrow-right": {
+      "up": "ui-arrow-active-right",
+      "disabled": "ui-arrow-inactive-right"
+    },
+    "arrow-left": {
+      "up": "ui-arrow-active-left",
+      "disabled": "ui-arrow-inactive-left"
+    },
+    "game-potions": {
+      "up": "ui-potions-up",
+      "disabled": "ui-potions-disabled"
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle": {
+    "default": {
+      "checkboxOn": "ui-checkbox-on",
+      "checkboxOff": "ui-checkbox-off",
+      "font": "default"
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle": {
+    "default": {
+      "font": "default",
+      "selection": "ui-list-selection"
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle": {
+    "default": {
+      "background": "ui-window-background",
+      "font": "default",
+      "scrollStyle": {"background": "ui-window-background"},
+      "listStyle": "default"
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.SplitPane$SplitPaneStyle": {
+    "default-vertical": {"handle": "ui-creature-info-line"}
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle": {
+    "default-horizontal": {
+      "background": "ui-slider-background",
+      "knob": "ui-slider-knob",
+      "knobBefore": "ui-slider-knob-before"
+    }
+  },
+  "com.vlaaad.common.gdx.scene2d.TabPane$TabPaneStyle": {
+    "default": {
+      "content": "ui/tab-pane/content",
+      "active": "ui/tab-pane/active",
+      "inactive": "ui/tab-pane/inactive",
+      "activeBorderLeft": "ui/tab-pane/active-left-border",
+      "activeBorderRight": "ui/tab-pane/active-right-border",
+      "activeBorderLeftEdge": "ui/tab-pane/active-left-edge",
+      "activeBorderRightEdge": "ui/tab-pane/active-right-edge",
+      "inactiveBorderLeftEdge": "ui/tab-pane/inactive-left-edge",
+      "inactiveBorderRightEdge": "ui/tab-pane/inactive-right-edge"
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle": {
+    "default": {
+      "font": "default",
+      "fontColor": "inactive",
+      "focusedFontColor": "text-main",
+      "background": "ui-text-background",
+      "cursor": "ui-text-cursor",
+      "selection": "ui-text-selection"
+    }
+  }
+}

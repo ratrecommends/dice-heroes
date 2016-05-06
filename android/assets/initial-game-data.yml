@@ -1,0 +1,11 @@
+levels: ~
+dice:
+  - profession: warrior
+    name: Pudi
+    exp: 0
+    abilities:
+      - default-attack
+      - default-attack
+      - default-attack
+items:
+  coin: 15

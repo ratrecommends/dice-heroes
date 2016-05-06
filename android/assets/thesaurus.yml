@@ -1,0 +1,1814 @@
+#
+# common
+#
+---
+key: "app-name"
+en: "Dice Heroes"
+---
+key: "app-link"
+en: "https://play.google.com/store/apps/details?id=com.vlaaad.dice"
+---
+key: "community-link"
+en: "https://www.facebook.com/rrg.dice.heroes"
+ru: "https://vk.com/dice.heroes"
+---
+key: "community-short-link"
+en: "facebook.com/rrg.dice.heroes"
+ru: "vk.com/dice.heroes"
+---
+key: "repository-link"
+en: "https://github.com/ratrecommends/dice-heroes"
+---
+key: "repository-short-link"
+en: "github.com/\nratrecommends/dice-heroes"
+---
+key: author-vlaaad
+en: "Vlad P."
+ru: "Влад П."
+---
+key: author-shtukaturka
+en: "Sasha K."
+ru: "Саша К."
+---
+key: author-sagamor
+en: "Sagamor"
+ru: "Сагамор"
+---
+key: author-vlaaad-link
+en: "https://github.com/vlaaad"
+---
+key: author-shtukaturka-link
+en: "http://be.net/shtukaturka"
+---
+key: author-sagamor-link
+en: "https://soundcloud.com/sagamor"
+#
+# util
+#
+---
+key: back
+en: ←
+---
+key: language
+en: en
+ru: ru
+---
+key: enum-and
+en: " and "
+ru: " и "
+---
+key: enum-comma
+en: ", "
+---
+key: alphabet
+en: abcdefghijklmnopqrstuvwxyz
+ru: абвгдеёжзийклмнопрстуфхцчшщъыьэюя
+---
+key: coins.one
+en: coin
+ru: монету
+---
+key: coins.many-one
+en: coins
+ru: монету
+---
+key: coins.many-two
+en: coins
+ru: монеты
+---
+key: coins.many-five
+en: coins
+ru: монет
+#
+# world map
+#
+---
+key: world-map-dusty-lands
+en: "SILENT\nWASTELAND"
+ru: "ТИХАЯ\nПУСТОШЬ"
+---
+key: world-map-woodlands
+en: "WOODLANDS\nOF YORE"
+ru: "ДИКИЕ\nЛЕСА"
+---
+key: world-map-mages
+en: "MAGES\nDOMAIN"
+ru: "ЗЕМЛИ\nМАГОВ"
+---
+key: world-map-prison
+en: "DARK\nFORTRESS"
+ru: "ТЁМНАЯ\nКРЕПОСТЬ"
+---
+key: world-map-desert
+en: "DEADLY\nDESERT"
+ru: "ПУСТЫНЯ\nПОГИБЕЛИ"
+#
+#
+# ui
+#
+#
+---
+key: ui-about-author
+en: by Rat Recommends Games
+ru: от Rat Recommends Games
+---
+key: ui-about-code
+en: "Code: "
+ru: "Код: "
+---
+key: ui-about-graphics
+en: "Graphics: "
+ru: "Графика: "
+---
+key: ui-about-music
+en: "Music: "
+ru: "Музыка: "
+---
+key: ui-about-community
+en: "Official community:"
+ru: "Официальное сообщество:"
+---
+key: ui-about-repository
+en: "It's open source:"
+ru: "Открытый исходный код:"
+---
+key: ui-donate
+en: "Support us!"
+ru: "Поддержать!"
+---
+key: ui-thank-you
+en: "Thank you for your support!"
+ru: "Спасибо за поддержку!"
+---
+key: ui-cancel-game
+en: "Exit to map"
+ru: "Выйти на карту"
+---
+key: ui-restart-game
+en: "Restart level"
+ru: "Начать заново"
+---
+key: ui-settings-wipe
+en: "Wipe user data"
+ru: "Начать заново"
+---
+key: ui-settings-window-about
+en: "About"
+ru: "Об игре"
+---
+key: rate-app
+en: "Rate game"
+ru: "Оценить игру"
+---
+key: ui-settings-sound-volume
+en: "Sound volume:"
+ru: "Громкость:"
+---
+key: ui-settings-select-language
+en: "Language:"
+ru: "Язык:"
+---
+key: ui-settings-select-scale
+en: "Scale:"
+ru: "Масштаб:"
+---
+key: ui-settings-music
+en: "Music: "
+ru: "Музыка: "
+---
+key: ui-dice-window-name
+en: "{name} the {profession}, level {level}"
+ru: "{profession} {name}, уровень {level}"
+---
+key: ui-use-ability
+en: "Use"
+ru: "Использовать"
+---
+key: ui-drink-potion
+en: "Drink"
+ru: "Выпить"
+---
+key: ui-throw-potion
+en: "Throw"
+ru: "Бросить"
+---
+key: ui-next-creature
+en: ">> {die}"
+ru: ">> {die}"
+---
+key: ui-use-local
+en: "Local"
+ru: "Локальная"
+---
+key: ui-use-server
+en: "Server"
+ru: "Серверная"
+---
+key: profession-warrior
+en: "Warrior"
+ru: "Воин"
+---
+key: profession-archer
+en: "Archer"
+ru: "Лучник"
+---
+key: profession-mage
+en: Mage
+ru: Маг
+---
+key: profession-cleric
+en: Cleric
+ru: Клирик
+---
+key: profession-shaman
+en: Shaman
+ru: Шаман
+---
+key: profession-boss
+en: Boss
+ru: Босс
+---
+key: profession-dragon
+en: Dragon
+ru: Дракон
+---
+key: ui-dice-window-equipment
+en: "Equipment"
+ru: "Экипировка"
+---
+key: ui-dice-window-inventory
+en: "Inventory"
+ru: "Рюкзак"
+---
+key: ui-dice-window-store
+en: "Store"
+ru: "Магазин"
+---
+key: ui-inventory-equip
+en: "Equip"
+ru: "Надеть"
+---
+key: ui-inventory-window-sell-for
+en: "Sell for"
+ru: "Продать за"
+---
+key: ui-store-window-buy-for
+en: "Buy for"
+ru: "Купить за"
+---
+key: ui-store-window-coins-needed
+en: "{count} more {coin-form} needed"
+ru: "Нужно ещё {count} {coin-form}"
+---
+key: "ui-store-window-max-count-reached"
+en: "{name} does not need more than 6 items of the same type"
+ru: "{name} не может иметь более шести одинаковых вещей"
+---
+key: "ui-inventory-is-full"
+en: "Inventory is full"
+ru: "Инвентарь заполнен"
+---
+key: "ui-spawn-place"
+en: "Place your dice"
+ru: "Расставь кубики"
+---
+key: "ui-spawn-fight"
+en: "Fight!"
+ru: "В бой!"
+---
+key: "ui-level-up-title"
+en: "{die} reached level {level}!"
+ru: "{die} достиг {level} уровня!"
+---
+key: "ui-level-up-continue"
+en: "Continue"
+ru: "Продолжить"
+---
+key: "ui-level-up-abilities"
+en: "{enum} {grammatical-number} available for him now"
+ru: "Теперь он может использовать {enum}"
+---
+key: "ui-level-up-profession-abilities"
+en: "Class ability {enum} {grammatical-number} available for him now"
+ru: "Теперь он может использовать классовую способность {enum}"
+---
+key: "die-gets-ability"
+en: "{die} gets\n{ability}"
+ru: "{die} получает\n{ability}"
+---
+key: "ui-level-up-share"
+en: "{die} reached level {level} in #DiceHeroes! {app-link}"
+ru: "{die} достиг {level} уровня в #DiceHeroes! {app-link}"
+---
+key: "ui-creature-info-name"
+en: "{name} the {profession}"
+ru: "{profession} {name}"
+---
+key: "ui-creature-info-ally-info"
+en: "(ally, level {level})"
+ru: "(игрок, уровень {level})"
+---
+key: "ui-creature-info-window-ability-description"
+en: "{name} - {desc}"
+ru: "{name} - {desc}"
+---
+key: "ui-creature-info-enemy-info"
+en: "(enemy)"
+ru: "(враг)"
+---
+key: "ui-creature-info-items"
+en: "Items"
+ru: "Вещи"
+---
+key: ui-creature-info-effects
+en: "Effects"
+ru: "Эффекты"
+---
+key: ui-creature-info-window-effect-description
+en: "{desc}\nTurns remained: {turn-count}"
+ru: "{desc}\nХодов осталось: {turn-count}"
+---
+key: ui-creature-info-window-forever-effect-description
+en: "{desc}"
+ru: "{desc}"
+---
+key: ui-creature-info-window-no-effects
+en: "Currently {name} has no active effects"
+ru: "Сейчас {name} не имеет активных эффектов"
+---
+key: "ui-reward-window-victory"
+en: "VICTORY"
+ru: "ПОБЕДА"
+---
+key: "ui-reward-window-new-die"
+en: "Someone joins your party"
+ru: "В команде пополнение"
+---
+key: "ui-reward-window-ok"
+en: "Yay!"
+ru: "Ура!"
+---
+key: "ui-lose-window-defeat"
+en: "DEFEAT"
+ru: "ПРОВАЛ"
+---
+key: "ui-lose-window-to-map"
+en: "Back to map"
+ru: "На карту"
+---
+key: ui-resurrect-header
+en: "{die} resurrects one of his allies"
+ru: "{die} воскрешает одного из своих союзников"
+---
+key: ui-select
+en: "Choose"
+ru: "Выбрать"
+---
+key: ui-ingredients
+en: "Ingredients:"
+ru: "Ингредиенты:"
+---
+key: ui-conflict-header
+en: "Another version found!"
+ru: "Есть другое сохранение!"
+---
+key: ui-conflict-description
+en: "You can stay with your current version (local) or apply data from other device (server)"
+ru: "Можно остаться с текущей версией (локальная) или применить данные с другого устройства (серверная)"
+---
+key: ui-conflict-window-levels
+en: "Passed levels"
+ru: "Пройденные уровни"
+---
+key: ui-conflict-window-dice
+en: "Joined dice"
+ru: "Присоединившиеся кубики"
+---
+key: ui-conflict-window-coins
+en: "Collected coins"
+ru: "Собранные монеты"
+---
+key: ui-conflict-window-potions
+en: "Brewed potions"
+ru: "Сваренные зелья"
+---
+key: ui-conflict-window-ingredients
+en: "Found ingredients"
+ru: "Найденные ингредиенты"
+#
+# effects
+#
+---
+key: ui-effect-icon-defence-weapon-1
+en: The die is protected from attacks with power 1
+ru: Кубик защищён от атак с силой 1
+---
+key: ui-effect-icon-cleric-defence-1
+en: The die is under protection of the cleric from attacks with power 1
+ru: Кубик под защитой клирика от атак с силой 1
+---
+key: ui-effect-icon-cleric-defence-2
+en: The die is under protection of the cleric from attacks with power 2
+ru: Кубик под защитой клирика от атак с силой 2
+---
+key: ui-effect-icon-defence-weapon-2
+en: The die is protected from attacks with power 2
+ru: Кубик защищён от атак с силой 2
+---
+key: ui-effect-icon-boss-protection
+en: The die is protected from attacks with power 2
+ru: Кубик защищён от атак с силой 2
+---
+key: ui-effect-icon-freeze
+en: The die is frozen
+ru: Кубик заморожен
+---
+key: ui-effect-icon-area-attack-2
+en: The die is inspired, he attacks with power 2
+ru: Кубик воодушевлён, он атакует с силой 2
+---
+key: ui-effect-icon-ignore-defence
+en: The die is unable to use any defence
+ru: Кубик не в силах использовать защиту
+---
+key: ui-effect-icon-poison
+en: The die is poisoned
+ru: Кубик отравлен
+---
+key: ui-effect-icon-stupefaction
+en: "The die is stupefied and can't control himself"
+ru: "Кубик одурманен и не контролирует себя"
+---
+key: ui-effect-icon-viscosity
+en: "The die is glued to his place and can't move"
+ru: "Кубик приклеен к месту и не может перемещаться"
+---
+key: ui-effect-icon-cooldown-berserk
+en: The die restores berserk ability
+ru: Кубик восстанавливается для использования режима берсерка
+---
+key: ui-effect-icon-cooldown-concentration
+en: The die restores concentration ability
+ru: Кубик восстанавливается для использования концентрации
+---
+key: ui-effect-icon-cooldown-speed-defence
+en: The die restores strafe ability
+ru: Кубик отдыхает для рывка
+---
+key: ui-effect-icon-cooldown-poison-dart
+en: The die crafts poison
+ru: Кубик готовит яд
+---
+key: ui-effect-icon-cooldown-transform-to-obstacle
+en: The die restores masking ability
+ru: Кубик подготавливает маскировку
+---
+key: ui-effect-icon-cooldown-summon
+en: The die has cooldown for summoning
+ru: У кубика кулдаун на призывание
+---
+key: ui-effect-icon-cooldown-teleport
+en: The die has cooldown for teleport
+ru: У кубика кулдаун на телепорт
+---
+key: ui-effect-icon-cooldown-resurrection
+en: The die has cooldown for resurrection
+ru: У кубика кулдаун на воскрешение
+---
+key: ui-effect-icon-cooldown-shaman-heavy-defence
+en: The die has cooldown for aura of protection
+ru: У кубика кулдаун на защитную ауру
+---
+key: ui-effect-icon-cooldown-enthrallment
+en: The die has cooldown for enthrallment
+ru: У кубика кулдаун на завораживание
+---
+key: ui-effect-icon-tambourine-of-oblivion
+en: "The die can't use class abilities"
+ru: Кубик не может использовать классовые способности
+---
+key: ui-effect-icon-black-spot
+en: "The die can't be resurrected"
+ru: Кубик не может быть воскрешён
+---
+key: ui-effect-icon-eery-mask
+en: Die is scared, his attack and defence are weakened by 1
+ru: Кубик испуган, его атака и защита ослаблена на 1
+---
+key: ui-effect-icon-enthrallment
+en: Die is enthralled
+ru: Кубик заворожен
+---
+key: ui-effect-icon-invulnerability
+en: Die is invulnerable
+ru: Кубик неуязвим
+---
+key: "die-is-short-of-breath"
+en: "{die} is short of breath"
+ru: "{die} запыхался"
+---
+key: "ability-is-under-cooldown"
+en: "{die} can't use {ability} because of cooldown"
+ru: "{die} не может использовать способность {ability} из-за кулдауна"
+---
+key: "cant-use-ability"
+en: "{die} can't use {ability}"
+ru: "{die} не может использовать способность {ability}"
+---
+key: "can-not-place-summoned"
+en: "{die} has no free cells around to place summoned creature"
+ru: "{die} не может призвать воина из-за того, что рядом нет свободных клеток"
+---
+key: "die-is-max-level"
+en: "{die} already reached maximum level"
+ru: "{die} уже достиг максимального уровня"
+---
+key: "creature-is-not-on-map"
+en: "{die} is not on map"
+ru: "{die} не на карте"
+---
+key: "can-not-place-resurrected"
+en: "{die} has no free cells around to place resurrected creature"
+ru: "{die} не может воскресить кубик из-за того, что рядом нет свободных клеток"
+---
+key: "no-near-enemies"
+en: "{die} has no enemies within his attack radius"
+ru: "Нет врагов в радиусе атаки"
+---
+key: "no-near-creatures-of-relation"
+en: "There is no {relation} in {radius} cells radius."
+ru: "В радиусе {radius} клеток нет {relation}."
+---
+key: enemy
+en: enemy
+ru: враг
+---
+key: enemy.many
+en: enemies
+ru: враги
+---
+key: enemy.many.acc
+en: enemies
+ru: врагов
+---
+key: "die-is-not-poisoned"
+en: "{die} is not poisoned"
+ru: "{die} не отравлен"
+---
+key: "nobody-to-resurrect"
+en: "There is no creatures to resurrect"
+ru: "Некого воскрешать"
+---
+key: "ui-no-near-targets"
+en: "There is no available targets within his attack radius"
+ru: "В радиусе выстрела нет доступных целей"
+---
+key: "ui-no-near-targets-for-action"
+en: "There is no available targets within action radius"
+ru: "В радиусе действия нет доступных целей"
+---
+key: "ui-select-ability-for-concentration"
+en: "{die} concentrates on item he will use the next turn..."
+ru: "{die} концентрируется на предмете, который он будет использовать в следующий ход"
+---
+key: "ui-turns-order"
+en: "Turns order for this battle"
+ru: "Порядок ходов в этой битве"
+#
+# purchases
+#
+---
+key: "ui-purchase-window-header"
+en: "Get some coins"
+ru: "Добавить монет"
+---
+key: "ui-purchase-item-coin-100-name"
+en: "Small purse"
+ru: "Кошелёчек"
+---
+key: "ui-purchase-item-coin-100-count"
+en: "100 coins"
+ru: "100 монет"
+---
+key: "ui-purchase-item-coin-500-name"
+en: "Small purse"
+ru: "Кошелёчек"
+---
+key: "ui-purchase-item-coin-500-count"
+en: "500 coins"
+ru: "500 монет"
+---
+key: "ui-purchase-item-coin-1000-name"
+en: "Money pot"
+ru: "Горшочек"
+---
+key: "ui-purchase-item-coin-1000-count"
+en: "1000 coins"
+ru: "1000 монет"
+---
+key: "ui-purchase-item-coin-2500-name"
+en: "Treasure chest"
+ru: "Сундук"
+---
+key: "ui-purchase-item-coin-2500-count"
+en: "2500 coins"
+ru: "2500 монет"
+---
+key: "ui-exit-confirmation"
+en: "Are you sure\nyou want to quit?"
+ru: "Вы уверены,\nчто хотите выйти?"
+---
+key: "ui-yes"
+en: "Yes"
+ru: "Да"
+---
+key: "ui-no"
+en: "No"
+ru: "Нет"
+---
+key: "ui-replay-game"
+en: "Play again"
+ru: "Сыграть ещё раз"
+---
+key: "disconnect-utf-8"
+en: "Sorry, your device doesn't support utf-8 encoding :("
+ru: "Извините, ваше устройство не поддерживает кодировку utf-8 :("
+---
+key: "disconnect-peer-left"
+en: "Other player left the game"
+ru: "Другой игрок вышел из игры"
+---
+key: "disconnect-game-services-error"
+en: "The game was ended due to a Google Play Game Services error :("
+ru: "Игра закончилась из-за ошибки игровых сервисов Google Play :("
+---
+key: "disconnect-exception-on-receive"
+en: "We received unexpected message from other player :("
+ru: "Мы получили неожиданное сообщение от другого игрока :("
+---
+key: "disconnect-update-needed"
+en: "Game is impossible because you have older version of game than other players :("
+ru: "Игра невозможна, потому что у вас установлена более старая версия приложения, чем у других игроков :("
+---
+key: "disconnect-server-needs-update"
+en: "Game is impossible because other player has older version of game :("
+ru: "Игра невозможна, потому что у другого игрока установлена более старая версия приложения :("
+---
+key: "disconnect-unknown-reason"
+en: "The game ended due to an unknown reason :("
+ru: "Игра завершилась по неизвестной причине :("
+---
+key: "disconnect-level-not-reached-yet"
+en: "You didn't yet unlock multiplayer level :("
+ru: "Вы пока не дошли до уровня с мультиплеером :("
+---
+key: "disconnect-error-on-send"
+en: "We failed to send message to another player :("
+ru: "Не удалось отправить сообщение другому игроку :("
+---
+key: "ui-please-send-report"
+en: "There was an error. You can help us to fix it by sending crash report. If you press \"Send\", game will stop and you will be prompted to send report. You wont lose any progress."
+ru: "Произошла ошибка. Вы можете помочь нам её исправить, отправив отчёт о ней. Если вы нажмёте \"Отправить\", игра будет остановлена и вам будет предложено отправить отчёт. Вы не потеряете игровой прогресс."
+---
+key: "ui-crash-and-send"
+en: "Send"
+ru: "Отправить"
+---
+key: "ui-cancel-crash-report"
+en: "Cancel"
+ru: "Отменить"
+---
+key: "ui-okay"
+en: "Okay"
+ru: "Ок"
+---
+key: "ui-sign-in"
+en: "Sign in"
+ru: "Войти"
+---
+key: "ui-multiplayer-sign-in"
+en: "You need to sign in to Google Play Game Services to play in multiplayer"
+ru: "Нужно войти в игровые сервисы Google Play, чтобы играть в мультиплеере"
+---
+key: "multiplayer-invitation"
+en: "{user} invites you to play!"
+ru: "{user} приглашает сыграть!"
+---
+key: "ui-waiting-another-player"
+en: "Waiting another player..."
+ru: "Ожидаем другого игрока..."
+---
+key: "ui-select-die-name"
+en: "Change die's name!"
+ru: "Смени имя кубика!"
+---
+key: "ui-renames-left"
+en: "{count} {free-renames} left."
+ru: "Осталось {count} {free-renames}."
+---
+key: "ui-change-name"
+en: "Roll!"
+ru: "Сменить!"
+---
+key: "ui-change-name-for"
+en: "Roll for"
+ru: "Сменить за"
+---
+key: "ui-skill-desc"
+en: "Skill: {current}/{total}"
+ru: "Навык: {current}/{total}"
+---
+key: "ui-needed-skill"
+en: "needed skill: {skill}"
+ru: "требуемый навык: {skill}"
+---
+key: "not-enough-skill"
+en: "not enough skill"
+ru: "не хватает навыка"
+---
+key: free-renames.one
+en: free rename
+ru: бесплатное переименование
+---
+key: free-renames.many-one
+en: free renames
+ru: бесплатное переименование
+---
+key: free-renames.many-two
+en: free renames
+ru: бесплатных переименования
+---
+key: free-renames.many-five
+en: free renames
+ru: бесплатных переименований
+
+#
+# items
+#
+---
+key: item-any-ingredient
+en: "Any ingredient"
+ru: "Любой ингредиент"
+---
+key: item-any-ingredient-desc
+en: "This potions can be brewed with any ingredient"
+ru: "Для этого зелья подойдёт любой ингредиент"
+---
+key: item-feather
+en: "Raven's feather"
+ru: "Воронье перо"
+---
+key: item-feather-desc
+en: "Can be found in Silent Wasteland. Used in brewing {enum}"
+ru: "Может быть найдено в Тихой Пустоши. Используется в приготовлении {enum}"
+---
+key: item-applebloom
+en: "Applebloom"
+ru: "Яблоневый цвет"
+---
+key: item-applebloom-desc
+en: "Can be found in Woodlands of Yore. Used in brewing {enum}"
+ru: "Может быть найден в Диких Лесах. Используется в приготовлении {enum}"
+---
+key: item-dragonwort
+en: "Dried dragonwort"
+ru: "Сушёный эстрагон"
+---
+key: item-dragonwort-desc
+en: "Can be found in Woodlands of Yore and Deadly Desert. Used in brewing {enum}"
+ru: "Может быть найден в Диких Лесах и Пустыне Погибели. Используется в приготовлении {enum}"
+---
+key: item-fireberries
+en: "Fire Berries"
+ru: "Огненные ягоды"
+---
+key: item-fireberries-desc
+en: "Can be found in Mages Domain. Used in brewing {enum}"
+ru: "Могут быть найдены в Землях Магов. Используются в приготовлении {enum}"
+---
+key: item-pearl
+en: "Pearl"
+ru: "Жемчужина"
+---
+key: item-pearl-desc
+en: "Can be found in Mages Domain. Used in brewing {enum}"
+ru: "Может быть найдена в Землях Магов. Используется в приготовлении {enum}"
+---
+key: item-ruby
+en: "Ruby"
+ru: "Рубин"
+---
+key: item-ruby-desc
+en: "Can be found in Dark Fortress. Used in brewing {enum}"
+ru: "Может быть найден в Тёмной Крепости. Используется в приготовлении {enum}"
+---
+key: item-sulfur
+en: "Sulfur"
+ru: "Сера"
+---
+key: item-sulfur-desc
+en: "Can be found in Silent Wasteland. Used in brewing {enum}"
+ru: "Может быть найдена в Тихой Пустоши. Используется в приготовлении {enum}"
+---
+key: item-web
+en: "Web"
+ru: "Паутина"
+---
+key: item-web-desc
+en: "Can be found in Dark Fortress and Deadly Desert. Used in brewing {enum}"
+ru: "Может быть найдена в Тёмной Крепости и Пустыне Погибели. Используется в приготовлении {enum}"
+#
+#
+# tutorial
+#
+#
+---
+key: "tap-to-continue"
+en: "tap to continue"
+ru: "коснись экрана, чтобы продолжить"
+---
+key: "tutorial-intro-1"
+en: "Dark times came down the Dice world - the Alliance forces keep Diceland under control. Evil is everywhere, but it won't last forever."
+ru: "Тёмные времена настали в мире кубиков - войска Альянса держат под контролем земли Кубестрии. Но гнёт не может продолжаться вечно."
+---
+key: "tutorial-intro-2"
+en: "One after another, separate nations that inhabit these lands become rebellious. Your mission is to raise the Resistance Army and restore freedom to Diceland."
+ru: "Один за другим, представители разрозненных рас, населяющих страну, начинают восставать, и нам предстоит объединить их в движение Сопротивления."
+---
+key: "tutorial-pudi-introduction"
+en: "Here's Pudi the brave warrior. He is ready to become the first freedom fighter. Let's prepare for the oncoming fight!"
+ru: "Это Пуди, храбрый воин. Он готов стать первым в рядах повстанцев. Осталось подготовиться к предстоящей битве."
+---
+key: "tutorial-open-dice-window"
+en: "Open the dice settings window"
+ru: "Открой окно настройки кубиков"
+---
+key: "tutorial-dice-window"
+en: "This window contains information about all your allies. Tap Pudi"
+ru: "В этом окне отображаются все твои кубики. Нажми на Пуди"
+---
+key: "tutorial-net"
+en: "There can be one item on each side of a die. For now Pudi has only one sword. Let’s buy something else for him!"
+ru: "На каждой грани кубика может быть по вещи, сейчас у Пуди есть только меч, давай купим что-нибудь ещё!"
+---
+key: "tutorial-open-store"
+en: "Open die's store"
+ru: "Открой магазин"
+---
+key: "tutorial-click-defence"
+en: "What are you without your shield?"
+ru: "Какой же воин без щита?"
+---
+key: "tutorial-place-defence-on-net"
+en: "Place the shield on any empty side of the dice net"
+ru: "Перетащи щит на любую пустую сторону кубика"
+---
+key: "tutorial-close-dice-window"
+en: "Pudi is ready to fight! Tap {back} to go back to the map"
+ru: "Пуди готов к бою! Нажми {back}, чтобы перейти к карте."
+---
+key: "tutorial-open-level"
+en: "Looks like it's time for your first fight!"
+ru: "Пришло время первого боя!"
+---
+key: "tutorial-place-pudi"
+en: "Place Pudi on the battlefield"
+ru: "Размести Пуди на поле боя"
+---
+key: "tutorial-press-start"
+en: "Press start button"
+ru: "Нажми на кнопку старта"
+---
+key: "tutorial-press-bjum"
+en: "Pudi faces Bjum! Tap and hold the enemy to find out more information about his strength"
+ru: "Пуди сталкивается один на один с Бжумом! Долгое нажатие на врага покажет его боевую силу"
+---
+key: "tutorial-creature-info-window-1"
+en: "Here you can see items the dice uses in the fight"
+ru: "Здесь показаны те вещи, которые кубик использует в бою"
+---
+key: "tutorial-creature-info-window-2"
+en: "You can tap item to read it's description"
+ru: "По нажатию на вещи можно почитать её описание"
+---
+key: "tutorial-creature-info-window-3"
+en: "This information is available at any moment during the fight. Tap {back} button to close the window"
+ru: "Смотреть информацию о любом кубике можно в любой момент боя. Нажми {back}, чтобы выйти"
+---
+key: "tutorial-move"
+en: "In its turn a die can be thrown on any vacant neighbour tile of a field including the one he is standing on right now"
+ru: "В бою кубик можно бросить на любую свободную соседнюю клетку поля, включая ту, на которой он находится"
+---
+key: "tutorial-roll"
+en: "Let's roll!"
+ru: "Вперёд!"
+---
+key: "tutorial-roll-confirm"
+en: "Tap again to confirm moving to selected tile"
+ru: "Нажми ещё раз для подтверждения передвижения на выбранную клетку"
+---
+key: "tutorial-what-is-rolled"
+en: "After throwing one of six chosen items becomes available and comes into action. For this turn Pudi is defended from attacks"
+ru: "При броске выпадает одна из находящихся на его гранях вещей и выполняет своё действие. До следующего хода Пуди защищён от атак"
+---
+key: "tutorial-long-press-tip"
+en: "Tip: information about your active die is available by tap and hold on him"
+ru: "Совет: посмотреть информацию о своём активном кубике можно по долгому нажатию на него"
+---
+key: "tutorial-exp-gained"
+en: "Pudi successfully blocks the attack and gains some exp. The more experienced a die is, the more powerful items he can use"
+ru: "Пуди успешно отразил атаку и получил немного опыта. Чем опытнее кубик, тем более мощные вещи он сможет использовать"
+---
+key: "tutorial-roll-again"
+en: "Tap Pudi so he stays on the same place for his next turn"
+ru: "Нажми на Пуди, чтобы в свой ход он остался на том же месте"
+---
+key: "tutorial-win"
+en: "Bjum is defeated! Pudi gains his exp, and trophy coins can be used to buy items for all your dice"
+ru: "Бжум повержен! Пуди получает опыт, а монетки идут в общую казну повстанцев для покупки новых боевых вещей"
+---
+key: "tutorial-ending"
+en: "Tutorial is done! After completing the level, one or several new become available, but you can always replay levels if you want to practice. Move on, we will see even more glorious feats!"
+ru: "Обучение пройдено! После прохождения уровней открываются новые, а старые всегда можно перепройти для тренировки. Вперёд, нас ждёт ещё много славных подвигов!"
+---
+key: "tutorial-end-dice-window"
+en: "More battles are coming and each following requires more dice power. Let's spend gained coins for some new items"
+ru: "Для последующих битв кубикам потребуется больше боевой силы. На полученные монетки снаряди Пуди чем-нибудь ещё"
+---
+key: "tutorial-initiative"
+en: "Dice are displayed in turns order"
+ru: "При расстановке кубики отображаются в порядке, в котором они ходят"
+---
+key: "tutorial-turn-order-window"
+en: "The next die in line is shown here. Tap to see full turns queue."
+ru: "Здесь показано, кто ходит следующим. По нажатию откроется окно с полным списком очерёдности."
+---
+key: "tutorial-profession-abilities"
+en: "When die progresses, he receives class abilities, which can be used instead of his regular turn."
+ru: "При достижении определённых уровней у кубика появляются способности, присущие его классу. Их можно использовать вместо хода."
+---
+key: "tutorial-potions-available"
+en: "Now potions are available for dice!"
+ru: "Теперь кубикам доступно зельеварение!"
+---
+key: "tutorial-potions-list"
+en: "Here is a list of all available potions"
+ru: "Здесь перечислены возможные зелья"
+---
+key: "tutorial-potions-description"
+en: "There is description of potion's effect and required ingredients"
+ru: "Здесь написан эффект зелья и необходимые ингредиенты"
+---
+key: "tutorial-potions-ingredients"
+en: "You can tap on ingredient to view its description"
+ru: "По нажатию на ингредиент показывается его описание"
+---
+key: "tutorial-potions-brewing"
+en: "To brew a potion you need to drop ingredients here and then tap on the potion appeared on the right"
+ru: "Чтобы сварить зелье, нужно перетащить сюда ингредиенты и нажать на появившееся справа зелье"
+---
+key: "tutorial-potions-any-ingredients"
+en: "Question mark in recipe means any ingredient can be used"
+ru: "Знак вопроса в рецепте означает, что может быть использован любой ингредиент"
+---
+key: "tutorial-potions-play-action"
+en: "In a battle before his turn a die can drink or throw a potion"
+ru: "В бою перед своим ходом кубик может выпить или бросить зелье"
+---
+key: "tutorial-potions-play-one-potion-per-turn"
+en: "Only one potion per dies turn can be used"
+ru: "За ход кубик может использовать только одно зелье"
+---
+key: "tutorial-spawn-swipe"
+en: "You have so much dice they can't be displayed at once. Slide left or right to navigate them. To place die on battlefield, move him up."
+ru: "У тебя так много кубиков, что они не могут быть показаны все сразу. Чтобы промотать список кубиков, проведи пальцем влево или вправо. Чтобы вытащить кубик на поле боя, перетаскивай его движением вверх."
+---
+key: "tutorial-skill-values"
+en: "Every item requires some skill. The more experienced your dice are, the more difficult items they can use."
+ru: "Каждый предмет требует от кубика определённого навыка. Чем опытнее кубик, тем больше сложных в обращении предметов он может использовать одновременно."
+---
+key: "tutorial-boss-intro"
+en: "The famous Resistance Movement! I'm surprised you've come this far. But you won't survive today. My dragons are hungry. And I'm invulnerable muahahaha!"
+ru: "Вот и знаменитое движение Сопротивления! Удивлён, что вы зашли так далеко. Но отсюда живыми вам не выбраться. Мои драконы проголодались. И я неуязвим муахахаха!"
+---
+key: "tutorial-boss-vulnerability"
+en: "I guess I underestimated you. But the battle isn't over yet!"
+ru: "Похоже, я вас недооценил. Но битва ещё не закончена!"
+---
+key: "tutorial-boss-death"
+en: "I have something to say... {name}, I am your father..."
+ru: "Я должен кое что сказать... {name}, я твой отец..."
+---
+key: "tutorial-final-ending"
+en: "The brave Resistance Movement managed to defeat the enemy forces and finally there is peace in Diceland!\n\nThe end."
+ru: "Бесстрашное движение Сопротивления сумело победить вражеские силы, и в Кубестрии наконец настал мир!\n\nКонец."
+#
+#
+# share
+#
+#
+---
+key: "app-share-text"
+en: "Hey, let's play #DiceHeroes! {app-link}"
+ru: "Хей, давайте играть в #DiceHeroes! {app-link}"
+---
+key: "pvp-share"
+en: "I beat {opponents} in #diceheroes! {app-link}"
+ru: "Победа! {opponents} {pvp-cant-stop-me} в #diceheroes! {app-link}"
+---
+key: "pvp-cant-stop-me.one"
+en: ""
+ru: "меня не остановит"
+---
+key: "pvp-cant-stop-me.many"
+en: ""
+ru: "меня не остановят"
+---
+key: "share-level-default"
+en: "I passed {level} level of #diceheroes! {app-link}"
+ru: "Пройден {level} уровень в #diceheroes! {app-link}"
+---
+key: "share-level-tutorial"
+en: "I passed tutorial level in #diceheroes! {app-link}"
+ru: "Пройден обучающий уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-1"
+en: "I passed second level of #diceheroes! {app-link}"
+ru: "Пройден второй уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-2"
+en: "I passed third level of #diceheroes! {app-link}"
+ru: "Пройден третий уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-3"
+en: "I passed fourth level of #diceheroes! {app-link}"
+ru: "Пройден четвёртый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-4"
+en: "I passed fifth level of #diceheroes! {app-link}"
+ru: "Пройден пятый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-5"
+en: "I passed sixth level of #diceheroes! {app-link}"
+ru: "Пройден шестой уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-6"
+en: "I passed seventh level of #diceheroes! {app-link}"
+ru: "Пройден седьмой уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-7"
+en: "I passed eighth level of #diceheroes! {app-link}"
+ru: "Пройден восьмой уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-8"
+en: "I passed ninth level of #diceheroes! {app-link}"
+ru: "Пройден девятый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-w-9"
+en: "I passed tenth level of #diceheroes! {app-link}"
+ru: "Пройден десятый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-1"
+en: "I have my first archer in #diceheroes! {app-link}"
+ru: "У меня есть первый лучник в #diceheroes! {app-link}"
+---
+key: "share-level-a-2"
+en: "I passed twelfth level of #diceheroes! {app-link}"
+ru: "Пройден двенадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-3"
+en: "I passed thirteenth level of #diceheroes! {app-link}"
+ru: "Пройден тринадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-4"
+en: "I passed fourteenth level of #diceheroes! {app-link}"
+ru: "Пройден четырнадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-5"
+en: "I passed fifteenth level of #diceheroes! {app-link}"
+ru: "Пройден пятнадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-6"
+en: "I passed sixteenth level of #diceheroes! {app-link}"
+ru: "Пройден шестнадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-7"
+en: "I passed seventeenth level of #diceheroes! {app-link}"
+ru: "Пройден семнадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-8"
+en: "I passed eighteenth level of #diceheroes! {app-link}"
+ru: "Пройден восемнадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-9"
+en: "I passed nineteenth level of #diceheroes! {app-link}"
+ru: "Пройден девятнадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-a-10"
+en: "I passed twentieth level of #diceheroes! {app-link}"
+ru: "Пройден двадцатый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-1"
+en: "I entered mages domain in #diceheroes! {app-link}"
+ru: "Пройден двадцать первый уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-2"
+en: "I passed twenty second level in #diceheroes! {app-link}"
+ru: "Пройден двадцать второй уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-3"
+en: "I passed 23rd level in #diceheroes! {app-link}"
+ru: "Пройден 23 уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-4"
+en: "I passed 24th level in #diceheroes! {app-link}"
+ru: "Пройден 24 уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-5"
+en: "I passed 25th level in #diceheroes! {app-link}"
+ru: "Пройден 25 уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-6"
+en: "I passed 26th level in #diceheroes! {app-link}"
+ru: "Пройден 26 уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-7"
+en: "I passed 27th level in #diceheroes! {app-link}"
+ru: "Пройден 27 уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-8"
+en: "I passed 28th level in #diceheroes! {app-link}"
+ru: "Пройден 28 уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-9"
+en: "I passed 29th level in #diceheroes! {app-link}"
+ru: "Пройден 29 уровень в #diceheroes! {app-link}"
+---
+key: "share-level-m-10"
+en: "I passed 30th level in #diceheroes! {app-link}"
+ru: "Пройден 30 уровень в #diceheroes! {app-link}"
+---
+key: "share-level-c-1"
+en: "I just entered dark fortress in #diceheroes! {app-link}"
+ru: "Я в тёмной крепости в #diceheroes! {app-link}"
+---
+key: "share-level-c-2"
+en: "I passed 2nd level of dark fortress in #diceheroes! {app-link}"
+ru: "Пройден второй уровень тёмной крепости в #diceheroes! {app-link}"
+---
+key: "share-level-c-3"
+en: "I passed 3rd level of dark fortress in #diceheroes! {app-link}"
+ru: "Пройден третий уровень тёмной крепости в #diceheroes! {app-link}"
+---
+key: "share-level-c-4"
+en: "I passed 4th level of dark fortress in #diceheroes! {app-link}"
+ru: "Пройден четвёртый уровень тёмной крепости в #diceheroes! {app-link}"
+---
+key: "share-level-c-5"
+en: "I passed dark fortress in #diceheroes! {app-link}"
+ru: "Пройдена тёмная крепость в #diceheroes! {app-link}"
+#
+#
+# game actions
+#
+#
+---
+key: "game-select-target"
+en: "Select target"
+ru: "Выберите цель"
+---
+key: "game-select-cell"
+en: "Select cell"
+ru: "Выберите клетку"
+#
+#
+# requirements
+#
+#
+---
+key: "requirement-level"
+en: "{name} needs to be level {level}"
+ru: "{name} должен быть {level}-го уровня"
+---
+key: "requirement-profession"
+en: "{name} needs to be the {profession}"
+ru: "{name}, увы, не {profession}"
+
+# names begin
+
+
+# names end
+
+#
+#
+# abilities
+#
+#
+---
+key: ability-skip-turn
+en: "There is no item"
+ru: "Тут ничего нет"
+---
+key: ability-skip-turn-desc
+en: "turn is skipped"
+ru: "пропуск хода"
+---
+key: ability-default-attack
+en: "Wooden sword"
+ru: "Деревянный меч"
+---
+key: ability-default-attack-desc
+en: "attacks one neighbour target with attack power 1"
+ru: "атакует одного врага на соседней клетке с силой атаки 1"
+---
+key: ability-default-defence
+en: "Wooden shield"
+ru: "Деревянный щит"
+---
+key: ability-default-defence-desc
+en: "protects from attacks with power 1"
+ru: "защищает от атак силой 1"
+---
+key: ability-heavy-attack
+en: "Iron sword"
+ru: "Стальной меч"
+---
+key: ability-heavy-attack-desc
+en: "attacks one neighbour target with attack power 2"
+ru: "атакует одного врага на соседней клетке с силой атаки 2"
+---
+key: ability-heavy-defence
+en: "Iron shield"
+ru: "Стальной щит"
+---
+key: ability-heavy-defence-desc
+en: "protects from attacks with power 2"
+ru: "защищает от атак силой 2"
+---
+key: ability-cleave
+en: "Wooden sword of fury"
+ru: "Деревянный меч ярости"
+---
+key: ability-cleave-desc
+en: "attacks all near enemies with attack power 1"
+ru: "атакует всех ближайших врагов c силой атаки 1"
+---
+key: ability-heavy-cleave
+en: "Iron sword of fury"
+ru: "Стальной меч ярости"
+---
+key: ability-heavy-cleave-desc
+en: "attacks all near enemies with attack power 2"
+ru: "атакует всех ближайших врагов c силой атаки 2"
+---
+key: ability-shot
+en: "Short bow"
+ru: "Короткий лук"
+---
+key: ability-shot-desc
+en: "shoots enemy in 3 cells radius with attack power 1. Can't shoot if there are any enemies near"
+ru: "стреляет в радиусе 3 клеток с силой атаки 1. Нельзя стрелять, если рядом есть враг"
+---
+key: ability-heavy-shot
+en: "Long bow"
+ru: "Длинный лук"
+---
+key: ability-heavy-shot-desc
+en: "shoots enemy in 3 cells radius with attack power 2. Can't shoot if there are any enemies near"
+ru: "стреляет в радиусе 3 клеток с силой атаки 2. Нельзя стрелять, если рядом есть враг"
+---
+key: ability-speed
+en: "Elven boots"
+ru: "Эльфийские ботинки"
+---
+key: ability-speed-desc
+en: "give ability to move one more cell and then roll"
+ru: "дают возможность передвинуться ещё на одну клетку и затем броситься"
+---
+key: ability-speed-attack
+en: "Elven dagger"
+ru: "Эльфийский кинжал"
+---
+key: ability-speed-attack-desc
+en: "gives ability to move one more cell and then attack with power 1"
+ru: "даёт возможность передвинуться ещё на одну клетку и затем атаковать с силой атаки 1"
+---
+key: ability-heavy-speed-attack
+en: "Elven blade"
+ru: "Эльфийский клинок"
+---
+key: ability-heavy-speed-attack-desc
+en: "gives ability to move one more cell and then attack with power 2"
+ru: "даёт возможность передвинуться ещё на одну клетку и затем атаковать с силой атаки 2"
+---
+key: ability-elven-defence
+en: "Elven armor"
+ru: "Эльфийская кольчуга"
+---
+key: ability-elven-defence.acc
+en: "Elven armor"
+ru: "Эльфийскую кольчугу"
+---
+key: ability-elven-defence-desc
+en: "protects from attacks with power 1 for 3 turns. When used with shield, protects from attacks with power 2"
+ru: "защищает от атак силой 1 в течение 3 ходов, в сочетании с щитом даёт защиту от атак 2 уровня"
+---
+key: ability-heavy-elven-defence
+en: "Mythril armor"
+ru: "Мифрильная броня"
+---
+key: ability-heavy-elven-defence.acc
+en: "Mythril armor"
+ru: "Мифрильную броню"
+---
+key: ability-heavy-elven-defence-desc
+en: "protects from attacks with power 1 for 5 turns. When used with shield, protects from attacks with power 2"
+ru: "защищает от атак силой 1 в течение 5 ходов, в сочетании с щитом даёт защиту от атак 2 уровня"
+---
+key: ability-defensive-attack
+en: "Blade of resistance"
+ru: "Кинжал сопротивления"
+---
+key: ability-defensive-attack-desc
+en: "attacks one neighbour target with attack power 1 and protects from attacks with power 1"
+ru: "атакует одного врага на соседней клетке с силой атаки 1 и защищает от атак силой 1"
+---
+key: ability-heavy-defensive-attack
+en: "Sword of resistance"
+ru: "Меч сопротивления"
+---
+key: ability-heavy-defensive-attack-desc
+en: "attacks one neighbour target with attack power 1 and protects from attacks with power 2"
+ru: "атакует одного врага на соседней клетке с силой атаки 1 и защищает от атак силой 2"
+---
+key: ability-fireball
+en: "Fireball"
+ru: "Фаербол"
+---
+key: ability-fireball-desc
+en: "shoots one enemy in 4 cells radius with attack power 1"
+ru: "стреляет в одного врага в радиусе 4 клеток с силой атаки 1"
+---
+key: ability-freeze
+en: "Freeze crystals"
+ru: "Кристаллы заморозки"
+---
+key: ability-freeze-desc
+en: "magic of Cold freezes one enemy in 2 cells radius for 2 turns"
+ru: "магией холода замораживают одного врага в радиусе 2 клеток на 2 хода"
+---
+key: ability-chain-lightning
+en: "Wand of magic lightning"
+ru: "Палочка магической молнии"
+---
+key: ability-chain-lightning.acc
+en: "Wand of magic lightning"
+ru: "Палочку магической молнии"
+---
+key: ability-chain-lightning-desc
+en: "strikes one enemy in 3 cells radius and one neighbour die with attack of power 1"
+ru: "ударяет врага в радиусе 3 клеток и одного соседнего с ним кубика с силой атаки 1"
+---
+key: ability-firestorm
+en: "Scroll of firestorm"
+ru: "Свиток огненного шторма"
+---
+key: ability-firestorm-desc
+en: "meteor that fires in 1.5 cells radius with attack power 1"
+ru: "призывает метеор, который в радиусе 1.5 клеток наносит всем урон с силой атаки 1"
+---
+key: ability-heavy-firestorm
+en: "Scroll of fire tornado"
+ru: "Свиток огненного торнадо"
+---
+key: ability-heavy-firestorm-desc
+en: "meteor that fires in 1.5 cells radius with attack power 1, in the epicenter attack power is 2. "
+ru: "призывает метеор, который в радиусе 1.5 клеток наносит всем урон с силой атаки 1, в эпицентре сила атаки 2"
+---
+key: ability-cleric-defence
+en: "Holy symbol of protection"
+ru: "Священный символ защиты"
+---
+key: ability-cleric-defence-desc
+en: "protects one ally in 2 cells radius from attacks with power 1"
+ru: "защищает одного дружественного кубика в радиусе 2 клеток от атак с силой 1"
+---
+key: ability-area-of-attack
+en: "Amulet of inspiration"
+ru: "Амулет воодушевления"
+---
+key: ability-area-of-attack-desc
+en: "increases attack power of allies in 2 cells radius by 1, but no more than to 2"
+ru: "увеличивает силу атаки дружественных кубиков в радиусе 2 клеток на 1, но не более чем до 2"
+---
+key: ability-area-of-defence
+en: "Amulet of protection"
+ru: "Амулет защиты"
+---
+key: ability-area-of-defence-desc
+en: "increases protection of allies in 1 cell radius by 1, but no more than to 2"
+ru: "увеличивает защиту всех дружественных кубиков в радиусе 1 клетки на 1, но не более чем до 2"
+---
+key: ability-cleric-heavy-defence
+en: "Symbol of super protection"
+ru: "Символ супер защиты"
+---
+key: ability-cleric-heavy-defence-desc
+en: "protects one ally in 2 cells radius from attacks with power 2"
+ru: "защищает одного дружественного кубика в радиусе 2 клеток от атак с силой 2"
+---
+key: ability-speed-defence
+en: "Strafe"
+ru: "Рывок"
+---
+key: ability-speed-defence-desc
+en: "ability to move 2 cells and then use wooden shield. Cooldown: {cooldown} turns"
+ru: "способность передвинуться на 2 клетки и использовать деревянный щит. Кулдаун: {cooldown} ходов"
+---
+key: ability-berserk
+en: "Berserk"
+ru: "Берсерк"
+---
+key: ability-berserk-desc
+en: "ability to perform attack with power 3. Afterwards this die is unable to use any defence for 4 turns. Cooldown: {cooldown} turns"
+ru: "способность атаковать с силой атаки 3. После использования способности кубик не использует защиту в течение четырёх ходов. Кулдаун: {cooldown} ходов"
+---
+key: ability-transform-to-obstacle
+en: "Masking"
+ru: "Маскировка"
+---
+key: ability-transform-to-obstacle-desc
+en: "ability to turn into a bush for 4 turns. While being a bush a die is inactive and can't be attacked. Cooldown: {cooldown} turns"
+ru: "способность превратиться в кустик. Будучи кустиком, кубик бездействует и не может быть атакован. Кулдаун: {cooldown} ходов"
+---
+key: ability-poison-dart
+en: "Poisonous dart"
+ru: "Отравляющий дротик"
+---
+key: ability-poison-dart-desc
+en: "poisonous dart kills its target in 3 cells radius after 4 turns. Cooldown: {cooldown} turns"
+ru: "выстрел отравляющим дротиком, который убъёт кубик в радиусе 3 клеток через 4 хода. Кулдаун: {cooldown} ходов"
+---
+key: ability-concentration
+en: "Concentration"
+ru: "Концентрация"
+---
+key: ability-concentration-desc
+en: "allows to select, what will be rolled on this die the next turn. Cooldown: {cooldown} turns"
+ru: "позволяет выбрать, что выпадет на кубике в следующий ход. Кулдаун: {cooldown} ходов"
+---
+key: ability-summon
+en: "Summoning"
+ru: "Призывание"
+---
+key: ability-summon-desc
+en: "allows to summon a warrior with 3 iron shields and 3 iron swords. Cooldown: {cooldown} turns"
+ru: "позволяет призвать война с 3 железными щитами и 3 железными мечами. Кулдаун: {cooldown} ходов"
+---
+key: ability-teleport
+en: "Teleport"
+ru: "Телепорт"
+---
+key: ability-teleport-desc
+en: "ability to move instantly on any free cell in {radius} cells radius. Cooldown: {cooldown} turns"
+ru: "позволяет мгновенно переместиться на любую свободную клетку в радиусе {radius} клеток. Кулдаун: {cooldown} ходов"
+---
+key: ability-resurrection
+en: "Resurrection"
+ru: "Воскрешение"
+---
+key: ability-resurrection-desc
+en: "ability to resurrect one ally. Cooldown: {cooldown} turns"
+ru: "позволяет вернуть к жизни один дружественный кубик. Кулдаун: {cooldown} ходов"
+---
+key: ability-antidote
+en: "Antidote"
+ru: "Противоядие"
+---
+key: ability-antidote-desc
+en: "cures one poisoned ally in 2 cells radius"
+ru: "излечивает одного отравленного союзника в радиусе 2 клеток"
+---
+key: ability-area-of-antidote
+en: "Amulet of antidote"
+ru: "Амулет противоядия"
+---
+key: ability-area-of-antidote-desc
+en: "cures all poisoned allies in 2 cells radius"
+ru: "излечивает всех отравленных союзников в радиусе 2 клеток"
+---
+key: ability-potion-of-experience
+en: "Potion of experience"
+ru: "Зелье опыта"
+---
+key: ability-potion-of-experience.gen
+en: "Potion of experience"
+ru: "Зелья опыта"
+---
+key: ability-potion-of-experience-desc
+en: "brings a die to the next level"
+ru: "переводит кубик на следующий уровень"
+---
+key: ability-potion-of-antidote
+en: "Potion of antidote"
+ru: "Зелье антидота"
+---
+key: ability-potion-of-antidote.gen
+en: "Potion of antidote"
+ru: "Зелья антидота"
+---
+key: ability-potion-of-antidote-desc
+en: "removes poison effect from a die"
+ru: "излечивает кубик от отравления"
+---
+key: ability-potion-of-explosion
+en: "Potion of fire"
+ru: "Огненное зелье"
+---
+key: ability-potion-of-explosion.gen
+en: "Potion of fire"
+ru: "Огненного зелья"
+---
+key: ability-potion-of-explosion-desc
+en: "When thrown at the enemy in {radius} cells radius it causes him damage with attack power {level}"
+ru: "Будучи брошено во врага в радиусе {radius} клеток, наносит ему урон с силой атаки {level}"
+---
+key: ability-potion-of-petrification
+en: "Potion of petrification"
+ru: "Зелье окаменения"
+---
+key: ability-potion-of-petrification.gen
+en: "Potion of petrification"
+ru: "Зелья окаменения"
+---
+key: ability-potion-of-petrification-desc
+en: "When thrown at the enemy in {radius} cells radius it turns him in a stone for {turns} turns"
+ru: "Будучи брошено во врага в радиусе {radius} клеток, зелье обращает его в камень на {turns} хода"
+---
+key: ability-potion-of-stupefaction
+en: "Potion of stupefaction"
+ru: "Одурманивающее зелье"
+---
+key: ability-potion-of-stupefaction.gen
+en: "Potion of stupefaction"
+ru: "Одурманивающего зелья"
+---
+key: ability-potion-of-stupefaction-desc
+en: "When thrown at the enemy in {radius} cells radius it makes him uncontrollable for {turns} turns"
+ru: "Будучи брошено во врага в радиусе {radius} клеток, зелье делает его неуправляемым на {turns} хода"
+---
+key: ability-potion-of-viscosity
+en: "Potion of viscosity"
+ru: "Липкое зелье"
+---
+key: ability-potion-of-viscosity.gen
+en: "Potion of viscosity"
+ru: "Липкого зелья"
+---
+key: ability-potion-of-viscosity-desc
+en: "When thrown at the enemy in {radius} cells radius it makes him immovable for {turns} turns"
+ru: "Будучи брошено во врага в радиусе {radius} клеток, зелье приклеивает его к месту на {turns} хода"
+---
+key: ability-potion-of-unstable-teleportation
+en: "Unstable potion of teleportation"
+ru: "Нестабильное зелье телепорта"
+---
+key: ability-potion-of-unstable-teleportation.gen
+en: "Unstable potion of teleportation"
+ru: "Нестабильного зелья телепортации"
+---
+key: ability-potion-of-unstable-teleportation-desc
+en: "When drunk or thrown it teleports die to random place in {radius} cells radius"
+ru: "Будучи выпитым или брошенным, телепортирует кубик в случайное место в радиусе {radius} клеток"
+---
+key: ability-potion-of-unstable-luck
+en: "Unstable potion of luck"
+ru: "Нестабильное зелье удачи"
+---
+key: ability-potion-of-unstable-luck.gen
+en: "Unstable potion of luck"
+ru: "Нестабильного зелья удачи"
+---
+key: ability-potion-of-unstable-luck-desc
+en: "When drunk or thrown it makes a die to either repeat or skip his turn"
+ru: "Будучи выпитым или брошенным, заставляет кубик либо повторить, либо пропустить свой ход"
+---
+key: ability-tambourine-of-oblivion
+en: "Tambourine of oblivion"
+ru: "Бубен забвения"
+---
+key: ability-tambourine-of-oblivion-desc
+en: "prohibits the enemy in {radius} cells radius to use class abilities for {turns} turns"
+ru: "запрещает врагу в радиусе {radius} клеток пользоваться классовыми способностями на {turns} хода"
+---
+key: ability-staff-of-teleportation
+en: "Staff of teleportation"
+ru: "Посох телепортации"
+---
+key: ability-staff-of-teleportation-desc
+en: "teleports any die in {radius} cells radius to any cell in {teleport-radius} cells radius"
+ru: "телепортирует любой кубик в радиусе {radius} клеток на клетку в радиусе {teleport-radius} клеток"
+---
+key: ability-black-spot
+en: "Black spot"
+ru: "Чёрная метка"
+---
+key: ability-black-spot.acc
+en: "Black spot"
+ru: "Чёрную метку"
+---
+key: ability-black-spot-desc
+en: "marks one enemy in {radius} cells radius for {turns} turns. The die can't be resurrected if he dies with black spot"
+ru: "помечает врага в радиусе {radius} клеток на {turns} ходов. Кубик не может быть воскрешён, если умер с чёрной меткой"
+---
+key: ability-poisonous-dust
+en: "Poisonous dust"
+ru: "Ядовитая пыльца"
+---
+key: ability-poisonous-dust.acc
+en: "Poisonous dust"
+ru: "Ядовитую пыльцу"
+---
+key: ability-poisonous-dust-desc
+en: "sprayed in {radius} cells radius, and poisons all dice in {area} cell radius for {turns} turns"
+ru: "распыляется в радиусе {radius} клеток и отравляет все кубики в радиусе {area} клетки на {turns} ходов"
+---
+key: ability-eery-mask
+en: "Eery mask"
+ru: "Жуткая маска"
+---
+key: ability-eery-mask.acc
+en: "Eery mask"
+ru: "Жуткую маску"
+---
+key: ability-eery-mask-desc
+en: "decreases attack and defence power of enemies in {radius} cells radius by {value}, but not less than {min}"
+ru: "уменьшает силу атаки и защиты врагов в радиусе {radius} клеток на {value}, но не меньше чем до {min}"
+---
+key: ability-shaman-heavy-defence
+en: "Aura of protection"
+ru: "Защитная аура"
+---
+key: ability-shaman-heavy-defence.acc
+en: "Aura of protection"
+ru: "Защитную ауру"
+---
+key: ability-shaman-heavy-defence-desc
+en: "protects from attacks with power {level} for {turns} turns"
+ru: "даёт защиту от атак силой {level} на {turns} хода"
+---
+key: ability-enthrallment
+en: "Enthrallment"
+ru: "Завораживание"
+---
+key: ability-enthrallment-desc
+en: "turns one enemy in {radius} cells radius to ally for {turns} turns"
+ru: "переводит вражеский кубик в радиусе {radius} клеток на свою сторону на {turns} хода"
+---
+key: ability-heavy-fireball
+en: "Big fireball"
+ru: "Большой фаербол"
+---
+key: ability-heavy-fireball-desc
+en: "shoots one enemy in 4 cells radius with attack power 2"
+ru: "стреляет в одного врага в радиусе 4 клеток с силой атаки 2"
+---
+key: ability-summon-dale
+en: "Summon Dale"
+ru: "Призывание Дейла"
+---
+key: ability-summon-dale-desc
+en: "summons a warrior with 3 iron shields and 3 iron swords"
+ru: "призвает война с 3 железными щитами и 3 железными мечами"
+---
+key: ability-boss-summon-1
+en: "Summon Ruby"
+ru: "Призывание Руби"
+---
+key: ability-boss-summon-1-desc
+en: "summons a dragon with mage abilities"
+ru: "призвает дракона с магическими способностями"
+---
+key: ability-heavy-chain-lightning
+en: "Lightning strike"
+ru: "Удар молнии"
+---
+key: ability-heavy-chain-lightning-desc
+en: "strikes one enemy in 3 cells radius and 2 neighbour dice with attack of power 2"
+ru: "ударяет врага в радиусе 3 клеток и 2 соседних с ним кубиков с силой атаки 2"
+---
+key: ability-ice-storm
+en: "Ice storm"
+ru: "Ледяной шторм"
+---
+key: ability-ice-storm-desc
+en: "that freezes dice in 1.5 cells radius for 2 turns (3 in epicenter)"
+ru: "замораживает кубики в радиусе 1.5 клеток на 2 хода (3 в эпицентре)"
+---
+key: ability-boss-summon-2
+en: "Summon Dia"
+ru: "Призывание Диа"
+---
+key: ability-boss-summon-2-desc
+en: "summons a dragon with mage abilities"
+ru: "призвает дракона с магическими способностями"
+---
+key: ability-super-elven-defence
+en: "Ghost armor"
+ru: "Призрачная броня"
+---
+key: ability-super-elven-defence.acc
+en: "Ghost armor"
+ru: "Призрачную броню"
+---
+key: ability-super-elven-defence-desc
+en: "protects from attacks with power 2 for 4 turns"
+ru: "защищает от атак силой 2 в течение 4 ходов"
+---
+key: ability-poison-shot
+en: "Poisonous dart"
+ru: "Отравляющий дротик"
+---
+key: ability-poison-shot-desc
+en: "kills its target in 3 cells radius after 4 turns"
+ru: "убъёт кубик в радиусе 3 клеток через 4 хода"
+---
+key: ability-boss-summon-3
+en: "Summon Ame"
+ru: "Призывание Эйма"
+---
+key: ability-boss-summon-3-desc
+en: "summons a dragon with archer abilities"
+ru: "призвает дракона со способностями стрелка"
+---
+key: ability-super-attack
+en: "Hammer"
+ru: "Молот"
+---
+key: ability-super-attack-desc
+en: "attacks one neighbour target with attack power 3"
+ru: "атакует одного врага на соседней клетке с силой атаки 3"
+---
+key: ability-boss-summon-4
+en: "Summon Jade"
+ru: "Призывание Джеда"
+---
+key: ability-boss-summon-4-desc
+en: "summons a dragon with warrior abilities"
+ru: "призвает дракона со способностями война"
+---
+key: ability-double-defensive-attack
+en: "Claw of resistance"
+ru: "Коготь сопротивления"
+---
+key: ability-double-defensive-attack-desc
+en: "attacks one neighbour target with attack power 2 and protects from attacks with power 2"
+ru: "атакует одного врага на соседней клетке с силой атаки 2 и защищает от атак силой 2"
+---
+key: ability-viscosity
+en: "Spit of viscosity"
+ru: "Вязкий плевок"
+---
+key: ability-viscosity-desc
+en: "Makes enemy in 4 cells radius immovable for 4 turns"
+ru: "Приклеивает врага в радисе 4 клеток к месту на 4 хода"
+---
+key: ability-boss-summon-5
+en: "Summon Sil"
+ru: "Призывание Сила"
+---
+key: ability-boss-summon-5-desc
+en: "summons a dragon with warrior abilities"
+ru: "призвает дракона со способностями война"
+---
+key: ability-petrification
+en: "Petrification"
+ru: "Окаменение"
+---
+key: ability-petrification-desc
+en: "turns enemy into stone for 4 turns"
+ru: "обращает врага в камень на 4 хода"
+---
+key: ability-dragon-enthrallment
+en: "Enthrallment"
+ru: "Завораживание"
+---
+key: ability-dragon-enthrallment-desc
+en: "turns one enemy in {radius} cells radius to ally for {turns} turns"
+ru: "переводит вражеский кубик в радиусе {radius} клеток на свою сторону на {turns} хода"
+---
+key: ability-stupefaction
+en: "Stupefier"
+ru: "Дурман"
+---
+key: ability-stupefaction-desc
+en: "makes enemy in {radius} cells radius uncontrollable for {turns} turns"
+ru: "делает врага в радиусе {radius} клеток неуправляемым на {turns} хода"
+---
+key: ability-boss-summon-6
+en: "Summon Lazu"
+ru: "Призывание Лазу"
+---
+key: ability-boss-summon-6-desc
+en: "summons a dragon with shaman abilities"
+ru: "призвает дракона со способностями шамана"
