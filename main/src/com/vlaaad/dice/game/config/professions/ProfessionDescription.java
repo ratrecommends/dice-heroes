@@ -20,13 +20,16 @@ package com.vlaaad.dice.game.config.professions;
 
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.IntArray;
+import com.badlogic.gdx.utils.ObjectMap;
 import com.vlaaad.common.util.MapHelper;
 import com.vlaaad.common.util.Numbers;
 import com.vlaaad.common.util.Option;
 import com.vlaaad.dice.Config;
 import com.vlaaad.dice.game.config.abilities.Ability;
+import com.vlaaad.dice.game.config.attributes.Attribute;
 import com.vlaaad.dice.game.user.Die;
 
+import java.util.Collections;
 import java.util.Map;
 
 /**
@@ -45,6 +48,7 @@ public class ProfessionDescription {
     private final Array<Ability> abilities = new Array<Ability>();
     public final boolean ignoreRequirements;
     public final Option<Ability> applyOnCreate;
+    public final ObjectMap<Attribute, Object> attributes;
 
     public ProfessionDescription(Map data) {
         this.name = MapHelper.get(data, "name");
@@ -70,6 +74,11 @@ public class ProfessionDescription {
             }
         }
         abilities.sort(Ability.COST_COMPARATOR);
+        this.attributes = new ObjectMap<Attribute, Object>();
+        Map<String, Object> attributes = MapHelper.get(data, "attributes", Collections.<String, Object>emptyMap());
+        for (String key : attributes.keySet()) {
+            this.attributes.put(Attribute.valueOf(key), attributes.get(key));
+        }
     }
 
     public int getSkillForLevel(int level) {
@@ -108,7 +117,8 @@ public class ProfessionDescription {
         return expForLevels.size;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return name;
     }
 

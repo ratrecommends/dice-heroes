@@ -4,6 +4,7 @@ Dice heroes is a turn based rpg-strategy game where characters are dice.
 
 ###Running game locally
 This project is built using gradle, so to run it you have to:
+
 1. Clone this repository
 2. In project's root, run in command line following command: `./gradlew desktop:run`
 3. There is no step 3 :)
@@ -19,6 +20,7 @@ Alternatively, you can import cloned repository in Intellij IDEA and run `deskto
 ###Contributing
 1. Use [issues](https://github.com/ratrecommends/dice-heroes/issues) to submit bugs and feature requests. **Do not** use issues for personal support (use community, [english](https://www.facebook.com/rrg.dice.heroes/) or [russian](https://vk.com/dice.heroes)).
 2. Feel free to submit [pull requests](https://github.com/ratrecommends/dice-heroes/pulls).
+
 ###Licenses
 1. Code is under [GNU GPLv3](https://gnu.org/licenses/gpl.html) ([tl;dr](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)).
 2. Images are under [Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/legalcode) ([tl;dr](https://tldrlegal.com/license/creative-commons-attribution-4.0-international-%28cc-by-4%29)).

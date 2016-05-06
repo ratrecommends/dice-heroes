@@ -106,6 +106,9 @@ public class Creature extends WorldObject implements Iterable<Ability> {
         super(description.profession.name);
         set(Attribute.defaultActionPoints, description.profession.defaultActionPoints);
         set(Attribute.actionPoints, description.profession.defaultActionPoints);
+        for (ObjectMap.Entry<Attribute, Object> entry : description.profession.attributes) {
+            set(entry.key, entry.value);
+        }
         this.initialPlayer = player;
         this.description = description;
         this.profession = description.profession;
@@ -218,17 +221,21 @@ public class Creature extends WorldObject implements Iterable<Ability> {
         return abilities.get(idx);
     }
 
-    @Override public void onAdded() {
+    @Override
+    public void onAdded() {
         viewer = world.viewer;
         world.creaturesById.put(id, this);
     }
 
-    @Override public void afterAdded() {
+    @Override
+    public void afterAdded() {
         if (profession.applyOnCreate.isDefined()) {
             profession.applyOnCreate.get().action.apply(this, world).addListener(new IFutureListener<IActionResult>() {
-                @Override public void onHappened(final IActionResult result) {
+                @Override
+                public void onHappened(final IActionResult result) {
                     world.getController(ViewController.class).visualize(result).addListener(new IFutureListener<Void>() {
-                        @Override public void onHappened(Void aVoid) {
+                        @Override
+                        public void onHappened(Void aVoid) {
                             result.apply(world);
                         }
                     });
@@ -290,7 +297,8 @@ public class Creature extends WorldObject implements Iterable<Ability> {
                 world.dispatcher.dispatch(REMOVE_EFFECT, new EffectEvent(Creature.this, effect));
             if (removeFuture != null) {
                 removeFuture.addListener(new IFutureListener<Void>() {
-                    @Override public void onHappened(Void aVoid) {
+                    @Override
+                    public void onHappened(Void aVoid) {
                         updateEffect(updateIndex + 1, size, effects, future, all);
                     }
                 });
@@ -322,7 +330,8 @@ public class Creature extends WorldObject implements Iterable<Ability> {
         effects.end();
     }
 
-    @Override public void onRemoved() {
+    @Override
+    public void onRemoved() {
         super.onRemoved();
     }
 
@@ -376,7 +385,8 @@ public class Creature extends WorldObject implements Iterable<Ability> {
 
     // -------------------- VIEW -------------------- //
 
-    @Override public ArrayMap<Object, SubView> createSubViews(Player viewer, PlayerColors colors) {
+    @Override
+    public ArrayMap<Object, SubView> createSubViews(Player viewer, PlayerColors colors) {
         ArrayMap<Object, SubView> result = new ArrayMap<Object, SubView>();
         Array<String> frames = new Array<String>(6);
         for (Ability description : abilities) {
@@ -412,11 +422,13 @@ public class Creature extends WorldObject implements Iterable<Ability> {
 
     // -------------------- OTHER -------------------- //
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return profession + " " + description.name + ": " + StringHelper.toCamelCase(player.toString()) + " at " + getX() + ", " + getY();
     }
 
-    @Override public Iterator<Ability> iterator() {
+    @Override
+    public Iterator<Ability> iterator() {
         return abilities.iterator();
     }
 

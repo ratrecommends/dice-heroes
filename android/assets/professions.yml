@@ -82,6 +82,8 @@ skills:
 name: boss
 id: b
 ap: 3
+attributes:
+  canBeResurrected: false
 levels:
 - 1000
 skills:
@@ -91,6 +93,8 @@ name: dragon
 id: d
 ignore-requirements: true
 apply-on-create: dragon-defence
+attributes:
+  canBeResurrected: false
 levels:
   - 17
   - 29
