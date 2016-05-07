@@ -8,7 +8,6 @@ This project is built using gradle, so to run it you have to:
 1. Clone this repository
 2. Make sure you have jdk installed
 3. In project's root, run in command line following command: `gradlew desktop:run` (on windows) or `./gradlew desktop:run` (on mac and linux)
-4. There is no step 4 :)
 
 Alternatively, you can import cloned repository in Intellij IDEA and run `desktop:run` gradle task from IDE.
 
@@ -19,7 +18,7 @@ Alternatively, you can import cloned repository in Intellij IDEA and run `deskto
 4. `generator/gfx` and `generator/world-map` directories contain images that are compiled into atlas before running a game.
 
 ###Contributing
-1. Use [issues](https://github.com/ratrecommends/dice-heroes/issues) to submit bugs and feature requests. **Do not** use issues for personal support (use community, [english](https://www.facebook.com/rrg.dice.heroes/) or [russian](https://vk.com/dice.heroes)).
+1. Use [issues](https://github.com/ratrecommends/dice-heroes/issues) to submit bugs and feature requests. **Do not** use issues for personal support (use community, [english](https://www.facebook.com/rrg.dice.heroes/) or [russian](https://vk.com/dice.heroes)). Please note that all collaboration is in english language, so everyone can understand and take part in development.
 2. Feel free to submit [pull requests](https://github.com/ratrecommends/dice-heroes/pulls).
 
 ###Licenses
