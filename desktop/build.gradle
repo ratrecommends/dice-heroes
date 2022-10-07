@@ -16,15 +16,47 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-apply plugin: "java"
-
-sourceCompatibility = 1.6
+sourceCompatibility = 1.8
 sourceSets.main.java.srcDirs = [ "src/" ]
+sourceSets.main.resources.srcDirs = ["../assets"]
+
+project.ext.mainClassName = "com.vlaaad.dice.DesktopLauncher"
+project.ext.assetsDir = new File("../android/assets")
+
+import org.gradle.internal.os.OperatingSystem
 
 task run(dependsOn: classes, type: JavaExec) {
-    main "com.vlaaad.dice.DesktopLauncher"
+    main = project.mainClassName
     classpath = sourceSets.main.runtimeClasspath
     standardInput = System.in
-    workingDir "../android/assets"
-    ignoreExitValue true
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+
+    if (OperatingSystem.current() == OperatingSystem.MAC_OS) {
+        // Required to run on macOS
+        jvmArgs += "-XstartOnFirstThread"
+    }
 }
+
+task debug(dependsOn: classes, type: JavaExec) {
+    main = project.mainClassName
+    classpath = sourceSets.main.runtimeClasspath
+    standardInput = System.in
+    workingDir = project.assetsDir
+    ignoreExitValue = true
+    debug = true
+}
+
+task dist(type: Jar) {
+    duplicatesStrategy(DuplicatesStrategy.EXCLUDE)
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    with jar
+}
+
+dist.dependsOn classes

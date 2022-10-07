@@ -65,7 +65,7 @@ public class NameSubView implements SubView {
         label.invalidate();
         label.validate();
         label.setY(ViewController.CELL_SIZE);
-        label.setX(ViewController.CELL_SIZE / 2f - label.getTextBounds().x / 2f);
+        label.setX(ViewController.CELL_SIZE / 2f - label.getGlyphLayout().width / 2f);
         group.addActor(background);
         group.addActor(label);
         group.setTouchable(Touchable.disabled);

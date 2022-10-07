@@ -55,7 +55,7 @@ public class AnimatedActor extends Actor {
     }
 
     @Override public void draw(Batch batch, float parentAlpha) {
-        TextureRegion region = animation.getKeyFrame(stateTime);
+        TextureRegion region = (TextureRegion) animation.getKeyFrame(stateTime);
 
         Color color = getColor();
         batch.setColor(color.r, color.g, color.b, color.a * parentAlpha);

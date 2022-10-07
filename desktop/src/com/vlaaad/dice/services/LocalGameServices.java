@@ -18,7 +18,7 @@
 
 package com.vlaaad.dice.services;
 
-import com.badlogic.gdx.backends.lwjgl.LwjglPreferences;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Preferences;
 import com.vlaaad.common.util.IStateDispatcher;
 import com.vlaaad.common.util.StateDispatcher;
 import com.vlaaad.common.util.futures.Future;
@@ -36,14 +36,14 @@ import com.vlaaad.dice.ui.windows.MessageWindow;
 public class LocalGameServices implements IGameServices {
 
     public static final String KEY = "signed-in";
-    private final LwjglPreferences prefs;
+    private final Lwjgl3Preferences prefs;
     private IGameAchievements achievements = new LocalAchievements();
     private final StateDispatcher<ServicesState> dispatcher = new StateDispatcher<ServicesState>(ServicesState.DISCONNECTED);
     private ICloudSave cloudSave = new LocalCloudSave();
     private IMultiplayer multiplayer = new LocalMultiplayer();
 
     public LocalGameServices() {
-        prefs = new LwjglPreferences("dice.local.game-services", ".prefs/");
+        prefs = new Lwjgl3Preferences("dice.local.game-services", ".prefs/");
         dispatcher.setState(ServicesState.valueOf(prefs.getString(KEY, ServicesState.DISCONNECTED.toString())));
     }
 

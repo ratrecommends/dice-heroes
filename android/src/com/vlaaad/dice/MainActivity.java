@@ -47,7 +47,7 @@ public class MainActivity extends AndroidApplication {
         getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
         AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
-        config.hideStatusBar = true;
+        // config.hideStatusBar = true;
         config.useAccelerometer = false;
         config.useCompass = false;
 

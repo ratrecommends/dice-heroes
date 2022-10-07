@@ -73,10 +73,10 @@ public class AnimationSubView implements SubView {
         }
     };
 
-    public final Animation animation;
+    public final Animation<TextureRegion> animation;
 
     public AnimationSubView(float frameDuration, Array<? extends TextureRegion> regions, Animation.PlayMode playType) {
-        this.animation = new Animation(frameDuration, regions, playType);
+        this.animation = new Animation<TextureRegion>(frameDuration, regions, playType);
         this.regions = regions;
         if (regions.size > 0) {
             TextureRegion region = regions.first();

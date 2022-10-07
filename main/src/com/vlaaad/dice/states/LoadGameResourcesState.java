@@ -68,7 +68,7 @@ public class LoadGameResourcesState extends State {
     private boolean loaded;
     private final Callback callback;
     private float stateTime = 0;
-    private Animation animation;
+    private Animation<TextureRegion> animation;
     private float displayedProgress = 0;
 
     private Actor actor = new Actor() {
@@ -107,7 +107,7 @@ public class LoadGameResourcesState extends State {
         TextureRegion[][] regions = TextureRegion.split(texture, 20, 28);
         TextureRegion[] frames = new TextureRegion[5];
         System.arraycopy(regions[0], 0, frames, 0, 5);
-        animation = new Animation(0.1f, frames);
+        animation = new Animation<TextureRegion>(0.1f, frames);
         stage.addActor(actor);
         progressY = stage.getHeight() / 2f - h / 2f - progressHeight - 4;
 

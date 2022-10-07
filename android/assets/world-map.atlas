@@ -1,8 +1,8 @@
 
 world-map.png
-size: 1024,1024
+size: 1024, 1024
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Nearest, Nearest
 repeat: none
 world-map
   rotate: false

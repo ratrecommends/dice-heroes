@@ -19,8 +19,8 @@
 package com.vlaaad.dice;
 
 import com.badlogic.gdx.LifecycleListener;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.vlaaad.dice.services.LocalMultiplayer;
 
 import java.io.IOException;
@@ -30,10 +30,9 @@ import java.io.IOException;
  */
 public class DesktopLauncher {
     public static void main(String[] args) throws IOException {
-        LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+        Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
         //min
-        config.width = 320 * 2;
-        config.height = 426 * 2;
+        config.setWindowedMode(320 * 2, 426 * 2);
 
         //avg
 //        config.width = 360;
@@ -56,9 +55,10 @@ public class DesktopLauncher {
 
 //        config.width = 800;
 //        config.height = 800;
+        config.setWindowedMode(960*2,640*2);
 
-        config.title = "dice heroes";
-        config.resizable = false;
-        new LwjglApplication(new DiceHeroes(new LocalMobileApi()), config);
+        config.setTitle("dice heroes");
+        config.setResizable(false);
+        new Lwjgl3Application(new DiceHeroes(new LocalMobileApi()), config);
     }
 }

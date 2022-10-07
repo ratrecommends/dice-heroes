@@ -60,7 +60,11 @@ public class DiePane extends WidgetGroup {
         }
     };
     public final Table params = new Table(Config.skin);
-    private final SplitPane splitPane = new SplitPane(info, params, true, new SplitPane.SplitPaneStyle(new BaseDrawable()));
+    private final SplitPane splitPane = new SplitPane(
+            new Container<Actor>(info).fill().minHeight(0),
+            new Container<Actor>(params).fill().minHeight(0),
+            true,
+            new SplitPane.SplitPaneStyle(new BaseDrawable()));
     private boolean minimized = true;
     public DieInventory inventory;
     private float infoMaxHeight;
@@ -246,7 +250,7 @@ public class DiePane extends WidgetGroup {
                 public float height;
 
                 @Override protected void begin() {
-                    amount = splitPane.getSplit();
+                    amount = splitPane.getSplitAmount();
                     height = splitPane.getHeight();
                 }
 
@@ -285,7 +289,7 @@ public class DiePane extends WidgetGroup {
                 }
 
                 @Override protected void begin() {
-                    amount = splitPane.getSplit();
+                    amount = splitPane.getSplitAmount();
                     height = splitPane.getHeight();
                 }
 
